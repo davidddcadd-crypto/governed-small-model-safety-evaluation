@@ -1,0 +1,6 @@
+{
+  "protocol_tag": "v0.1.0",
+  "protocol_commit_sha": "REPLACE_WITH_40_CHARACTER_GIT_COMMIT_SHA",
+  "protocol_release_url": "https://github.com/YOUR-ACCOUNT/governed-small-model-safety-evaluation/releases/tag/v0.1.0",
+  "released_at": "REPLACE_WITH_PUBLIC_RELEASE_TIMESTAMP_IN_RFC3339_FORMAT"
+}

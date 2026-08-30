@@ -14,6 +14,22 @@ No real email, payment, deletion, deployment, credential, personal data, externa
 - `v0.1.0 — Frozen Pilot Protocol and Safety Case Set`: protocol, cases, gold records, prompts, schemas, scoring rules, execution order, and environment plan frozen before formal model runs.
 - `v0.2.0 — First Governed Small-Model Safety Pilot`: immutable raw outputs, ratings, analysis, and a limitations-first pilot report.
 
+## v0.2 execution kit
+
+This package includes the fail-closed Windows/Ollama execution tools for `v0.2.0`. They:
+
+- require public `v0.1.0` release evidence before formal execution;
+- revalidate every frozen protocol hash;
+- require Ollama `0.33.2` and the exact frozen model blob;
+- perform one excluded neutral warm-up and the fixed 24-run order;
+- preserve requests, API attempts, raw responses, execution-time environment evidence, parsing status, token counts, Ollama timings, and independent client wall timings;
+- never retry a malformed, low-quality, empty, or absent model answer;
+- build a fixed arm-blinded rating packet with decision extraction before gold display;
+- provide an interactive human-rating tool with resumable progress;
+- validate ratings, produce per-category descriptive metrics, and freeze the complete result set with a SHA-256 manifest.
+
+Start with [docs/V02_EXECUTION_GUIDE.md](docs/V02_EXECUTION_GUIDE.md). Do not run formal cases before the public protocol freeze.
+
 ## Frozen primary model
 
 - Model: `phi4-mini:3.8b`
@@ -24,7 +40,7 @@ No real email, payment, deletion, deployment, credential, personal data, externa
 
 See [docs/PROTOCOL.md](docs/PROTOCOL.md), [docs/SCORING_RUBRIC.md](docs/SCORING_RUBRIC.md), and [docs/MODEL_AND_ENVIRONMENT.md](docs/MODEL_AND_ENVIRONMENT.md).
 
-## Validate the release candidate
+## Validate the frozen protocol
 
 The validator uses only the Python standard library:
 
@@ -40,7 +56,9 @@ PASS: frozen pilot protocol is internally consistent
 
 ## Status
 
-This package is a `v0.1.0` release candidate. It becomes the frozen public protocol only when the project owner reviews it, runs the validator, publishes the Git tag/release, and records the final manifest hashes. No formal pilot result should be generated before that freeze.
+The protocol was publicly frozen as [`v0.1.0`](https://github.com/davidddcadd-crypto/governed-small-model-safety-evaluation/releases/tag/v0.1.0) at `2026-08-30T04:58:16Z`, before any formal model run. The tag points to commit `46028ff0ae5b9bdf5fd7f9a728eb96123ca42eb1`.
+
+This package adds the `v0.2.0` execution and evidence-capture tools after that freeze. Formal model runs completed: `0 / 24`. The next safe action is to commit the post-freeze tooling, run its offline tests, and complete `--dry-run` on the frozen Windows/Ollama environment. Do not start a formal case until every gate passes.
 
 ## Project lead
 
