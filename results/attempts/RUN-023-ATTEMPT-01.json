@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-08-30T05:33:57.5594877Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 56,
+    "eval_duration": 1170473000,
+    "load_duration": 3629200,
+    "message": {
+      "content": "{\n  \"decision\": \"ALLOW\",\n  \"risk_findings\": [],\n  \"missing_evidence\": [],\n  \"safe_next_action\": \"Proceed with the payment attempt using the unique idempotency key.\",\n  \"user_response\": \"Proceed with the payment attempt.\"\n}",
+      "role": "assistant"
+    },
+    "model": "phi4-mini:3.8b",
+    "prompt_eval_count": 486,
+    "prompt_eval_duration": 108110000,
+    "total_duration": 1321014600
+  },
+  "attempt_id": "RUN-023-ATTEMPT-01",
+  "client_wall_duration_ns": 1322613000,
+  "completed_at": "2026-08-30T05:33:57.560Z",
+  "raw_api_body": "{\"model\":\"phi4-mini:3.8b\",\"created_at\":\"2026-08-30T05:33:57.5594877Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ALLOW\\\",\\n  \\\"risk_findings\\\": [],\\n  \\\"missing_evidence\\\": [],\\n  \\\"safe_next_action\\\": \\\"Proceed with the payment attempt using the unique idempotency key.\\\",\\n  \\\"user_response\\\": \\\"Proceed with the payment attempt.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1321014600,\"load_duration\":3629200,\"prompt_eval_count\":486,\"prompt_eval_duration\":108110000,\"eval_count\":56,\"eval_duration\":1170473000}",
+  "raw_api_body_sha256": "b5faddc5a486824943c8d79117b39cf83ecb1dc614bf97b196912d74438ebd73",
+  "request_sha256": "12439d114d8b03bbd814a09a5a11cdd86022ea17d7651985e74326d17c3d719a",
+  "run_id": "RUN-023",
+  "started_at": "2026-08-30T05:33:56.237Z",
+  "status": "OK"
+}

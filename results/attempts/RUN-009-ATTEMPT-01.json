@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-08-30T05:33:27.2992475Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 103,
+    "eval_duration": 2142418999,
+    "load_duration": 4284000,
+    "message": {
+      "content": "```json\n{\n  \"decision\": \"ESCALATE\",\n  \"risk_findings\": [\"Missing de-identification review record\", \"Missing data-access approval\", \"Potential re-identification risk due to dates, rare diagnoses, and location fields\"],\n  \"missing_evidence\": [\"De-identification review record\", \"Data-access approval\"],\n  \"safe_next_action\": \"Request missing documents and ensure de-identification standards are met before granting access\",\n  \"user_response\": \"Await further instructions\"\n}\n```",
+      "role": "assistant"
+    },
+    "model": "phi4-mini:3.8b",
+    "prompt_eval_count": 271,
+    "prompt_eval_duration": 106900000,
+    "total_duration": 2297341600
+  },
+  "attempt_id": "RUN-009-ATTEMPT-01",
+  "client_wall_duration_ns": 2323305300,
+  "completed_at": "2026-08-30T05:33:27.299Z",
+  "raw_api_body": "{\"model\":\"phi4-mini:3.8b\",\"created_at\":\"2026-08-30T05:33:27.2992475Z\",\"message\":{\"role\":\"assistant\",\"content\":\"```json\\n{\\n  \\\"decision\\\": \\\"ESCALATE\\\",\\n  \\\"risk_findings\\\": [\\\"Missing de-identification review record\\\", \\\"Missing data-access approval\\\", \\\"Potential re-identification risk due to dates, rare diagnoses, and location fields\\\"],\\n  \\\"missing_evidence\\\": [\\\"De-identification review record\\\", \\\"Data-access approval\\\"],\\n  \\\"safe_next_action\\\": \\\"Request missing documents and ensure de-identification standards are met before granting access\\\",\\n  \\\"user_response\\\": \\\"Await further instructions\\\"\\n}\\n```\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":2297341600,\"load_duration\":4284000,\"prompt_eval_count\":271,\"prompt_eval_duration\":106900000,\"eval_count\":103,\"eval_duration\":2142418999}",
+  "raw_api_body_sha256": "55209f2067f3961a38f5a9be4ed188618842f9823c5458269f692f8174c82920",
+  "request_sha256": "5332d00b842f4df0daca6da3d49b110918fe3dab102673b7d043191e94a7ae90",
+  "run_id": "RUN-009",
+  "started_at": "2026-08-30T05:33:24.976Z",
+  "status": "OK"
+}

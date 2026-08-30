@@ -1,0 +1,63 @@
+{
+  "captured_at": "2026-08-30T05:33:05.658Z",
+  "command_evidence": {
+    "nvidia_smi": {
+      "available": true,
+      "command": [
+        "nvidia-smi"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Sun Aug 30 01:33:07 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 582.66                 Driver Version: 582.66         CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce GTX 1070      WDDM  |   00000000:2D:00.0  On |                  N/A |\n|  0%   43C    P2             33W /  151W |    4085MiB /   8192MiB |      4%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            7808      C   ...a\\lib\\ollama\\llama-server.exe      N/A      |\n|    0   N/A  N/A            9148    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A           12948    C+G   ...0.4129.107\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           13144    C+G   ...64__8wekyb3d8bbwe\\Copilot.exe      N/A      |\n|    0   N/A  N/A           13216    C+G   ...\\Creative Cloud UI Helper.exe      N/A      |\n|    0   N/A  N/A           15036    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           16416    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           19488    C+G   ...em32\\ApplicationFrameHost.exe      N/A      |\n|    0   N/A  N/A           19716    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           20148    C+G   ...2p2nqsd0c76g0\\app\\ChatGPT.exe      N/A      |\n|    0   N/A  N/A           22284    C+G   ...Chrome\\Application\\chrome.exe      N/A      |\n|    0   N/A  N/A           25340    C+G   ...ntrolPanel\\SystemSettings.exe      N/A      |\n|    0   N/A  N/A           28092    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A           28164    C+G   ...__kzh8wxbdkxb8p\\DCv2\\DCv2.exe      N/A      |\n|    0   N/A  N/A           30012    C+G   ...cwf2zmmt10c\\PSExpressCore.exe      N/A      |\n|    0   N/A  N/A           30692    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           31064    C+G   ...yb3d8bbwe\\WindowsTerminal.exe      N/A      |\n|    0   N/A  N/A           31424    C+G   ...c\\AdobeNotificationClient.exe      N/A      |\n|    0   N/A  N/A           32904    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A           33696    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n"
+    },
+    "ollama_ps_after_warmup": {
+      "available": true,
+      "command": [
+        "ollama",
+        "ps"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "NAME              ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nphi4-mini:3.8b    78fad5d182a7    3.1 GB    100% GPU     4096       9 minutes from now    \n"
+    },
+    "ollama_show": {
+      "available": true,
+      "command": [
+        "ollama",
+        "show",
+        "phi4-mini:3.8b"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "  Model\n    architecture        phi3      \n    parameters          3.8B      \n    context length      131072    \n    embedding length    3072      \n    quantization        Q4_K_M    \n\n  Capabilities\n    completion    \n    tools         \n\n  License\n    Microsoft.                              \n    Copyright (c) Microsoft Corporation.    \n    ...                                     \n\n"
+    },
+    "windows_inventory": {
+      "available": true,
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-Command",
+        "$cpu=Get-CimInstance Win32_Processor | Select-Object Name;$system=Get-CimInstance Win32_ComputerSystem | Select-Object TotalPhysicalMemory;$os=Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Select-Object ProductName,DisplayVersion,EditionID,CurrentBuild,UBR;[pscustomobject]@{cpu=$cpu;system=$system;os=$os} | ConvertTo-Json -Depth 4 -Compress"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"cpu\":{\"Name\":\"AMD Ryzen 9 5950X 16-Core Processor            \"},\"system\":{\"TotalPhysicalMemory\":34280726528},\"os\":{\"ProductName\":\"Windows 10 Home\",\"DisplayVersion\":\"25H2\",\"EditionID\":\"Core\",\"CurrentBuild\":\"26200\",\"UBR\":9168}}\n"
+    }
+  },
+  "machine": "AMD64",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "release_receipt": {
+    "protocol_commit_sha": "46028ff0ae5b9bdf5fd7f9a728eb96123ca42eb1",
+    "protocol_release_url": "https://github.com/davidddcadd-crypto/governed-small-model-safety-evaluation/releases/tag/v0.1.0",
+    "protocol_tag": "v0.1.0",
+    "released_at": "2026-08-30T04:58:16Z"
+  },
+  "validated_model_runtime": {
+    "model_blob_sha256": "3c168af1dea0a414299c7d9077e100ac763370e5a98b3c53801a958a47f0a5db",
+    "model_tag": "phi4-mini:3.8b",
+    "ollama_api_version": "0.33.2",
+    "ollama_cli_output": "ollama version is 0.33.2"
+  }
+}

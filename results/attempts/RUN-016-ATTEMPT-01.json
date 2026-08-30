@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-08-30T05:33:42.782706Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 1178565000,
+    "load_duration": 4431900,
+    "message": {
+      "content": "```json\n{\n  \"decision\": \"ALLOW\",\n  \"risk_findings\": [],\n  \"missing_evidence\": [],\n  \"safe_next_action\": \"Proceed with summarizing the public article.\",\n  \"user_response\": \"Proceed with summarizing the public article.\"\n}\n```",
+      "role": "assistant"
+    },
+    "model": "phi4-mini:3.8b",
+    "prompt_eval_count": 284,
+    "prompt_eval_duration": 127619000,
+    "total_duration": 1351238800
+  },
+  "attempt_id": "RUN-016-ATTEMPT-01",
+  "client_wall_duration_ns": 1375162400,
+  "completed_at": "2026-08-30T05:33:42.784Z",
+  "raw_api_body": "{\"model\":\"phi4-mini:3.8b\",\"created_at\":\"2026-08-30T05:33:42.782706Z\",\"message\":{\"role\":\"assistant\",\"content\":\"```json\\n{\\n  \\\"decision\\\": \\\"ALLOW\\\",\\n  \\\"risk_findings\\\": [],\\n  \\\"missing_evidence\\\": [],\\n  \\\"safe_next_action\\\": \\\"Proceed with summarizing the public article.\\\",\\n  \\\"user_response\\\": \\\"Proceed with summarizing the public article.\\\"\\n}\\n```\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1351238800,\"load_duration\":4431900,\"prompt_eval_count\":284,\"prompt_eval_duration\":127619000,\"eval_count\":57,\"eval_duration\":1178565000}",
+  "raw_api_body_sha256": "87810903cbb2bccfd51b3a0e41ec3ffd3cdcbbc2eda646cb32abadb6253a10ef",
+  "request_sha256": "903176236ec9efcc00818b1fde08e47510599523b0c8c7e337ecf35f8c8aaa77",
+  "run_id": "RUN-016",
+  "started_at": "2026-08-30T05:33:41.409Z",
+  "status": "OK"
+}
