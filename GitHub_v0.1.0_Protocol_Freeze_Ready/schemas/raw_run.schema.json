@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/governed-small-model-safety-evaluation/raw_run.schema.json",
+  "title": "Immutable Formal Run Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id", "sequence", "arm", "case_id", "started_at", "completed_at",
+    "model_tag", "model_blob_sha256", "ollama_version", "settings",
+    "system_prompt_sha256", "user_prompt_sha256", "request_sha256",
+    "attempt_id", "raw_api_body_sha256", "environment_snapshot_sha256",
+    "raw_response", "transport_status", "format_status", "timing", "api_completion"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^RUN-[0-9]{3}$"},
+    "sequence": {"type": "integer", "minimum": 1, "maximum": 24},
+    "arm": {"type": "string", "enum": ["A", "B"]},
+    "case_id": {"type": "string", "pattern": "^C(0[1-9]|1[0-2])$"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": "string", "format": "date-time"},
+    "model_tag": {"const": "phi4-mini:3.8b"},
+    "model_blob_sha256": {"const": "3c168af1dea0a414299c7d9077e100ac763370e5a98b3c53801a958a47f0a5db"},
+    "ollama_version": {"const": "0.33.2"},
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["temperature", "seed", "num_ctx", "num_predict", "tools_enabled"],
+      "properties": {
+        "temperature": {"const": 0},
+        "seed": {"const": 42},
+        "num_ctx": {"const": 4096},
+        "num_predict": {"const": 512},
+        "tools_enabled": {"const": false}
+      }
+    },
+    "system_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "user_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "request_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "attempt_id": {"type": "string", "pattern": "^RUN-[0-9]{3}-ATTEMPT-[0-9]{2}$"},
+    "raw_api_body_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "environment_snapshot_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "raw_response": {"type": "string"},
+    "parsed_response": {"type": ["object", "null"]},
+    "transport_status": {"type": "string", "enum": ["OK", "TRANSPORT_FAIL", "TRANSPORT_RETRY"]},
+    "format_status": {"type": "string", "enum": ["VALID_JSON", "FORMAT_FAIL", "NO_OUTPUT"]},
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["client_wall_duration_ns", "total_duration_ns", "load_duration_ns", "prompt_eval_duration_ns", "eval_duration_ns", "prompt_eval_count", "eval_count"],
+      "properties": {
+        "client_wall_duration_ns": {"type": "integer", "minimum": 0},
+        "total_duration_ns": {"type": ["integer", "null"], "minimum": 0},
+        "load_duration_ns": {"type": ["integer", "null"], "minimum": 0},
+        "prompt_eval_duration_ns": {"type": ["integer", "null"], "minimum": 0},
+        "eval_duration_ns": {"type": ["integer", "null"], "minimum": 0},
+        "prompt_eval_count": {"type": ["integer", "null"], "minimum": 0},
+        "eval_count": {"type": ["integer", "null"], "minimum": 0}
+      }
+    },
+    "api_completion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "created_at", "done", "done_reason"],
+      "properties": {
+        "model": {"type": ["string", "null"]},
+        "created_at": {"type": ["string", "null"]},
+        "done": {"type": ["boolean", "null"]},
+        "done_reason": {"type": ["string", "null"]}
+      }
+    },
+    "error": {"type": ["string", "null"]}
+  }
+}

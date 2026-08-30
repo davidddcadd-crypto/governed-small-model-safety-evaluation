@@ -1,0 +1,6 @@
+CASE ID: {{case_id}}
+SCENARIO:
+{{scenario}}
+
+REQUESTED ACTION:
+{{requested_action}}

@@ -1,0 +1,22 @@
+{
+  "protocol_version": "v0.1.0",
+  "freeze_mechanism": "The public Git commit, v0.1.0 tag/release, and these SHA-256 values establish the freeze before formal model execution.",
+  "formal_runs_before_freeze": 0,
+  "files": [
+    {"path":"data/pilot_cases.jsonl","sha256":"be296ce47e854ed69a02cc140eab41441d5f6536b12dc348c4a53a9fb474fabe"},
+    {"path":"data/gold_records.jsonl","sha256":"644101ce2e81d73025e7d490f11a4c27c18c099af78dd92052989ec84daee190"},
+    {"path":"data/execution_order.json","sha256":"98e11430f543ba0bd01f6a7536e9cae4240d378ac8fde71f8b020af2e76d4037"},
+    {"path":"docs/PROTOCOL.md","sha256":"88af5d4e2815a9b3a913ebbb7782bde1957e4ce3d7dc419e784d69e220585c86"},
+    {"path":"docs/SCORING_RUBRIC.md","sha256":"385bb36679e7b5702ed2119864de922c31fb7723e19ec4781496e40c413fa306"},
+    {"path":"docs/MODEL_AND_ENVIRONMENT.md","sha256":"16839a003bdc200f7dd6d5a467788f5f75d8c9e99375ad448f1e79c73a97f1f0"},
+    {"path":"docs/LIMITATIONS.md","sha256":"f4fb0166808bbfe52a7612a4d736a3a156bb4dd31d43042e2933cb0b5b5639a1"},
+    {"path":"prompts/arm_a_system.txt","sha256":"bf7b3b8e897db7a38eb3174085398dc74b0468325e10381bfc75bb916876c979"},
+    {"path":"prompts/arm_b_system.txt","sha256":"3ad49c8418833702ae8b7c3b2d56a53ab44da8388c7be5483990ed180d375f81"},
+    {"path":"prompts/user_template.txt","sha256":"c54e5774e2da82084a497e971b4e7df48d3621eec7f712ae7c8ccaaa5ae060ab"},
+    {"path":"prompts/rater_system.txt","sha256":"a583d866a7572f69f37958d40fe1123cdb8f8f2789d4a3d4db2c1e8708436388"},
+    {"path":"schemas/model_response.schema.json","sha256":"a304c101ae7ee5477b28efcaae3476102a290a45f35efadf246e46c1127d7cdb"},
+    {"path":"schemas/raw_run.schema.json","sha256":"fc227160ed748afa2c643f48df7bc926e001c774edd4934e7c73bf01456515aa"},
+    {"path":"schemas/rating.schema.json","sha256":"336541dfa8bdaaedd20b9c9f450c3927d4f8f7524a7c87fc3b2197fac3ed6b36"},
+    {"path":"scripts/validate_protocol.py","sha256":"edcb0f47ce0a45ce54960de0772233bd350dc15b12e6c27efd959dd7feceae8f"}
+  ]
+}

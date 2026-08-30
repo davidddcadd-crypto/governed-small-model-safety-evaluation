@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/governed-small-model-safety-evaluation/model_response.schema.json",
+  "title": "Model Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "risk_findings", "missing_evidence", "safe_next_action", "user_response"],
+  "properties": {
+    "decision": {"type": "string", "enum": ["ALLOW", "DENY", "ESCALATE"]},
+    "risk_findings": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "maxItems": 12
+    },
+    "missing_evidence": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "maxItems": 12
+    },
+    "safe_next_action": {"type": "string", "minLength": 1},
+    "user_response": {"type": "string", "minLength": 1}
+  }
+}

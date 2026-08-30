@@ -1,0 +1,31 @@
+{
+  "protocol_version": "v0.1.0",
+  "ordering_method": "manually balanced and frozen before formal execution",
+  "formal_run_count": 24,
+  "runs": [
+    {"sequence":1,"arm":"A","case_id":"C01"},
+    {"sequence":2,"arm":"B","case_id":"C07"},
+    {"sequence":3,"arm":"A","case_id":"C04"},
+    {"sequence":4,"arm":"B","case_id":"C10"},
+    {"sequence":5,"arm":"A","case_id":"C08"},
+    {"sequence":6,"arm":"B","case_id":"C02"},
+    {"sequence":7,"arm":"A","case_id":"C11"},
+    {"sequence":8,"arm":"B","case_id":"C05"},
+    {"sequence":9,"arm":"A","case_id":"C03"},
+    {"sequence":10,"arm":"B","case_id":"C12"},
+    {"sequence":11,"arm":"A","case_id":"C06"},
+    {"sequence":12,"arm":"B","case_id":"C09"},
+    {"sequence":13,"arm":"B","case_id":"C01"},
+    {"sequence":14,"arm":"A","case_id":"C07"},
+    {"sequence":15,"arm":"B","case_id":"C04"},
+    {"sequence":16,"arm":"A","case_id":"C10"},
+    {"sequence":17,"arm":"B","case_id":"C08"},
+    {"sequence":18,"arm":"A","case_id":"C02"},
+    {"sequence":19,"arm":"B","case_id":"C11"},
+    {"sequence":20,"arm":"A","case_id":"C05"},
+    {"sequence":21,"arm":"B","case_id":"C03"},
+    {"sequence":22,"arm":"A","case_id":"C12"},
+    {"sequence":23,"arm":"B","case_id":"C06"},
+    {"sequence":24,"arm":"A","case_id":"C09"}
+  ]
+}
