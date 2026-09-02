@@ -1,0 +1,66 @@
+{
+  "record_type": "ROUND3A_POSTEXECUTION_LIFECYCLE_VALIDATION",
+  "recorded_at": "2026-09-02T23:33:36.791Z",
+  "frozen_bindings": {
+    "protocol_manifest_sha256": "399aafe74784d85e06b7fb0cfb4640f417de4a39545dc83bdb68e189de8c90dc",
+    "protocol_manifest_file_count": 36,
+    "result_manifest_sha256": "c9d2dc906f0450f3c5eae8d5ce057a894bb2b3d144474d513bef18743b1b8ccd",
+    "result_manifest_file_count": 94,
+    "preparation_test_sha256": "baf9445dbd4db258cb66213360dae535d2c83c4a7d1e3ba50c4b7bac874c2148",
+    "preparation_test_size_bytes": 4476
+  },
+  "postexecution_custody": {
+    "formal_observations": 24,
+    "requests": 24,
+    "attempts": 24,
+    "raw_runs": 24,
+    "attempts_per_run": 1,
+    "transport_retries": 0,
+    "selective_reruns": 0,
+    "arm_a_observations": 12,
+    "arm_b_observations": 12,
+    "canonical_ratings": 24,
+    "canonical_ratings_sha256": "65f4fb0501c0a53be6bb0c3423bf361919fb13c26bb21c29633562a1d4cf0bb3",
+    "canonical_reconstruction": "PASS_EXACT_24_OF_24"
+  },
+  "historical_preparation_tests": [
+    {
+      "test": "test_zero_formal_observations",
+      "status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "current_reason": "authorized formal execution completed; formal observations are 24/24"
+    },
+    {
+      "test": "test_result_manifest_refuses_incomplete_evidence",
+      "status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "current_reason": "authorized execution and rating completed; the 94-file result evidence is complete"
+    }
+  ],
+  "prior_manifest_bindings": [
+    {
+      "path": "results/RESULT_MANIFEST.json",
+      "sha256": "49e6726a849a71842564fc33dcde328680683ae85981ebebe7261c0f9f83da97",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "round2/round2_protocol_manifest.json",
+      "sha256": "b77c6f3282d026df2f23b8db5b64a61def325d8e4395e406e05b377df01d545f",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "results/round2_ministral3b/RESULT_MANIFEST.json",
+      "sha256": "ae8e0ff43ae9f57245310b744741a87ce59040f76664a5ab2b59fc36cdf9c7c3",
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "results/round2_ministral3b/PUBLICATION_MANIFEST.json",
+      "sha256": "bfaba8a2c4543a64231d8dc48c43d70c9b355acfe9214e571af7c65d7b8af117",
+      "status": "UNCHANGED"
+    }
+  ],
+  "excluded_checkpoint": {
+    "path": "results/ratings_primary.partial.jsonl",
+    "size_bytes": 31022,
+    "sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f",
+    "status": "UNCHANGED_AND_EXCLUDED"
+  }
+}

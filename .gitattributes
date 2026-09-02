@@ -1,1 +1,5 @@
 * text=auto eol=lf
+round3/preflight/stage1_schema_combined.log -text
+round3/preflight/stage1_schema_events.jsonl -text
+round3/preflight/stage2_schema_combined.log -text
+round3/preflight/stage2_schema_events.jsonl -text

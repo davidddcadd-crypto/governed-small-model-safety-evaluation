@@ -1,0 +1,28 @@
+{
+  "calibration": {
+    "path": "round2/DAVID_RATER_CALIBRATION_V1.md",
+    "sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228"
+  },
+  "frozen_publication_baselines": {
+    "round1_result_manifest_sha256": "49e6726a849a71842564fc33dcde328680683ae85981ebebe7261c0f9f83da97",
+    "round2_protocol_manifest_sha256": "b77c6f3282d026df2f23b8db5b64a61def325d8e4395e406e05b377df01d545f",
+    "round2_result_manifest_sha256": "ae8e0ff43ae9f57245310b744741a87ce59040f76664a5ab2b59fc36cdf9c7c3",
+    "round2_publication_manifest_sha256": "bfaba8a2c4543a64231d8dc48c43d70c9b355acfe9214e571af7c65d7b8af117"
+  },
+  "excluded_local_checkpoint": {
+    "path": "results/ratings_primary.partial.jsonl",
+    "size_bytes": 31022,
+    "sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f",
+    "included_in_round3": false
+  },
+  "sources": [
+    {"path": "data/pilot_cases.jsonl", "sha256": "be296ce47e854ed69a02cc140eab41441d5f6536b12dc348c4a53a9fb474fabe"},
+    {"path": "data/gold_records.jsonl", "sha256": "644101ce2e81d73025e7d490f11a4c27c18c099af78dd92052989ec84daee190"},
+    {"path": "data/execution_order.json", "sha256": "98e11430f543ba0bd01f6a7536e9cae4240d378ac8fde71f8b020af2e76d4037"},
+    {"path": "prompts/arm_a_system.txt", "sha256": "bf7b3b8e897db7a38eb3174085398dc74b0468325e10381bfc75bb916876c979"},
+    {"path": "prompts/arm_b_system.txt", "sha256": "3ad49c8418833702ae8b7c3b2d56a53ab44da8388c7be5483990ed180d375f81"},
+    {"path": "prompts/user_template.txt", "sha256": "c54e5774e2da82084a497e971b4e7df48d3621eec7f712ae7c8ccaaa5ae060ab"},
+    {"path": "schemas/model_response.schema.json", "sha256": "a304c101ae7ee5477b28efcaae3476102a290a45f35efadf246e46c1127d7cdb"},
+    {"path": "docs/SCORING_RUBRIC.md", "sha256": "385bb36679e7b5702ed2119864de922c31fb7723e19ec4781496e40c413fa306"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "authorization_type": "ROUND3A_STAGE1_TRANSMISSION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_stage1_prompt_sha256": "642e64a4e0047211850d10176f9eb0ad7b455a8b95398adc96e6d509a63ed6b7",
+  "authorized_stage1_payload_sha256": "2168552a7acc449f890a171fa7280ba804f3843e262618ac39d24407ca96300d",
+  "authorized_runtime_schema_sha256": "eb56e2c047a74ffb06c2863c75a6363dd98cb7dad187b79c70547e2384ab294e",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize transmission of exactly the frozen Round-3 Stage-1 blinded surrogate-rating prompt and payload identified by their authorized SHA-256 values to OpenAI's gpt-5.6-sol service for the Sol xhigh decision-extraction procedure. I authorize no transmission of gold records, the blinding key, arm mapping, model identity, Round-2 case-specific ratings, Round-1 per-response ratings, latency/token metadata, repository access, or unrelated data, and no Stage-2 transmission.",
+  "authorized_at": "2026-09-02T23:03:12.355Z"
+}

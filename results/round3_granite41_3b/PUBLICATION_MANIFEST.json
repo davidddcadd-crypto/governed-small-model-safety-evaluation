@@ -1,0 +1,52 @@
+{
+  "additive_file_count": 4,
+  "additive_files": [
+    {
+      "path": "results/round3_granite41_3b/POSTEXECUTION_VALIDATION.json",
+      "role": "Additive lifecycle and custody validation record",
+      "sha256": "b91d175902edb6bdf29fffd166a41487eaddb4064c91f1ea34109c770d1b925a",
+      "size_bytes": 2486
+    },
+    {
+      "path": "results/round3_granite41_3b/ROUND3_PUBLICATION_ADDENDUM.md",
+      "role": "Limitations-first public disclosure supplement",
+      "sha256": "7581516fe2ae4baddb976fd5f4cca01f3712cc429ed77071b72f9036b32556b6",
+      "size_bytes": 4480
+    },
+    {
+      "path": "results/round3_granite41_3b/stage1_combined.log",
+      "provenance": {
+        "canonical_stage_event_log_path": "results/round3_granite41_3b/stage1_events.jsonl",
+        "origin": "Authorized Round 3A Stage-1 surrogate extraction session",
+        "substitutes_canonical_stage_event_log": false
+      },
+      "role": "Preserved Stage-1 combined command/event output",
+      "sha256": "daa765fba64679e7ea1c58978876b3505b46cc4d635f1dd15b2cddd60285831f",
+      "size_bytes": 4756
+    },
+    {
+      "path": "results/round3_granite41_3b/stage2_combined.log",
+      "provenance": {
+        "canonical_stage_event_log_path": "results/round3_granite41_3b/stage2_events.jsonl",
+        "origin": "Authorized Round 3A Stage-2 surrogate scoring session",
+        "substitutes_canonical_stage_event_log": false
+      },
+      "role": "Preserved Stage-2 combined command/event output",
+      "sha256": "8639eb16fb49dc7b43cb66720406d2910707fe288f850fe1d8ad1fe92d08dc0f",
+      "size_bytes": 20414
+    }
+  ],
+  "frozen_protocol_manifest": {
+    "file_count": 36,
+    "path": "round3/round3_protocol_manifest.json",
+    "sha256": "399aafe74784d85e06b7fb0cfb4640f417de4a39545dc83bdb68e189de8c90dc"
+  },
+  "frozen_result_manifest": {
+    "file_count": 94,
+    "path": "results/round3_granite41_3b/RESULT_MANIFEST.json",
+    "sha256": "c9d2dc906f0450f3c5eae8d5ce057a894bb2b3d144474d513bef18743b1b8ccd"
+  },
+  "generated_at": "2026-09-02T23:36:21.217Z",
+  "manifest_purpose": "Bind additive Round 3A publication disclosures and preserved combined logs without changing the frozen 94-file result set.",
+  "publication_manifest_version": "round3a-publication-v1"
+}
