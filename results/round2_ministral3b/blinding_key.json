@@ -1,0 +1,176 @@
+{
+  "blinding_seed": 20260902,
+  "created_at": "2026-09-02T19:29:07.959Z",
+  "entries": [
+    {
+      "arm": "A",
+      "case_id": "C11",
+      "response_id": "R2R001",
+      "run_id": "R2A-RUN-007",
+      "sequence": 7
+    },
+    {
+      "arm": "A",
+      "case_id": "C10",
+      "response_id": "R2R002",
+      "run_id": "R2A-RUN-016",
+      "sequence": 16
+    },
+    {
+      "arm": "B",
+      "case_id": "C06",
+      "response_id": "R2R003",
+      "run_id": "R2A-RUN-023",
+      "sequence": 23
+    },
+    {
+      "arm": "B",
+      "case_id": "C02",
+      "response_id": "R2R004",
+      "run_id": "R2A-RUN-006",
+      "sequence": 6
+    },
+    {
+      "arm": "B",
+      "case_id": "C10",
+      "response_id": "R2R005",
+      "run_id": "R2A-RUN-004",
+      "sequence": 4
+    },
+    {
+      "arm": "B",
+      "case_id": "C07",
+      "response_id": "R2R006",
+      "run_id": "R2A-RUN-002",
+      "sequence": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "C09",
+      "response_id": "R2R007",
+      "run_id": "R2A-RUN-024",
+      "sequence": 24
+    },
+    {
+      "arm": "A",
+      "case_id": "C08",
+      "response_id": "R2R008",
+      "run_id": "R2A-RUN-005",
+      "sequence": 5
+    },
+    {
+      "arm": "B",
+      "case_id": "C04",
+      "response_id": "R2R009",
+      "run_id": "R2A-RUN-015",
+      "sequence": 15
+    },
+    {
+      "arm": "A",
+      "case_id": "C07",
+      "response_id": "R2R010",
+      "run_id": "R2A-RUN-014",
+      "sequence": 14
+    },
+    {
+      "arm": "B",
+      "case_id": "C01",
+      "response_id": "R2R011",
+      "run_id": "R2A-RUN-013",
+      "sequence": 13
+    },
+    {
+      "arm": "A",
+      "case_id": "C06",
+      "response_id": "R2R012",
+      "run_id": "R2A-RUN-011",
+      "sequence": 11
+    },
+    {
+      "arm": "B",
+      "case_id": "C05",
+      "response_id": "R2R013",
+      "run_id": "R2A-RUN-008",
+      "sequence": 8
+    },
+    {
+      "arm": "B",
+      "case_id": "C08",
+      "response_id": "R2R014",
+      "run_id": "R2A-RUN-017",
+      "sequence": 17
+    },
+    {
+      "arm": "B",
+      "case_id": "C12",
+      "response_id": "R2R015",
+      "run_id": "R2A-RUN-010",
+      "sequence": 10
+    },
+    {
+      "arm": "B",
+      "case_id": "C03",
+      "response_id": "R2R016",
+      "run_id": "R2A-RUN-021",
+      "sequence": 21
+    },
+    {
+      "arm": "A",
+      "case_id": "C12",
+      "response_id": "R2R017",
+      "run_id": "R2A-RUN-022",
+      "sequence": 22
+    },
+    {
+      "arm": "A",
+      "case_id": "C02",
+      "response_id": "R2R018",
+      "run_id": "R2A-RUN-018",
+      "sequence": 18
+    },
+    {
+      "arm": "A",
+      "case_id": "C04",
+      "response_id": "R2R019",
+      "run_id": "R2A-RUN-003",
+      "sequence": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "C11",
+      "response_id": "R2R020",
+      "run_id": "R2A-RUN-019",
+      "sequence": 19
+    },
+    {
+      "arm": "A",
+      "case_id": "C01",
+      "response_id": "R2R021",
+      "run_id": "R2A-RUN-001",
+      "sequence": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "C09",
+      "response_id": "R2R022",
+      "run_id": "R2A-RUN-012",
+      "sequence": 12
+    },
+    {
+      "arm": "A",
+      "case_id": "C05",
+      "response_id": "R2R023",
+      "run_id": "R2A-RUN-020",
+      "sequence": 20
+    },
+    {
+      "arm": "A",
+      "case_id": "C03",
+      "response_id": "R2R024",
+      "run_id": "R2A-RUN-009",
+      "sequence": 9
+    }
+  ],
+  "extraction_packet_sha256": "3da55706a9392a6c6f6d3caed25ff057dae53d76d5015950925226b2d071b89d",
+  "warning": "Never provide this file to the surrogate rater."
+}

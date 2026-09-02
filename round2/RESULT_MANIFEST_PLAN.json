@@ -1,0 +1,36 @@
+{
+  "version": "round2a-result-manifest-plan-v1",
+  "result_root": "results/round2_ministral3b",
+  "required_artifacts": [
+    "PROJECT_OWNER_AUTHORIZATION.json",
+    "warmup.json",
+    "execution_environment.json",
+    "24 request files",
+    "at least 24 attempt files",
+    "24 immutable raw-run files",
+    "formal_raw_results.jsonl",
+    "blinded_extraction_packet.jsonl",
+    "blinding_key.json",
+    "stage1_prompt.txt",
+    "stage1_events.jsonl",
+    "stage1_raw_output.json",
+    "blinded_scoring_packet.jsonl",
+    "stage2_prompt.txt",
+    "stage2_events.jsonl",
+    "stage2_raw_output.json",
+    "rater_session.json",
+    "ratings_surrogate.jsonl",
+    "ROUND2_METRICS.json",
+    "ROUND2_REPORT.md"
+  ],
+  "bindings": [
+    "round2 protocol manifest and SHA-256",
+    "all frozen Round-1 source hashes",
+    "model manifest and blob SHA-256",
+    "request and raw API-body hashes per observation",
+    "calibration, rubric, packets, prompts, event logs, raw rater outputs, and session hashes",
+    "each result path, byte size, and SHA-256"
+  ],
+  "final_manifest": "results/round2_ministral3b/RESULT_MANIFEST.json",
+  "overwrite_policy": "refuse; repairs use fresh protocol or evidence identifiers"
+}

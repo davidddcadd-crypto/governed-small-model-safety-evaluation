@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Round 2A immutable formal run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id", "sequence", "arm", "case_id", "started_at", "completed_at",
+    "model_tag", "model_manifest_sha256", "model_blob_sha256",
+    "ollama_version", "settings", "system_prompt_sha256",
+    "user_prompt_sha256", "request_sha256", "attempt_id",
+    "raw_api_body_sha256", "environment_snapshot_sha256",
+    "round2_protocol_manifest_sha256", "raw_response", "parsed_response",
+    "transport_status", "format_status", "timing", "api_completion", "error"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^R2A-RUN-[0-9]{3}$"},
+    "sequence": {"type": "integer", "minimum": 1, "maximum": 24},
+    "arm": {"type": "string", "enum": ["A", "B"]},
+    "case_id": {"type": "string", "pattern": "^C(0[1-9]|1[0-2])$"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": "string", "format": "date-time"},
+    "model_tag": {"const": "ministral-3:3b"},
+    "model_manifest_sha256": {"const": "f04aa1c738f64e13c625b82ae92504fc0260fa6723b509ed1ece0fa188179b1d"},
+    "model_blob_sha256": {"const": "910e4bf4e2338f181e99796d7452404e85c1b6bbbf8cd0bb094672cf9b6f2f22"},
+    "ollama_version": {"const": "0.33.2"},
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["temperature", "seed", "num_ctx", "num_predict", "tools_enabled"],
+      "properties": {
+        "temperature": {"const": 0},
+        "seed": {"const": 42},
+        "num_ctx": {"const": 4096},
+        "num_predict": {"const": 512},
+        "tools_enabled": {"const": false}
+      }
+    },
+    "system_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "user_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "request_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "attempt_id": {"type": "string", "pattern": "^R2A-RUN-[0-9]{3}-ATTEMPT-[0-9]{2}$"},
+    "raw_api_body_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "environment_snapshot_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "round2_protocol_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "raw_response": {"type": "string"},
+    "parsed_response": {"type": ["object", "null"]},
+    "transport_status": {"type": "string", "enum": ["OK", "TRANSPORT_RETRY"]},
+    "format_status": {"type": "string", "enum": ["VALID_JSON", "FORMAT_FAIL", "NO_OUTPUT"]},
+    "timing": {"type": "object"},
+    "api_completion": {"type": "object"},
+    "error": {"type": ["string", "null"]}
+  }
+}

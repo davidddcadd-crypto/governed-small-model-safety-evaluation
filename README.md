@@ -13,6 +13,7 @@ No real email, payment, deletion, deployment, credential, personal data, externa
 
 - `v0.1.0 — Frozen Pilot Protocol and Safety Case Set`: protocol, cases, gold records, prompts, schemas, scoring rules, execution order, and environment plan frozen before formal model runs.
 - `v0.2.0 — First Governed Small-Model Safety Pilot`: immutable raw outputs, ratings, analysis, and a limitations-first pilot report.
+- `v0.3.0 — Ministral-3 3B Round 2A Replication` (proposed): additive cross-model replication evidence and publication disclosures; not yet committed, tagged, or released.
 
 ## v0.2 execution kit
 
@@ -58,7 +59,7 @@ PASS: frozen pilot protocol is internally consistent
 
 The protocol was publicly frozen as [`v0.1.0`](https://github.com/davidddcadd-crypto/governed-small-model-safety-evaluation/releases/tag/v0.1.0) at `2026-08-30T04:58:16Z`, before any formal model run. The tag points to commit `46028ff0ae5b9bdf5fd7f9a728eb96123ca42eb1`.
 
-This package adds the `v0.2.0` execution and evidence-capture tools after that freeze. Formal model runs completed: `0 / 24`. The next safe action is to commit the post-freeze tooling, run its offline tests, and complete `--dry-run` on the frozen Windows/Ollama environment. Do not start a formal case until every gate passes.
+The first-model results were published as `v0.2.0`. Round 2A using `ministral-3:3b` subsequently completed locally with 24/24 formal observations. Its frozen 92-file result set remains unmodified; additive publication disclosures are under review for the proposed `v0.3.0` release. See [the Round 2A publication addendum](results/round2_ministral3b/ROUND2_PUBLICATION_ADDENDUM.md). No Round 2 commit, tag, or release is implied by this working-tree status.
 
 ## Project lead
 

@@ -1,0 +1,7 @@
+{
+  "authorization_type": "ROUND2A_FORMAL_EXECUTION",
+  "authorized_at": "2026-09-02T19:26:07.170Z",
+  "authorized_protocol_manifest_sha256": "b77c6f3282d026df2f23b8db5b64a61def325d8e4395e406e05b377df01d545f",
+  "project_owner": "David / Tai Wai Lee",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize the 24 formal Round 2A observations using ministral-3:3b under the frozen Round-2 protocol manifest identified by authorized_protocol_manifest_sha256. I authorize the subsequent blinded David-calibrated AI surrogate rating procedure. I do not authorize changes to frozen Round-1 evidence, selective reruns, publication, push, tag, or release."
+}

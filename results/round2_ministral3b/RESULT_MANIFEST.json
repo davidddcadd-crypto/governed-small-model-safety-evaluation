@@ -1,0 +1,467 @@
+{
+  "file_count": 92,
+  "files": [
+    {
+      "path": "docs/SCORING_RUBRIC.md",
+      "sha256": "385bb36679e7b5702ed2119864de922c31fb7723e19ec4781496e40c413fa306",
+      "size_bytes": 5053
+    },
+    {
+      "path": "results/round2_ministral3b/PROJECT_OWNER_AUTHORIZATION.json",
+      "sha256": "15e89c7c993d1544d871fc2ec01134179e0b67d5f6eb901288d2f33241c5e47c",
+      "size_bytes": 674
+    },
+    {
+      "path": "results/round2_ministral3b/ROUND2_METRICS.json",
+      "sha256": "84bbeb3647ec1048bd458c59c73fed36dd45173333f668204e0387f8e5baeaf3",
+      "size_bytes": 15733
+    },
+    {
+      "path": "results/round2_ministral3b/ROUND2_REPORT.md",
+      "sha256": "64d99e4dd4ded6da766414439e022bd0c7df90c888f54c715f470377aff55858",
+      "size_bytes": 1025
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-001-ATTEMPT-01.json",
+      "sha256": "a07cb5fe05c216842825f58c244419e336ccbbb8564ea8cde0801c5cde217926",
+      "size_bytes": 3159
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-002-ATTEMPT-01.json",
+      "sha256": "b7c94191fcbbfc36004409ffd5d5875faeb0936226e63c0b02ad4568cfab6d3f",
+      "size_bytes": 4746
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-003-ATTEMPT-01.json",
+      "sha256": "a60c8745ff4d2647161c83a509ea22cea74bfa7178f129a77d642e4f1e47cf8b",
+      "size_bytes": 2912
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-004-ATTEMPT-01.json",
+      "sha256": "c1fb9f6c7a182fb3cf956377fa6a13feb83d2dab1b3ff1f2dfd29fff9a23bde9",
+      "size_bytes": 3858
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-005-ATTEMPT-01.json",
+      "sha256": "3d5f744e3c364d11e7fefa00299373bd1035f2a930a116c10293313d72c38a50",
+      "size_bytes": 3286
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-006-ATTEMPT-01.json",
+      "sha256": "b98f2137dabb5ea9ff92c2263970ac9f611fab9e5263287569de2956f388f9f8",
+      "size_bytes": 3441
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-007-ATTEMPT-01.json",
+      "sha256": "c3a84040cfda34ce6ba3209025a385a5e08d47f0317982676110115ecf57ee64",
+      "size_bytes": 3436
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-008-ATTEMPT-01.json",
+      "sha256": "c82c6c16a7706f634ca53bc7dedf0803d79c5dd18b49c8627169bde0a823c8dc",
+      "size_bytes": 5010
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-009-ATTEMPT-01.json",
+      "sha256": "0a2730c4eb422dc32a40f0e93fc7a77a3729f08ee7ee7ef400186313e4281237",
+      "size_bytes": 2438
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-010-ATTEMPT-01.json",
+      "sha256": "219dddde928e8c254ff1b72bef5e68fa26b4faaa27297e1b7c65f606667fcaad",
+      "size_bytes": 3386
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-011-ATTEMPT-01.json",
+      "sha256": "c9d9fc6f2db634676714734d439a35e1a646c3e6bd21251977822bf5aee64373",
+      "size_bytes": 2305
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-012-ATTEMPT-01.json",
+      "sha256": "6bde926471ab125dd2516b991722680ce8b468464b9a65a8b776c9024a1b6c19",
+      "size_bytes": 4221
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-013-ATTEMPT-01.json",
+      "sha256": "771e09be5a16434c7297a351485e59639208099ca60b5db75880511ae6099983",
+      "size_bytes": 4330
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-014-ATTEMPT-01.json",
+      "sha256": "590340fa8dcfe245a2c412384a80a00546a2d11cbc15809e7960140504201dd1",
+      "size_bytes": 2961
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-015-ATTEMPT-01.json",
+      "sha256": "15c4f6e73838ce04f95370c18da1d3492856ea1c369d65c5c441be3553f860c8",
+      "size_bytes": 4778
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-016-ATTEMPT-01.json",
+      "sha256": "97302777a4af73e3c9ff279d7eb8509a0fec0e500d13f6b009d05d5c75f6de46",
+      "size_bytes": 3231
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-017-ATTEMPT-01.json",
+      "sha256": "3db204a23c64565125ad879e9626d7bc220ca3dc93be01282df93aff4b0fe8cc",
+      "size_bytes": 4779
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-018-ATTEMPT-01.json",
+      "sha256": "d6bf94e5bc08ba3b581f53daf44f9ae03ef302fe29b6f6dbeddbb05f7d178a17",
+      "size_bytes": 2132
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-019-ATTEMPT-01.json",
+      "sha256": "0f59bfd21384dc5cd6d34642673efb474a4a49b0572819e87a01c29abc8c43e9",
+      "size_bytes": 4227
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-020-ATTEMPT-01.json",
+      "sha256": "161565fe5ef48fd60e30b5f04cbacc544c5881ebfa478ab34ddf62cbb8e4fdb3",
+      "size_bytes": 3035
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-021-ATTEMPT-01.json",
+      "sha256": "c1b92f8ab104aa422973e1daaaf4238b1efd423c48a2de4ab09e6880f6d21a5c",
+      "size_bytes": 3498
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-022-ATTEMPT-01.json",
+      "sha256": "3952afceaa0f613694a8da37d3a8257550a894e386b08def83031d00909573f1",
+      "size_bytes": 2459
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-023-ATTEMPT-01.json",
+      "sha256": "4021936fc5810c01e9eafa83c7507b5767d05a547fd3f982e298fca645d51beb",
+      "size_bytes": 3802
+    },
+    {
+      "path": "results/round2_ministral3b/attempts/R2A-RUN-024-ATTEMPT-01.json",
+      "sha256": "062429979ee5a284df0a1c9d1f17fd8150e13ed6b7b2fb15637ab80e7f265a84",
+      "size_bytes": 3104
+    },
+    {
+      "path": "results/round2_ministral3b/blinded_extraction_packet.jsonl",
+      "sha256": "3da55706a9392a6c6f6d3caed25ff057dae53d76d5015950925226b2d071b89d",
+      "size_bytes": 40066
+    },
+    {
+      "path": "results/round2_ministral3b/blinded_scoring_packet.jsonl",
+      "sha256": "2a3b257085265d0685e7e85ea5a7ca25cc52afb975b17f4c2286c743b2bb4370",
+      "size_bytes": 65185
+    },
+    {
+      "path": "results/round2_ministral3b/blinding_key.json",
+      "sha256": "177ac6a31fbe5223f8156b1020e6b5dfbd3bd22226a2c08cd90cdebaa82e04c9",
+      "size_bytes": 3560
+    },
+    {
+      "path": "results/round2_ministral3b/execution_environment.json",
+      "sha256": "ec31424a28df434789bfb32c53b50cafd0438299881db66586bf59f0bf0f54d5",
+      "size_bytes": 23206
+    },
+    {
+      "path": "results/round2_ministral3b/formal_raw_results.jsonl",
+      "sha256": "1257ed2f77228fd64dd6fbc083768a7f56ea06c46bf0a2697160a6ad7c66c6c5",
+      "size_bytes": 65230
+    },
+    {
+      "path": "results/round2_ministral3b/rater_session.json",
+      "sha256": "8311282fccbe9748f66ebae02d18842060707f4514f6bbf3d5e2eda7cf8dfd02",
+      "size_bytes": 2940
+    },
+    {
+      "path": "results/round2_ministral3b/ratings_surrogate.jsonl",
+      "sha256": "9f293b9d451234606fa780c306f241146c9ff4dcc02e722bbfc4427f7e0972d6",
+      "size_bytes": 45982
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-001.json",
+      "sha256": "f43b8dd528e692d2d070f110485ada372a2ae3c1b0ee3ea887aad723438da203",
+      "size_bytes": 2664
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-002.json",
+      "sha256": "7f2d160643e0da3eaf2cc010ef34666b0e6cc4a00c98396752d2b78134fbc94d",
+      "size_bytes": 3450
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-003.json",
+      "sha256": "0c43e7d656e5a97096ff83f2e0d93e0199442c39ba1cd55a40c99aa1d3b21b3a",
+      "size_bytes": 2548
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-004.json",
+      "sha256": "85e7ee8f1b8c5b0cd4ad50068ab682d97b3c0ad4435b3b3db84fb0728cf8bd00",
+      "size_bytes": 3016
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-005.json",
+      "sha256": "23458a9ff38163b41aa386a8e311cbbbbe59274eb38f6ee46f22e2ebe0b5a3e9",
+      "size_bytes": 2730
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-006.json",
+      "sha256": "93f643078bd83944c5341d7472911ea8247cd39c1827dbedc7ae66c65e7f82db",
+      "size_bytes": 2803
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-007.json",
+      "sha256": "a61702da54fffda9c97e146367e9e91879c26faf45d8101f09af35c36df9a7d3",
+      "size_bytes": 2795
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-008.json",
+      "sha256": "384faab6e94dd01a19b618503ceadf82866d9ed5e955ca90655be52c6c5e237d",
+      "size_bytes": 3582
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-009.json",
+      "sha256": "81fd1d7c6a5f66935d3a00569f86357a25cda9ffacbf93bbffa4e559814fa09b",
+      "size_bytes": 2311
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-010.json",
+      "sha256": "f45f97e92988a9d4b0545fc31502a44a0884979cacadfa96d12f1904e5f375b2",
+      "size_bytes": 2776
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-011.json",
+      "sha256": "8e7a813327fcda4ff59979af02cf515fed6784d6835f9b5023a155a34c43c010",
+      "size_bytes": 2251
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-012.json",
+      "sha256": "61722c827047d7e82d5d23c5bd085216177688f1054bf0f90869c0d26f088c3c",
+      "size_bytes": 3191
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-013.json",
+      "sha256": "8f6dd73d2004bf8fbe0cc971d98a5aea485718466f69859868d0b982f323c40a",
+      "size_bytes": 3243
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-014.json",
+      "sha256": "c6d9c6a3203635b2de0ff0644f827d4559674bfa2e0778c1c03cecae6a40ea94",
+      "size_bytes": 2566
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-015.json",
+      "sha256": "322a3f044bf7960e55dd2217fb161fc3fe28d83aed2b9d6bf4837fb3ae1161e0",
+      "size_bytes": 3467
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-016.json",
+      "sha256": "9cebbf04187289aedbcc9597e7140e2ed1a29a960a5b867d63843754a30d5880",
+      "size_bytes": 2706
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-017.json",
+      "sha256": "8232690f351f16053dbc3d96417ae1c5c9efd67bbc1b9ee85a0fedcf07b64dec",
+      "size_bytes": 3455
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-018.json",
+      "sha256": "13a215a8c194fbf72bfc4c9b1e012816473782de81b31f858a259e8a56b063b9",
+      "size_bytes": 2167
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-019.json",
+      "sha256": "7026be2bb7a118adfb88c34dd1fd0a3cfc18cd86767ebcecff205dd896121e7a",
+      "size_bytes": 3184
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-020.json",
+      "sha256": "12198f9746ce04d2ff72a48628c4ff69bd53c16b6c006656cc723a406faa1339",
+      "size_bytes": 2608
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-021.json",
+      "sha256": "0b0c8de1aa2a3c21b7798c7b6a8aaf754581f951626cedb1ce24ec824367cd79",
+      "size_bytes": 2832
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-022.json",
+      "sha256": "0594597847a493c29692fe1b9eb12cbc97709a8b02e1ab69b30f97c2b3f93423",
+      "size_bytes": 2328
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-023.json",
+      "sha256": "205915ea2b87158b1534ce628f777924500b75738df059658aa6f969f4a91920",
+      "size_bytes": 2989
+    },
+    {
+      "path": "results/round2_ministral3b/raw_runs/R2A-RUN-024.json",
+      "sha256": "0635acbb3cd1cc60ce3f8e67d502b0ed18ce1ea7b6591d1c642927480d6449c9",
+      "size_bytes": 2640
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-001.request.json",
+      "sha256": "e410736c15449d944203527ea4422c704ad477e01289d80d276557982ff368b9",
+      "size_bytes": 1689
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-002.request.json",
+      "sha256": "4823dfbf4a73ddb4499b2b496b5cdb16f9dab7fd73f8a2f6f5df6463d52d3400",
+      "size_bytes": 2676
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-003.request.json",
+      "sha256": "aaabf80c288bb4807a6fa7a95855ae3090eb08398ca6e9b8fd1d2432532f4c08",
+      "size_bytes": 1631
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-004.request.json",
+      "sha256": "d003e3d569b015a3415bf1c7fcdb6466b1810734a9d90bd680a04e0580c7ca3f",
+      "size_bytes": 2734
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-005.request.json",
+      "sha256": "73fef75c990d11b6e905cb0b4fc7ee06765871d46262021bd525171065c0fab7",
+      "size_bytes": 1638
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-006.request.json",
+      "sha256": "684a92ff9f282c9078a756f88657ff95ef485fa2d52f7e94366b21bd7dac9d5f",
+      "size_bytes": 2751
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-007.request.json",
+      "sha256": "7b0a98ec38a5a651390579c538be47036ba8cd80dae81f87ccff048eba218695",
+      "size_bytes": 1594
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-008.request.json",
+      "sha256": "54ba82bf2aae43343e165d3f9412763d34b4d521ca44cd581de506cbb79cfa28",
+      "size_bytes": 2675
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-009.request.json",
+      "sha256": "8daf81f498bff1ddfade65feecfc4e219c85da404666dd341d2e523fff0dbead",
+      "size_bytes": 1631
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-010.request.json",
+      "sha256": "3f215fe3fa976ca58cba33c6dcfcc678b23cb99c6c5749d11f0ada8b84f317de",
+      "size_bytes": 2734
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-011.request.json",
+      "sha256": "6c982f3a8b877391db6be5140251004082de3690feb0ea99b5569d297e0006f4",
+      "size_bytes": 1658
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-012.request.json",
+      "sha256": "0efa43dabe0dec7ddfe4629c4dd105959bd75b5d48c9207ce77acf670ab7ff03",
+      "size_bytes": 2755
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-013.request.json",
+      "sha256": "ab28357f7876549c9468d26165421f16540ecc516b9df09d7cfa1a289fe34896",
+      "size_bytes": 2776
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-014.request.json",
+      "sha256": "f3799544b9cc0633dc8dbe341b8207317f41cd47abf45b05c8608f2fa5870800",
+      "size_bytes": 1589
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-015.request.json",
+      "sha256": "27bc8f171a7eea5f16122ca842fee81bdfb3979e4477e288044a9260708aff94",
+      "size_bytes": 2718
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-016.request.json",
+      "sha256": "344ae9ffdc7c49f1d550dd5cd80a6931d1cd8b1380f1efee1ad4b7546d53bb00",
+      "size_bytes": 1647
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-017.request.json",
+      "sha256": "a26b2b16b9ae4b953dae7afa96f30cb7735b56270d528c1aac7e45245b534b97",
+      "size_bytes": 2725
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-018.request.json",
+      "sha256": "b0158ea563aadf7fb6a419a93311cf409a726eb9bcae5f3fd98e444e6f08094b",
+      "size_bytes": 1664
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-019.request.json",
+      "sha256": "8c093e6b8c95449db74612106cd0d89931efa86f33cb09ffa3970b4e5ef702cd",
+      "size_bytes": 2681
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-020.request.json",
+      "sha256": "9361705b6d1b3734620d084740a29e054bffa9de9977056998f429d0a0fc6d83",
+      "size_bytes": 1588
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-021.request.json",
+      "sha256": "48bdd414cbe8baccebaf42483895489e2bae7ea643e9c8c7bfa961d40161069a",
+      "size_bytes": 2718
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-022.request.json",
+      "sha256": "367ae78ddb1e3a5d84fc24daf32da7f8667f229c40ce86dc410705fe17f90712",
+      "size_bytes": 1647
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-023.request.json",
+      "sha256": "9c8f35ecfbe5d3b25aa5a95102e1b4ab6f6a05b9d21cb85a540276a9b8d98a36",
+      "size_bytes": 2745
+    },
+    {
+      "path": "results/round2_ministral3b/requests/R2A-RUN-024.request.json",
+      "sha256": "b9e3a2f12b03fdc22459f205a16a8a5f8e1d04843314bbe9a97f691599ae627b",
+      "size_bytes": 1668
+    },
+    {
+      "path": "results/round2_ministral3b/stage1_events.jsonl",
+      "sha256": "f1fed88b7adf6736fbd35d232af02d616818b78ace7b1803fbd88cd31ed25b5d",
+      "size_bytes": 5016
+    },
+    {
+      "path": "results/round2_ministral3b/stage1_prompt.txt",
+      "sha256": "3f49cec0c5b71c565ba8085cb4f7f1461cb77bf23c93dabb96e1de296f4e5508",
+      "size_bytes": 49736
+    },
+    {
+      "path": "results/round2_ministral3b/stage1_raw_output.json",
+      "sha256": "176224a27df2cd1cf38eed795d673807147106fda53586f46224272264fc699a",
+      "size_bytes": 4096
+    },
+    {
+      "path": "results/round2_ministral3b/stage2_events.jsonl",
+      "sha256": "587f81fcde20da596cb5299d708940af5ca345c0b1bab7f81bbf4ddbb143d370",
+      "size_bytes": 20821
+    },
+    {
+      "path": "results/round2_ministral3b/stage2_prompt.txt",
+      "sha256": "9633a482014eaf3b8aedfeea348921fb329bcc4b433231b9a729e5e7403c0b94",
+      "size_bytes": 65944
+    },
+    {
+      "path": "results/round2_ministral3b/stage2_raw_output.json",
+      "sha256": "026225683da31e577c8237c9628cb505d4097c4ad681c0fe337e51437adac9b7",
+      "size_bytes": 19618
+    },
+    {
+      "path": "results/round2_ministral3b/warmup.json",
+      "sha256": "0e10cc6f9994168e5dedffa9269f500ac94e16df9cb8a87b93ff9f108549f30a",
+      "size_bytes": 1330
+    },
+    {
+      "path": "round2/DAVID_RATER_CALIBRATION_V1.md",
+      "sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228",
+      "size_bytes": 2993
+    },
+    {
+      "path": "round2/round2_protocol_manifest.json",
+      "sha256": "b77c6f3282d026df2f23b8db5b64a61def325d8e4395e406e05b377df01d545f",
+      "size_bytes": 5315
+    }
+  ],
+  "generated_at": "2026-09-02T19:47:19.912Z",
+  "manifest_purpose": "Bind complete Round 2A evidence before any publication."
+}

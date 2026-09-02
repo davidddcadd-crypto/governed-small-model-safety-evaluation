@@ -1,0 +1,33 @@
+{
+  "additive_file_count": 4,
+  "additive_files": [
+    {
+      "path": "results/round2_ministral3b/publication_disclosures/SCHEMA_REJECTION_PROVENANCE.json",
+      "sha256": "bf472dcfa4b0a3fc7ac3cfd58d9d05d6b6511a6188e7e4ce3f4949048c1c5065",
+      "size_bytes": 2750
+    },
+    {
+      "path": "results/round2_ministral3b/publication_disclosures/STAGE1_SCHEMA_REJECTION.jsonl",
+      "sha256": "aa5e78715968d6463d090603be1d02630f26e79e69b3ca9df2a0b32a0993acdc",
+      "size_bytes": 853
+    },
+    {
+      "path": "results/round2_ministral3b/publication_disclosures/STAGE2_SCHEMA_REJECTION.jsonl",
+      "sha256": "432b88f018d8b5af5082fc1e332a19e2dd2453061c99f66c6031d91f255df2ec",
+      "size_bytes": 939
+    },
+    {
+      "path": "results/round2_ministral3b/ROUND2_PUBLICATION_ADDENDUM.md",
+      "sha256": "28f57c3f2f10bc315df75f9dbb39ed41f9c34f707115115c46cdfab9df846ad2",
+      "size_bytes": 2721
+    }
+  ],
+  "base_result_manifest": {
+    "file_count": 92,
+    "path": "results/round2_ministral3b/RESULT_MANIFEST.json",
+    "sha256": "ae8e0ff43ae9f57245310b744741a87ce59040f76664a5ab2b59fc36cdf9c7c3"
+  },
+  "generated_at": "2026-09-02T21:46:20.773Z",
+  "manifest_purpose": "Bind additive Round 2A publication disclosures without changing the frozen 92-file result set.",
+  "publication_manifest_version": "round2a-publication-v1"
+}

@@ -1,0 +1,156 @@
+{
+  "file_count": 21,
+  "files": [
+    {
+      "path": "round2/README.md",
+      "sha256": "14e17be50f822bad0bc0153e45bf5023a4e9773115442905695fa2f6a7d99bea",
+      "size_bytes": 596
+    },
+    {
+      "path": "round2/ROUND2_PROTOCOL.md",
+      "sha256": "2142c81d32a452f6922ae4185786b59546f574ba75928faeefc9f1eb73e15b8a",
+      "size_bytes": 4821
+    },
+    {
+      "path": "round2/DAVID_RATER_CALIBRATION_V1.md",
+      "sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228",
+      "size_bytes": 2993
+    },
+    {
+      "path": "round2/RATER_ISOLATION_PROCEDURE.md",
+      "sha256": "e0fb547096c51e9ed2290d618b592d6daab99d1c3229feb702124445c3316350",
+      "size_bytes": 2871
+    },
+    {
+      "path": "round2/RATING_INSTRUCTIONS.md",
+      "sha256": "96206bc14700106c337dc6bbae665988d7a7e32d71b9d12e44e34d88c0e49599",
+      "size_bytes": 749
+    },
+    {
+      "path": "round2/MODEL_AND_ENVIRONMENT.json",
+      "sha256": "055b013f139d2a7fc4b11684a276402e02f13041e653fb09517493655cfe4e0f",
+      "size_bytes": 2524
+    },
+    {
+      "path": "round2/RESULT_MANIFEST_PLAN.json",
+      "sha256": "58d10a6099a18cf3d4d4b39a78a3dcd8984779c01e0739ea5a529180f00e6879",
+      "size_bytes": 1213
+    },
+    {
+      "path": "round2/schemas/surrogate_extraction_output.schema.json",
+      "sha256": "41484a7e8266b3a7396afea66bf7ca7f167b83eba1500ab458c4d4121871acb7",
+      "size_bytes": 943
+    },
+    {
+      "path": "round2/schemas/surrogate_scoring_output.schema.json",
+      "sha256": "d88d56cb25a4854babe5ab3eaabf061497f9320eb5d891f142278751109ee190",
+      "size_bytes": 2119
+    },
+    {
+      "path": "round2/schemas/surrogate_rating.schema.json",
+      "sha256": "a852d4ddf305cc31d5056b728e68fa3ec734e3f1950740f622ab4091d8a7b86f",
+      "size_bytes": 3088
+    },
+    {
+      "path": "round2/schemas/raw_run.schema.json",
+      "sha256": "2257749cffd9b8c07477ea09580412b0e12883e332b1034d669f30173f1d92cd",
+      "size_bytes": 2673
+    },
+    {
+      "path": "round2/schemas/rater_session.schema.json",
+      "sha256": "190faa7c7ecbf597167dd8302d54e65047d9d5543c8454b7c6d5518e5e28da12",
+      "size_bytes": 2626
+    },
+    {
+      "path": "scripts/round2_common.py",
+      "sha256": "d06641acd649d692f78249cba55a266ec129ba4642b22bbce02a341ffa74c1ae",
+      "size_bytes": 8194
+    },
+    {
+      "path": "scripts/run_round2.py",
+      "sha256": "ca0dbd83d5e3f97fa85ba5527153d5c2237a78bf8002c68afb3542c152da68cc",
+      "size_bytes": 13313
+    },
+    {
+      "path": "scripts/build_round2_rating_packets.py",
+      "sha256": "45c4313ec7fc6f9ca2eaeb44944d4def6a3ac23443b0e543ac7e8bfddb9deb8e",
+      "size_bytes": 6419
+    },
+    {
+      "path": "scripts/validate_round2_ratings.py",
+      "sha256": "d99c97399ccacf466964c98d5698f5f286e2cd4a79b03be18a504bb04c2f70f2",
+      "size_bytes": 11182
+    },
+    {
+      "path": "scripts/analyze_round2.py",
+      "sha256": "22b1d5e1566ea2ddd8463dc6cfa31152b1ad2e9bbe1db041b681e81880ca04cd",
+      "size_bytes": 9768
+    },
+    {
+      "path": "scripts/build_round2_result_manifest.py",
+      "sha256": "4829665e1e04c479a34d5a43d776a2c2f88875e93f007ca1dbca056e7b89859b",
+      "size_bytes": 3085
+    },
+    {
+      "path": "scripts/validate_round2.py",
+      "sha256": "231f3702986a0cebc8b3d78b1d8cdb40caa78f59f60e17899629bf82bb555132",
+      "size_bytes": 3125
+    },
+    {
+      "path": "scripts/build_round2_protocol_manifest.py",
+      "sha256": "a30b7648785b23c00de180eec02e24bc08a823f116e791a3a9377135cba39eea",
+      "size_bytes": 3180
+    },
+    {
+      "path": "tests/test_round2_tools.py",
+      "sha256": "6d8b9b4ed7bf4aad6985eabd9e98ef907aea05917e96449259a3911cc851da7b",
+      "size_bytes": 11319
+    }
+  ],
+  "formal_observations_before_freeze": 0,
+  "generated_at": "2026-09-02T18:55:51.241Z",
+  "manifest_purpose": "Bind Round 2A before any formal Ministral observation.",
+  "model_identity": {
+    "blob_sha256": "910e4bf4e2338f181e99796d7452404e85c1b6bbbf8cd0bb094672cf9b6f2f22",
+    "manifest_sha256": "f04aa1c738f64e13c625b82ae92504fc0260fa6723b509ed1ece0fa188179b1d",
+    "ollama_version": "0.33.2",
+    "quantization": "Q4_K_M",
+    "tag": "ministral-3:3b"
+  },
+  "protocol_version": "round2a-v1",
+  "round1_baseline": {
+    "commit": "9ced40bc11f5995f27ddd74d0104248af287a418",
+    "protocol_tag": "v0.1.0",
+    "results_tag": "v0.2.0"
+  },
+  "source_bindings": [
+    {
+      "path": "data/pilot_cases.jsonl",
+      "sha256": "be296ce47e854ed69a02cc140eab41441d5f6536b12dc348c4a53a9fb474fabe"
+    },
+    {
+      "path": "data/gold_records.jsonl",
+      "sha256": "644101ce2e81d73025e7d490f11a4c27c18c099af78dd92052989ec84daee190"
+    },
+    {
+      "path": "data/execution_order.json",
+      "sha256": "98e11430f543ba0bd01f6a7536e9cae4240d378ac8fde71f8b020af2e76d4037"
+    },
+    {
+      "path": "prompts/arm_a_system.txt",
+      "sha256": "bf7b3b8e897db7a38eb3174085398dc74b0468325e10381bfc75bb916876c979"
+    },
+    {
+      "path": "prompts/arm_b_system.txt",
+      "sha256": "3ad49c8418833702ae8b7c3b2d56a53ab44da8388c7be5483990ed180d375f81"
+    },
+    {
+      "path": "prompts/user_template.txt",
+      "sha256": "c54e5774e2da82084a497e971b4e7df48d3621eec7f712ae7c8ccaaa5ae060ab"
+    },
+    {
+      "path": "docs/SCORING_RUBRIC.md",
+      "sha256": "385bb36679e7b5702ed2119864de922c31fb7723e19ec4781496e40c413fa306"
+    }
+  ]
+}

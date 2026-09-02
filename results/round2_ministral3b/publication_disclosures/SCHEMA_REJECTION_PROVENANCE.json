@@ -1,0 +1,49 @@
+{
+  "record_type": "ROUND2A_PRE_SAMPLING_SCHEMA_REJECTION_PROVENANCE",
+  "recorded_at": "2026-09-02T21:42:02.427751Z",
+  "frozen_result_manifest": {
+    "path": "results/round2_ministral3b/RESULT_MANIFEST.json",
+    "sha256": "ae8e0ff43ae9f57245310b744741a87ce59040f76664a5ab2b59fc36cdf9c7c3",
+    "file_count": 92,
+    "modified_by_repair": false
+  },
+  "rejections": [
+    {
+      "stage": "STAGE1_DECISION_EXTRACTION",
+      "original_local_source_path": "C:\\Users\\User\\Documents\\ChatGPT\\安全\\round2_rater_isolated_b77c6f32\\stage1_preflight_schema_rejection_events.jsonl",
+      "preserved_path": "results/round2_ministral3b/publication_disclosures/STAGE1_SCHEMA_REJECTION.jsonl",
+      "size_bytes": 853,
+      "sha256": "aa5e78715968d6463d090603be1d02630f26e79e69b3ca9df2a0b32a0993acdc",
+      "event_types": ["thread.started", "turn.started", "error", "turn.failed"],
+      "item_completed_count": 0,
+      "turn_failed_count": 1,
+      "model_response_sampled": false,
+      "error_code": "invalid_json_schema",
+      "rejection_reason": "The stage property lacked an explicit type."
+    },
+    {
+      "stage": "STAGE2_GOLD_DISCLOSED_SCORING",
+      "original_local_source_path": "C:\\Users\\User\\Documents\\ChatGPT\\安全\\round2_rater_isolated_b77c6f32\\stage2_preflight_schema_rejection_events.jsonl",
+      "preserved_path": "results/round2_ministral3b/publication_disclosures/STAGE2_SCHEMA_REJECTION.jsonl",
+      "size_bytes": 939,
+      "sha256": "432b88f018d8b5af5082fc1e332a19e2dd2453061c99f66c6031d91f255df2ec",
+      "event_types": ["thread.started", "turn.started", "error", "turn.failed"],
+      "item_completed_count": 0,
+      "turn_failed_count": 1,
+      "model_response_sampled": false,
+      "error_code": "invalid_json_schema",
+      "rejection_reason": "The uniqueItems keyword was unsupported."
+    }
+  ],
+  "runtime_compatibility": {
+    "stage1_change": "The isolated runtime schema added type string to the stage const property.",
+    "stage2_change": "The isolated runtime schema added type string to the stage const property and omitted unsupported uniqueItems; frozen deterministic validation still enforced hard-failure uniqueness.",
+    "frozen_extraction_schema_sha256": "41484a7e8266b3a7396afea66bf7ca7f167b83eba1500ab458c4d4121871acb7",
+    "runtime_extraction_schema_sha256": "d34b740819f51e9178949d6fb24f617cef9f1912c58b0d3bffebfc939f273a30",
+    "frozen_scoring_schema_sha256": "d88d56cb25a4854babe5ab3eaabf061497f9320eb5d891f142278751109ee190",
+    "runtime_scoring_schema_sha256": "cbfd11e186ee196a256235faf26ac7e7dc0d9a18a1342ae0925621062918eaae",
+    "frozen_evaluation_schema_changed": false,
+    "scoring_semantics_changed": false,
+    "deterministic_post_validation_changed": false
+  }
+}
