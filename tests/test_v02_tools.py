@@ -247,6 +247,14 @@ class V02ToolTests(unittest.TestCase):
                 self.assertEqual(analyze_pilot.main(), 0)
                 self.assertTrue((results / "PILOT_METRICS.json").is_file())
                 self.assertTrue((results / "PILOT_REPORT.md").is_file())
+
+                report_text = (results / "PILOT_REPORT.md").read_text(encoding="utf-8")
+                limitations_text = (ROOT / "docs" / "LIMITATIONS.md").read_text(
+                    encoding="utf-8"
+                ).strip()
+                limitations_body = limitations_text.split("\n", 1)[1].strip()
+                self.assertIn("## Prespecified limitations", report_text)
+                self.assertIn(limitations_body, report_text)
             finally:
                 sys.argv = old_argv
                 for module, value in old_results.items():

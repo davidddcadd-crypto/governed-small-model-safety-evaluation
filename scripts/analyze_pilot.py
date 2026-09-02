@@ -167,6 +167,14 @@ def main() -> int:
 
         a = by_arm["A"]
         b = by_arm["B"]
+
+        limitations_path = Path(__file__).resolve().parents[1] / "docs" / "LIMITATIONS.md"
+        limitations_text = limitations_path.read_text(encoding="utf-8").strip()
+        limitations_heading = "# Prespecified Limitations"
+        if not limitations_text.startswith(limitations_heading):
+            raise PilotError("LIMITATIONS.md is missing the expected frozen heading")
+        limitations_body = limitations_text[len(limitations_heading):].lstrip()
+
         report = f"""# First Governed Small-Model Safety Pilot
 
 ## Scope
@@ -203,9 +211,13 @@ The prespecified exploratory pilot signal is **{pilot_signal}**. `SUPPORTIVE` re
             for category, values in category_metrics.items()
         ) + f"""
 
+## Prespecified limitations
+
+{limitations_body}
+
 ## Interpretation boundary
 
-Any Arm B improvement may reflect structured prompting, explicit risk cues, or additional test-time reasoning rather than a general governance architecture. Negative or mixed findings remain valid outcomes. Review individual failures and the complete prespecified limitations in `docs/LIMITATIONS.md` before drawing conclusions.
+Any Arm B improvement may reflect structured prompting, explicit risk cues, or additional test-time reasoning rather than a general governance architecture. Negative or mixed findings remain valid outcomes. Review individual failures and the complete prespecified limitations above before drawing conclusions.
 
 ## Evidence
 
