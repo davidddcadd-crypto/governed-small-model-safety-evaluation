@@ -1,0 +1,73 @@
+{
+  "record_type": "ROUND5A_CORE_RESULT_LIFECYCLE_TRANSITION",
+  "recorded_at": "2026-09-03T13:46:58.761Z",
+  "state_sequence": [
+    "PRE_EXECUTION",
+    "FORMAL_EXECUTION_COMPLETE",
+    "STAGE1_COMPLETE_AND_FROZEN",
+    "STAGE2_COMPLETE_AND_FROZEN",
+    "CORE_RESULT_FROZEN"
+  ],
+  "prior_transition_custody": {
+    "postexecution_repair_sha256": "7fa72bdb32b08f93339c82a10b5d6a1c58a620148cc3af1c34e39e84ec12ef36",
+    "stage1_postcompletion_repair_sha256": "38eb9f8589e6353730387ab207f80fbae9bba2047c835093d625a0ada285965a"
+  },
+  "expected_lifecycle_transitions": [
+    {
+      "assertion": "tests/test_round5_preparation.py::test_zero_formal_observations",
+      "transition_at": "FORMAL_EXECUTION_COMPLETE"
+    },
+    {
+      "assertion": "tests/test_round5_preparation.py::test_result_manifest_refuses_incomplete_evidence",
+      "transition_at": "CORE_RESULT_FROZEN"
+    },
+    {
+      "assertion": "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen",
+      "transition_at": "FORMAL_EXECUTION_COMPLETE"
+    },
+    {
+      "assertion": "scripts/validate_round5_postexecution_repair.py::validate_stage1_preparation pre-Stage-1 absence gate",
+      "transition_at": "STAGE1_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "tests/test_round5_postexecution_repair.py::test_stage1_remains_local_frozen_and_untransmitted",
+      "transition_at": "STAGE1_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "scripts/validate_round5_postexecution_repair.py::validate_stage1_state prohibited-future-Stage-2 gate",
+      "transition_at": "STAGE2_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "tests/test_round5_postexecution_repair.py::test_pre_stage1_absence_assertion_is_explicit_lifecycle_transition Stage-2-transmission-zero assertion",
+      "transition_at": "STAGE2_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "scripts/validate_round5_stage2_preparation.py::validate_stage2_preparation future-artifact absence gate",
+      "transition_at": "STAGE2_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "tests/test_round5_stage2_preparation.py::test_stage2_remains_local_and_untransmitted",
+      "transition_at": "STAGE2_COMPLETE_AND_FROZEN"
+    },
+    {
+      "assertion": "scripts/validate_round5_stage2_frozen.py::validate_frozen_stage2 prohibited canonical-result artifact gate",
+      "transition_at": "CORE_RESULT_FROZEN"
+    }
+  ],
+  "persistent_assertions_revalidated": [
+    "frozen protocol and source bindings",
+    "24 formal observations and 12 observations per arm",
+    "R5A-RUN-016 correction custody",
+    "Stage-1 extraction immutability",
+    "Stage-2 packet derivation and isolation",
+    "Stage-2 structural validity and zero tool calls",
+    "canonical rating deterministic reconstruction",
+    "metrics and signal deterministic reconstruction",
+    "core result manifest exact-byte validation"
+  ],
+  "frozen_prior_tests_modified": false,
+  "frozen_protocol_modified": false,
+  "frozen_observations_modified": false,
+  "frozen_stage1_or_stage2_output_modified": false,
+  "unanticipated_lifecycle_problem_detected": false
+}

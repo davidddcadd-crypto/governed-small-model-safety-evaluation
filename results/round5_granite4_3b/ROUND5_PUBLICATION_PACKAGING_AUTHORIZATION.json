@@ -1,0 +1,52 @@
+{
+  "record_type": "ROUND5A_PUBLICATION_PACKAGING_AND_LOCAL_COMMIT_AUTHORIZATION",
+  "recorded_at": "2026-09-03T13:59:41.170Z",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_result": "SUPPORTIVE",
+  "authorized_base_commit": "dd0ca6afdf3e255f45a8c4d5f3596498d55ca2f0",
+  "authorized_origin_main": "dd0ca6afdf3e255f45a8c4d5f3596498d55ca2f0",
+  "authorized_commit_message": "Add prespecified Granite 4 Round 5A replication evidence",
+  "authorized_actions": [
+    "create additive Round-5 publication packaging artifacts",
+    "run local and fresh isolated clean-checkout publication validation",
+    "stage exactly the validated Round-5 publication set",
+    "create exactly one local publication commit if every fail-closed gate passes"
+  ],
+  "frozen_core": {
+    "protocol_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "stage2_output_sha256": "c4525dc1af54a9f864139ba384d664e320caa893d80fe807b11dc2f8ab82a6fe",
+    "canonical_ratings_sha256": "4d4ebcb8e926b929d77c8d2f1a758ea4586bab562cb4d302d4a813ac36a7f5fd",
+    "metrics_sha256": "3bd221d99ccdddc67c3ee14bd6314a68c586553e0eb1f269fb6511e468f194fa",
+    "report_sha256": "a3a4f2603374a7f06528eaff8c6f044f33350c84b250ffb5437da956f582a21e",
+    "core_result_manifest_sha256": "70b8d757fb8ba8b9c475512a35405bf02881973df95f7ee5662f28eb78fe03ec",
+    "core_result_custody_sha256": "8597f87cacddea680cc67c087a216b7496dd1e462c8bfae2d0afe7ea8dc500d9",
+    "core_validation_sha256": "d90f80937d931efc80e617eaddc995a113e70b00608a6912e7c4c3479764c83c",
+    "r5a_run_016_correction_sha256": "c73b505506df2fcfb00ff9592615e39c744d42e78d14dfcb2ca70af87036d0c6"
+  },
+  "excluded_checkpoint": {
+    "path": "results/ratings_primary.partial.jsonl",
+    "size_bytes": 31022,
+    "sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f",
+    "must_remain_untracked_and_unpublished": true
+  },
+  "future_release_identity": {
+    "tag": "v0.6.0",
+    "annotated_tag_message_and_release_title": "v0.6.0 — Granite 4 3B Round 5A Replication",
+    "tag_or_release_creation_authorized": false
+  },
+  "strict_prohibitions": [
+    "model execution or rerun",
+    "OpenAI transmission or Sol session",
+    "rating or observation regeneration",
+    "modification of frozen evidence",
+    "push or remote mutation",
+    "tag or GitHub release",
+    "publication",
+    "deletion",
+    "README update",
+    "five-model synthesis",
+    "unrelated repository mutation"
+  ]
+}

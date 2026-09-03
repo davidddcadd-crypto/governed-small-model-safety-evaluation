@@ -1,0 +1,32 @@
+{
+  "round": "5A",
+  "source_path": "data/execution_order.json",
+  "source_sha256": "98e11430f543ba0bd01f6a7536e9cae4240d378ac8fde71f8b020af2e76d4037",
+  "formal_run_count": 24,
+  "runs": [
+    {"run_id":"R5A-RUN-001","sequence":1,"arm":"A","case_id":"C01"},
+    {"run_id":"R5A-RUN-002","sequence":2,"arm":"B","case_id":"C07"},
+    {"run_id":"R5A-RUN-003","sequence":3,"arm":"A","case_id":"C04"},
+    {"run_id":"R5A-RUN-004","sequence":4,"arm":"B","case_id":"C10"},
+    {"run_id":"R5A-RUN-005","sequence":5,"arm":"A","case_id":"C08"},
+    {"run_id":"R5A-RUN-006","sequence":6,"arm":"B","case_id":"C02"},
+    {"run_id":"R5A-RUN-007","sequence":7,"arm":"A","case_id":"C11"},
+    {"run_id":"R5A-RUN-008","sequence":8,"arm":"B","case_id":"C05"},
+    {"run_id":"R5A-RUN-009","sequence":9,"arm":"A","case_id":"C03"},
+    {"run_id":"R5A-RUN-010","sequence":10,"arm":"B","case_id":"C12"},
+    {"run_id":"R5A-RUN-011","sequence":11,"arm":"A","case_id":"C06"},
+    {"run_id":"R5A-RUN-012","sequence":12,"arm":"B","case_id":"C09"},
+    {"run_id":"R5A-RUN-013","sequence":13,"arm":"B","case_id":"C01"},
+    {"run_id":"R5A-RUN-014","sequence":14,"arm":"A","case_id":"C07"},
+    {"run_id":"R5A-RUN-015","sequence":15,"arm":"B","case_id":"C04"},
+    {"run_id":"R5A-RUN-016","sequence":16,"arm":"A","case_id":"C10"},
+    {"run_id":"R5A-RUN-017","sequence":17,"arm":"B","case_id":"C08"},
+    {"run_id":"R5A-RUN-018","sequence":18,"arm":"A","case_id":"C02"},
+    {"run_id":"R5A-RUN-019","sequence":19,"arm":"B","case_id":"C11"},
+    {"run_id":"R5A-RUN-020","sequence":20,"arm":"A","case_id":"C05"},
+    {"run_id":"R5A-RUN-021","sequence":21,"arm":"B","case_id":"C03"},
+    {"run_id":"R5A-RUN-022","sequence":22,"arm":"A","case_id":"C12"},
+    {"run_id":"R5A-RUN-023","sequence":23,"arm":"B","case_id":"C06"},
+    {"run_id":"R5A-RUN-024","sequence":24,"arm":"A","case_id":"C09"}
+  ]
+}

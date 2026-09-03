@@ -1,0 +1,57 @@
+{
+  "record_type": "ROUND5A_PUBLICATION_CUSTODY_PLAN",
+  "plan_version": "round5a-publication-v1",
+  "recorded_at": "2026-09-03T13:59:41.170Z",
+  "state_sequence": [
+    "PRE_EXECUTION",
+    "FORMAL_EXECUTION_COMPLETE",
+    "STAGE1_COMPLETE_AND_FROZEN",
+    "STAGE2_COMPLETE_AND_FROZEN",
+    "CORE_RESULT_FROZEN",
+    "PUBLICATION_PACKAGE_FROZEN"
+  ],
+  "frozen_protocol_manifest": {
+    "path": "round5/round5_protocol_manifest_v3.json",
+    "sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b"
+  },
+  "frozen_core_result_manifest": {
+    "path": "results/round5_granite4_3b/RESULT_MANIFEST.json",
+    "sha256": "70b8d757fb8ba8b9c475512a35405bf02881973df95f7ee5662f28eb78fe03ec"
+  },
+  "frozen_core_result_custody": {
+    "path": "results/round5_granite4_3b/ROUND5_CORE_RESULT_CUSTODY.json",
+    "sha256": "8597f87cacddea680cc67c087a216b7496dd1e462c8bfae2d0afe7ea8dc500d9"
+  },
+  "publication_manifest_path": "results/round5_granite4_3b/PUBLICATION_MANIFEST.json",
+  "release_notes_path": "results/round5_granite4_3b/ROUND5_RELEASE_NOTES_DRAFT.md",
+  "publication_addendum_path": "results/round5_granite4_3b/ROUND5_PUBLICATION_ADDENDUM.md",
+  "expected_lifecycle_transition_count": 10,
+  "new_publication_transition_classifications": [],
+  "lifecycle_disposition": "The ten frozen expected transitions remain authoritative. Publication packaging adds a new forward state and does not make another frozen assertion inapplicable.",
+  "exact_byte_custody": {
+    "root_gitattributes_sha256": "d4b93c3c3844665b7a33dc30f73384f467406b3adaba0da7f3c93b6a9d18e285",
+    "root_gitattributes_modified_for_round5": false,
+    "round5_scoped_rules_preexisting_and_frozen": true,
+    "staging_filter_must_reproduce_worktree_bytes": true,
+    "clean_checkout_must_reproduce_committed_bytes": true
+  },
+  "excluded_checkpoint": {
+    "path": "results/ratings_primary.partial.jsonl",
+    "published": false,
+    "may_be_absent_in_clean_checkout": true,
+    "if_present_size_bytes": 31022,
+    "if_present_sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f"
+  },
+  "planned_local_commit": {
+    "base": "dd0ca6afdf3e255f45a8c4d5f3596498d55ca2f0",
+    "message": "Add prespecified Granite 4 Round 5A replication evidence",
+    "one_commit_only": true
+  },
+  "future_release": {
+    "tag": "v0.6.0",
+    "annotated_tag_message": "v0.6.0 — Granite 4 3B Round 5A Replication",
+    "release_title": "v0.6.0 — Granite 4 3B Round 5A Replication",
+    "authorized_now": false
+  },
+  "remote_mutation_authorized": false
+}

@@ -1,0 +1,132 @@
+{
+  "excluded_case_free_generation_preflight": {
+    "completed_at": "2026-09-03T11:56:31.559Z",
+    "contains_david_calibration": false,
+    "contains_formal_case_content": false,
+    "contains_gold": false,
+    "excluded_from_formal_evidence": true,
+    "raw_api_body": "{\"model\":\"granite4:3b\",\"created_at\":\"2026-09-03T11:56:31.5586479Z\",\"message\":{\"role\":\"assistant\",\"content\":\"OK\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":2103324400,\"load_duration\":2009100700,\"prompt_eval_count\":39,\"prompt_eval_duration\":71846000,\"eval_count\":2,\"eval_duration\":19083000}",
+    "request": {
+      "keep_alive": "10m",
+      "messages": [
+        {
+          "content": "Return only the word OK.",
+          "role": "system"
+        },
+        {
+          "content": "Excluded case-free Round 5 generation-options compatibility preflight. No evaluation case content is present.",
+          "role": "user"
+        }
+      ],
+      "model": "granite4:3b",
+      "options": {
+        "num_ctx": 4096,
+        "num_predict": 512,
+        "seed": 42,
+        "temperature": 0
+      },
+      "stream": false
+    },
+    "response": {
+      "created_at": "2026-09-03T11:56:31.5586479Z",
+      "done": true,
+      "done_reason": "stop",
+      "eval_count": 2,
+      "eval_duration": 19083000,
+      "load_duration": 2009100700,
+      "message": {
+        "content": "OK",
+        "role": "assistant"
+      },
+      "model": "granite4:3b",
+      "prompt_eval_count": 39,
+      "prompt_eval_duration": 71846000,
+      "total_duration": 2103324400
+    },
+    "result": "PASS: exact four generation options accepted",
+    "started_at": "2026-09-03T11:56:29.435Z"
+  },
+  "formal_environment_capture": "Required again immediately after excluded warm-up and before R5A-RUN-001",
+  "generation_settings": {
+    "conversation_history": false,
+    "num_ctx": 4096,
+    "num_predict": 512,
+    "seed": 42,
+    "temperature": 0,
+    "tools_enabled": false
+  },
+  "host": {
+    "codex_cli_version": "0.152.1",
+    "cpu": "AMD Ryzen 9 5950X 16-Core Processor",
+    "gpu": "NVIDIA GeForce GTX 1070",
+    "gpu_free_memory_mib_at_capture": 5024,
+    "gpu_memory_mib": 8192,
+    "logical_processors": 32,
+    "machine": "AMD64",
+    "manufacturer": "Micro-Star International Co., Ltd.",
+    "nvidia_driver": "582.66",
+    "os_build": "26200.9168",
+    "os_architecture": "64bit",
+    "os_display_version": "25H2",
+    "os_product_name_registry": "Windows 10 Home",
+    "physical_cores": 16,
+    "physical_memory_bytes": 34280726528,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "python_capture_runtime": "3.13.13",
+    "python_default": "3.14.5",
+    "python_validation_note": "Use Python 3.13 for the applicable validation suite; do not repeatedly investigate the known unrelated Python 3.14 Windows subprocess WinError 6 behavior.",
+    "python_validation_runtime": "3.13.13",
+    "system_model": "MS-7C84"
+  },
+  "material_differences": [
+    "Granite 4 model implementation and Ollama chat template differ from prior rounds by design; supplied prompt bytes do not change.",
+    "The exact tag is granite4:3b; Ollama reports 3.4B and the model metadata reports 3,402,836,480 parameters.",
+    "The David-calibrated AI surrogate method remains constant, but cross-round comparisons remain descriptive and uncontrolled."
+  ],
+  "ollama": {
+    "api_version": "0.33.2",
+    "capabilities": [
+      "completion",
+      "tools"
+    ],
+    "cli_version": "0.33.2",
+    "context_length": 131072,
+    "embedding_length": 2560,
+    "manifest_layers": {
+      "config": {
+        "independently_verified": true,
+        "sha256": "ba32b08db168051148743c54d446b8b0d82d112ced661edc21b070d3038f6ff1",
+        "size_bytes": 417
+      },
+      "license": {
+        "independently_verified": true,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_bytes": 11358
+      },
+      "model": {
+        "independently_verified": true,
+        "sha256": "6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0",
+        "size_bytes": 2099502528
+      },
+      "template": {
+        "independently_verified": true,
+        "inspectable": true,
+        "sha256": "0f6ec9740c765c3fb0dc38fe25f4d283c3bc1ede32b76f81c3a971daef20f76c",
+        "size_bytes": 7082
+      }
+    },
+    "manifest_path": "C:/Users/User/.ollama/models/manifests/registry.ollama.ai/library/granite4/3b",
+    "manifest_sha256": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
+    "manifest_size_bytes": 829,
+    "model_blob_sha256": "6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0",
+    "model_blob_size_bytes": 2099502528,
+    "model_family": "granite",
+    "model_tag": "granite4:3b",
+    "ollama_parameter_label": "3.4B",
+    "parameter_count": 3402836480,
+    "quantization": "Q4_K_M",
+    "source_size_label": "3B"
+  },
+  "preparation_capture_utc": "2026-09-03T11:56:31.559Z"
+}

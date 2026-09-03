@@ -1,0 +1,64 @@
+{
+  "validation_version": "round5a-stage1-frozen-validation-v1",
+  "validated_at": "2026-09-03T12:55:54.508Z",
+  "result": "PASS_STAGE1_FROZEN",
+  "session": {
+    "session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+    "provider": "OpenAI",
+    "model": "gpt-5.6-sol",
+    "reasoning": "xhigh",
+    "codex_cli_version": "0.152.1",
+    "fresh_isolated_session": true,
+    "started_at": "2026-09-03T12:52:54.522Z",
+    "completed_at": "2026-09-03T12:53:20.670Z",
+    "exit_code": 0
+  },
+  "event_sequence": [
+    "thread.started",
+    "turn.started",
+    "item.completed:agent_message",
+    "turn.completed"
+  ],
+  "validated_extraction_count": 24,
+  "tool_call_count": 0,
+  "canonical_post_validation": "PASS",
+  "runtime_schema_enforcement": "PASS",
+  "presampling_cli_api_schema_rejection": false,
+  "nonfatal_stderr": "PowerShell shell snapshot is not supported; no shell or other tool call followed and Stage 1 completed successfully.",
+  "frozen_bindings": {
+    "authorization_sha256": "66fc7af5d606186e02124d95808d0cde758c5b4e4b2af9bfba96c54188aa60d2",
+    "protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_raw_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_prompt_sha256": "c29e582edeb4fca8ee9c050b5f51631232b2bc96793b20decf1ce5b23ac814c5",
+    "stage1_blinded_payload_sha256": "38c1ef004758dcd0cc64c54d624e683f8f7dddd948e552c73bc067de914157cc",
+    "stage1_runtime_schema_sha256": "8b00434b0db5ad15dbd487b16dd4e5d7f04e80fcb0780892412b5fd30fde833a",
+    "calibration_sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228",
+    "events_sha256": "2b82fdc998f7c1eb9dc228d35ed3c9afd1c720e64c4850d0520e843330bf3a3c",
+    "raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "combined_log_sha256": "44fe2917380e694cb3f1f43cf338b97299b929e74644f6f2254dee7b37aab0b7",
+    "session_custody_sha256": "1938fb32dcb2979695d8a63ef3d56231fdbe576c4abbf58b9cae9d93280f0762",
+    "r5a_run_016_correction_sha256": "c73b505506df2fcfb00ff9592615e39c744d42e78d14dfcb2ca70af87036d0c6",
+    "r5a_run_016_raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd"
+  },
+  "transmission_and_mutation_counts": {
+    "authorized_stage1_session_attempts": 1,
+    "openai_stage1_transmissions": 1,
+    "tool_calls": 0,
+    "stage1_output_revisions": 0,
+    "stage2_transmissions": 0,
+    "formal_ratings": 0,
+    "additional_ollama_requests": 0,
+    "commits": 0,
+    "pushes": 0,
+    "tags": 0,
+    "releases": 0,
+    "publications": 0
+  },
+  "stage2_local_preparation": {
+    "attempted_process_execution": false,
+    "artifacts_created": false,
+    "reason": "The authority gate stopped the local Stage-2 builder before process creation because an earlier explicit prohibition on sampled-output-dependent Stage-2 preparation was not expressly superseded."
+  },
+  "stage2_transmission_authorized": false,
+  "stage2_transmission_occurred": false
+}

@@ -1,0 +1,82 @@
+{
+  "validation_version": "round5a-additive-postexecution-repair-validation-v1",
+  "recorded_at": "2026-09-03T12:45:19.530Z",
+  "result": "PASS",
+  "frozen_core_unchanged": true,
+  "additive_artifact_bindings": {
+    "results/round5_granite4_3b/POSTEXECUTION_REPAIR_AUTHORIZATION.json": "a4c543a08dda60e6f72c48b0cfa3c0fd58590d791c42575abeb1f09d8a5e5165",
+    "results/round5_granite4_3b/ROUND5_POSTEXECUTION_CUSTODY_REPAIR.json": "7fa72bdb32b08f93339c82a10b5d6a1c58a620148cc3af1c34e39e84ec12ef36",
+    "results/round5_granite4_3b/ROUND5_POSTEXECUTION_CUSTODY_DISCLOSURE.md": "a47d6f94b5ad08066743ae67845d02008901ab22cf614a0955f13ca4386fcbc3",
+    "results/round5_granite4_3b/ROUND5_FROZEN_POSTEXECUTION_INVENTORY.json": "7f70e694db7bb808e9b4644ca711292f1a85f5a1279f7cb4fdb9a61e0e39ebe1",
+    "scripts/validate_round5_postexecution_repair.py": "9be98c7c17b4143d6961307b324ceec5eae219834710a83ac14c4a855991d0f3",
+    "tests/test_round5_postexecution_repair.py": "0e7f8a7df02393aa67382c5d6d3c1ebfebaade7a02de7d9788210a8c9293d4a9"
+  },
+  "frozen_bindings": {
+    "round5_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_raw_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_prompt_sha256": "c29e582edeb4fca8ee9c050b5f51631232b2bc96793b20decf1ce5b23ac814c5",
+    "stage1_blinded_payload_sha256": "38c1ef004758dcd0cc64c54d624e683f8f7dddd948e552c73bc067de914157cc",
+    "stage1_runtime_schema_sha256": "8b00434b0db5ad15dbd487b16dd4e5d7f04e80fcb0780892412b5fd30fde833a",
+    "r5a_run_016_raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+    "r5a_run_016_first_attempt_sha256": "653d8484e20bcc6daf46b735844104aa24e6286175a93e266f000e78974d0228"
+  },
+  "lifecycle_transitions": [
+    "tests/test_round5_preparation.py::test_zero_formal_observations",
+    "tests/test_round5_preparation.py::test_result_manifest_refuses_incomplete_evidence",
+    "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen"
+  ],
+  "observed_frozen_preparation_test_result": {
+    "summary": "15 passed, 2 failed",
+    "expected_failure": "tests/test_round5_preparation.py::test_zero_formal_observations",
+    "newly_reconciled_failure": "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen",
+    "prospective_future_transition_currently_still_passing": "tests/test_round5_preparation.py::test_result_manifest_refuses_incomplete_evidence"
+  },
+  "local_validation": {
+    "repair_validator": "PASS",
+    "applicable_test_summary": "18 passed, 3 deselected",
+    "prior_round_validators": "PASS",
+    "formal_requests": 24,
+    "first_attempts": 24,
+    "formal_raw_runs": 24,
+    "raw_response_bytes_reconstructed_exactly": true
+  },
+  "isolated_clean_checkout_validation": {
+    "result": "PASS",
+    "checkout_path": "C:/Users/User/AppData/Local/Temp/round5-postexecution-repair-79730857a1434402833c5863177452f3",
+    "base_head": "dd0ca6afdf3e255f45a8c4d5f3596498d55ca2f0",
+    "overlay_file_count": 128,
+    "byte_mismatch_count": 0,
+    "checkpoint_absent": true,
+    "repair_validator": "PASS",
+    "applicable_test_summary": "18 passed, 3 deselected",
+    "prior_round_validators": "PASS"
+  },
+  "r5a_run_016_disposition": {
+    "interruption_record": "REJECTED_NOT_AUTHORITATIVE",
+    "correction_record_bound": true,
+    "raw_response_bytes_changed": false,
+    "additional_model_requests": 0,
+    "second_attempts": 0,
+    "selective_regenerations": 0
+  },
+  "local_checkpoint": {
+    "path": "results/ratings_primary.partial.jsonl",
+    "size_bytes": 31022,
+    "sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f",
+    "untracked": true,
+    "excluded": true
+  },
+  "prohibited_activity_counts": {
+    "additional_model_requests": 0,
+    "openai_transmissions": 0,
+    "sol_sessions": 0,
+    "formal_ratings": 0,
+    "commits": 0,
+    "pushes": 0,
+    "tags": 0,
+    "releases": 0,
+    "publications": 0
+  },
+  "stage1_transmission_authorized": false,
+  "publication_authorized": false
+}

@@ -1,0 +1,57 @@
+{
+  "repair_version": "round5a-stage1-postcompletion-lifecycle-v1",
+  "authorization": {
+    "path": "results/round5_granite4_3b/STAGE2_LOCAL_PREPARATION_AUTHORIZATION.json",
+    "sha256": "ef6c420053c5fe262dd08cdbe164bae50fef438a610493f12417d2bba9a40588"
+  },
+  "authorized_state": {
+    "formal_execution": "COMPLETE",
+    "stage1": "COMPLETE_AND_FROZEN",
+    "stage2_transmission": "NOT_OCCURRED"
+  },
+  "frozen_stage1": {
+    "session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+    "authorization_sha256": "66fc7af5d606186e02124d95808d0cde758c5b4e4b2af9bfba96c54188aa60d2",
+    "events_sha256": "2b82fdc998f7c1eb9dc228d35ed3c9afd1c720e64c4850d0520e843330bf3a3c",
+    "raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "combined_log_sha256": "44fe2917380e694cb3f1f43cf338b97299b929e74644f6f2254dee7b37aab0b7",
+    "session_custody_sha256": "1938fb32dcb2979695d8a63ef3d56231fdbe576c4abbf58b9cae9d93280f0762",
+    "validation_sha256": "0866f3bcf1fd918643de1412f0a05a4bc3ec1f1e18748a8b29807ac856dce714"
+  },
+  "diagnostic_binding": {
+    "path": "results/round5_granite4_3b/STAGE1_LIFECYCLE_DIAGNOSTIC.json",
+    "sha256": "9ccb21964800716256151fcca38621e36bbc5ae06ccde73818cf4b78698c6d91",
+    "preserved": true,
+    "resolved_by_this_additive_repair": true
+  },
+  "pre_stage1_additive_state": {
+    "validator_path": "scripts/validate_round5_postexecution_repair.py",
+    "validator_sha256": "9be98c7c17b4143d6961307b324ceec5eae219834710a83ac14c4a855991d0f3",
+    "test_path": "tests/test_round5_postexecution_repair.py",
+    "test_sha256": "0e7f8a7df02393aa67382c5d6d3c1ebfebaade7a02de7d9788210a8c9293d4a9",
+    "validation_record_path": "results/round5_granite4_3b/ROUND5_POSTEXECUTION_REPAIR_VALIDATION.json",
+    "validation_record_sha256": "56277a60968c52862cb144508bc87f033f8b1170f4c98943a9639eb073eecec0",
+    "historical_status": "PASS_AT_PRE_STAGE1_GATE"
+  },
+  "newly_applicable_lifecycle_transitions": [
+    {
+      "assertion": "scripts/validate_round5_postexecution_repair.py::validate_stage1_preparation pre-Stage-1 absence gate",
+      "pre_stage1_status": "PASS",
+      "post_stage1_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "replacement_validation": "Validate the exact authorized Stage-1 evidence and continue to require zero Stage-2 transmission and zero ratings."
+    },
+    {
+      "assertion": "tests/test_round5_postexecution_repair.py::test_stage1_remains_local_frozen_and_untransmitted",
+      "pre_stage1_status": "PASS",
+      "post_stage1_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "replacement_validation": "Verify that the former absence assertion is explicitly preserved as a lifecycle transition and that Stage-1 evidence is frozen."
+    }
+  ],
+  "frozen_preparation_tests_modified": false,
+  "frozen_protocol_modified": false,
+  "scientific_semantics_changed": false,
+  "stage1_output_revised": false,
+  "stage1_session_resumed": false,
+  "stage2_transmission_occurred": false,
+  "formal_rating_created": false
+}

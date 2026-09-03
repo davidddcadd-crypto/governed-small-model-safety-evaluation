@@ -1,0 +1,30 @@
+{
+  "record_type": "ROUND5A_STAGE1_LIFECYCLE_DIAGNOSTIC",
+  "recorded_at": "2026-09-03T12:57:52.904Z",
+  "stage1_session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+  "stage1_result": "SUCCESSFULLY_FROZEN",
+  "affected_additive_validator": {
+    "path": "scripts/validate_round5_postexecution_repair.py",
+    "sha256": "9be98c7c17b4143d6961307b324ceec5eae219834710a83ac14c4a855991d0f3",
+    "pre_stage1_result": "PASS",
+    "post_stage1_result": "FAIL-CLOSED: unauthorized Stage-1/Stage-2/rating artifact exists",
+    "cause": "The validator asserts that Stage-1 authorization and output artifacts are absent. That assertion was valid at the pre-transmission repair gate and became inapplicable when the Project Owner separately authorized and completed Stage 1.",
+    "prospectively_classified_before_stage1": false
+  },
+  "prior_repair_validation_record": {
+    "path": "results/round5_granite4_3b/ROUND5_POSTEXECUTION_REPAIR_VALIDATION.json",
+    "sha256": "56277a60968c52862cb144508bc87f033f8b1170f4c98943a9639eb073eecec0",
+    "status_at_pre_stage1_gate": "PASS"
+  },
+  "impact": {
+    "scientific_assertion_failed": false,
+    "stage1_output_validation_failed": false,
+    "stage1_input_bytes_changed": false,
+    "stage1_output_bytes_changed": false,
+    "formal_observation_bytes_changed": false,
+    "additional_model_request_occurred": false,
+    "openai_transmission_beyond_authorized_stage1_occurred": false
+  },
+  "disposition": "UNRESOLVED_ADDITIVE_LIFECYCLE_TRANSITION_REQUIRES_PROJECT_OWNER_REPAIR_AUTHORIZATION",
+  "modification_performed": false
+}

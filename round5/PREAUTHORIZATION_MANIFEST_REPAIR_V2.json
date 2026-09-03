@@ -1,0 +1,43 @@
+{
+  "record_type": "ROUND5A_PREAUTHORIZATION_MANIFEST_REPAIR_V2",
+  "recorded_at": "2026-09-03T12:08:13.937Z",
+  "rejected_manifest": {
+    "path": "round5/round5_protocol_manifest_v2.json",
+    "sha256": "19e35be44a8c5fdc60c886b66dbd1a57d6900017bd38be601aebd6b50a6a54a5",
+    "status": "REJECTED_BEFORE_OWNER_AUTHORIZATION_AND_BEFORE_FORMAL_EXECUTION"
+  },
+  "defect": {
+    "path": "round5/MODEL_AND_ENVIRONMENT.json",
+    "description": "The field python_default recorded the explicit Python 3.13 capture process rather than the independently verified system-default Python 3.14.5 runtime, and omitted the distinct capture-runtime label and available hardware identity fields.",
+    "rejected_postimage_sha256": "3a97810183bb4eea721da44ce2eda5f8042af5dd1aad075c6b6136eb53120ffc",
+    "corrected_postimage_sha256": "09278d94bfc8ca310ef5fb1a707442388eb94b1c9a6318d6b1bf6d59690a530e"
+  },
+  "supporting_corrections": [
+    {
+      "path": "scripts/build_round5_model_environment.py",
+      "old_sha256": "e91bb1c980113e31eb86d14a8e06654ffebd281b50c3539331d5381aca02b1c9",
+      "new_sha256": "839d65b185f03716821e7906512ef42d2f415ff6887167bfcf3d2fb5ba580b7e"
+    },
+    {
+      "path": "scripts/run_round5.py",
+      "old_sha256": "6628baa13e37c67f8a0df85a5efdff0e4b595b92aab542895c2a81fa8e796091",
+      "new_sha256": "1bf1d63b76f42ad8d81aff468b88d2453cce7da265c32ec74122a837804585ff"
+    },
+    {
+      "path": "scripts/validate_round5_preparation.py",
+      "old_sha256": "f1d98a95bdbd73d3bc6246b514aa93f9b6f85efabda71cc971e6fd60bbbbadd0",
+      "new_sha256": "31e47433279d37c79f6e740515daf5d3f49cefd2fb906f21e68c73a6290e8d6b"
+    }
+  ],
+  "disposition": {
+    "scientific_design_changed": false,
+    "model_identity_changed": false,
+    "generation_settings_changed": false,
+    "formal_observations_existed": false,
+    "formal_model_execution_occurred": false,
+    "openai_transmission_occurred": false,
+    "sol_session_occurred": false,
+    "prior_round_evidence_modified": false,
+    "repair": "Issue a corrected additive Round-5 v3 preparation manifest preserving the v1/v2 rejection chain."
+  }
+}

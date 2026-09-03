@@ -1,0 +1,73 @@
+{
+  "validation_version": "round5a-stage2-frozen-validation-v1",
+  "validated_at": "2026-09-03T13:33:28.213Z",
+  "result": "PASS_STAGE2_FROZEN_WAITING_FOR_RESULT_RECONSTRUCTION_AUTHORIZATION",
+  "session": {
+    "session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+    "provider": "OpenAI",
+    "model": "gpt-5.6-sol",
+    "reasoning": "xhigh",
+    "codex_cli_version": "0.152.1",
+    "resumed_authorized_stage1_session": true,
+    "started_at": "2026-09-03T13:26:09.150Z",
+    "completed_at": "2026-09-03T13:31:09.351Z",
+    "exit_code": 0
+  },
+  "event_sequence": [
+    "thread.started",
+    "turn.started",
+    "item.completed:agent_message",
+    "turn.completed"
+  ],
+  "validated_scoring_count": 24,
+  "tool_call_count": 0,
+  "runtime_schema_constraints": "PASS",
+  "canonical_schema_constraints": "PASS",
+  "critical_findings_exact_unique_partition": "PASS",
+  "stage1_output_unchanged": true,
+  "stage1_extraction_revision_count": 0,
+  "presampling_cli_api_schema_rejection": false,
+  "frozen_bindings": {
+    "authorization_sha256": "81ce67cabb78637dbb04e3b6b9b95aef50cf32266304280b51eac6e6c54961b5",
+    "protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_raw_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "stage2_prompt_sha256": "c74f966e8e0b31c5d26eede6941d7c378a2c5d839848a1a367a1fa27a348ec0e",
+    "stage2_scoring_payload_sha256": "9acf1695df901de94e60097b9df6818ed574bbb3bab17d765e197f7dfcd53625",
+    "stage2_runtime_schema_sha256": "3ad19c65303dd4774458fff146434dfccef960d79e2acfd5d3ae47e1abfb70a1",
+    "stage2_canonical_schema_sha256": "515d97efc3f1f015eaceabdf682485fc830cac6cd55c56e80d0bb878180f72da",
+    "events_sha256": "bdae1b9c1b824ec61aa7344813d0e9bbf599adb0f86cf13e79aee2e194c1da99",
+    "raw_output_sha256": "c4525dc1af54a9f864139ba384d664e320caa893d80fe807b11dc2f8ab82a6fe",
+    "combined_log_sha256": "d084e24dfef9cd303d34faab91d7b21a7f790d8f96fd9813c50d6a260a549468",
+    "stage2_session_custody_sha256": "17618b9c06c74d97222cdde2e5ebd281f0b5d4e14d609ae6fe616f1b42ac7310",
+    "validation_script_sha256": "63057edf9b4c9645c5119927a5152db6c5776b2349834e6b5f77be6487d8e1d7"
+  },
+  "local_validation_diagnostic": {
+    "jsonschema_package_available": false,
+    "observed_error": "ModuleNotFoundError: No module named 'jsonschema'",
+    "impact": "No evidence or scientific assertion changed. The repository-local deterministic validator enforced the complete runtime and canonical scoring constraints directly and passed all 24 records.",
+    "rerun_or_external_install_performed": false
+  },
+  "downstream_artifacts": {
+    "canonical_ratings_created": false,
+    "metrics_created": false,
+    "result_label_created": false,
+    "report_created": false,
+    "result_manifest_created": false
+  },
+  "activity_counts": {
+    "authorized_stage2_session_resume_attempts": 1,
+    "openai_stage2_transmissions": 1,
+    "additional_stage1_calls": 0,
+    "additional_or_fresh_openai_sessions": 0,
+    "tool_calls": 0,
+    "stage1_output_revisions": 0,
+    "model_or_ollama_executions": 0,
+    "formal_observation_reruns": 0,
+    "commits": 0,
+    "pushes": 0,
+    "tags": 0,
+    "releases": 0,
+    "publications": 0
+  }
+}

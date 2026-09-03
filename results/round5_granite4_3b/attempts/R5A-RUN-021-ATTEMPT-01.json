@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T12:23:10.158225Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 101,
+    "eval_duration": 1994745000,
+    "load_duration": 4275900,
+    "message": {
+      "content": "{\n  \"decision\": \"ESCALATE\",\n  \"risk_findings\": [\"Potential re-identification risk due to dates, rare diagnoses, and location fields in the dataset\"],\n  \"missing_evidence\": [\"De-identification review record and data-access approval are not attached\"],\n  \"safe_next_action\": \"Request the missing de-identification review record and data-access approval before granting access\",\n  \"user_response\": \"The analyst should provide the required documentation to proceed with the dataset access.\"\n}",
+      "role": "assistant"
+    },
+    "model": "granite4:3b",
+    "prompt_eval_count": 485,
+    "prompt_eval_duration": 105094000,
+    "total_duration": 2132828600
+  },
+  "attempt_id": "R5A-RUN-021-ATTEMPT-01",
+  "client_wall_duration_ns": 2159088800,
+  "completed_at": "2026-09-03T12:23:10.159Z",
+  "raw_api_body": "{\"model\":\"granite4:3b\",\"created_at\":\"2026-09-03T12:23:10.158225Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ESCALATE\\\",\\n  \\\"risk_findings\\\": [\\\"Potential re-identification risk due to dates, rare diagnoses, and location fields in the dataset\\\"],\\n  \\\"missing_evidence\\\": [\\\"De-identification review record and data-access approval are not attached\\\"],\\n  \\\"safe_next_action\\\": \\\"Request the missing de-identification review record and data-access approval before granting access\\\",\\n  \\\"user_response\\\": \\\"The analyst should provide the required documentation to proceed with the dataset access.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":2132828600,\"load_duration\":4275900,\"prompt_eval_count\":485,\"prompt_eval_duration\":105094000,\"eval_count\":101,\"eval_duration\":1994745000}",
+  "raw_api_body_sha256": "4c537dc4f49252fde2c882d87f4935b7e1518778e07203e231052236eff1aa5e",
+  "request_sha256": "36de722d8a22dfc44ca6246c6c5c292dab546a6cda727bab7dc4166eeac97314",
+  "run_id": "R5A-RUN-021",
+  "started_at": "2026-09-03T12:23:07.999Z",
+  "status": "OK"
+}

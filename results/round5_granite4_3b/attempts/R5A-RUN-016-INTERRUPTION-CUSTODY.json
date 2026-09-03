@@ -1,0 +1,30 @@
+{
+  "record_type": "ROUND5A_FORMAL_RUNNER_INTERRUPTION_CUSTODY",
+  "recorded_at": "2026-09-03T12:24:13.551Z",
+  "run_id": "R5A-RUN-016",
+  "protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+  "event": {
+    "description": "The host orchestration process ended after the successful attempt artifact was durably created and before the derived raw-run artifact was created.",
+    "cause": "UNKNOWN_HOST_RUNNER_INTERRUPTION",
+    "ollama_transport_failure": false,
+    "model_sampling_occurred": true,
+    "usable_model_response_preserved": true,
+    "additional_model_request_permitted_for_this_run": false
+  },
+  "preserved_inputs": {
+    "request_path": "results/round5_granite4_3b/requests/R5A-RUN-016.request.json",
+    "request_file_sha256": "20ea0c3fc86916ee45dcc0be92861bb4627cb0e410e64c3c79ff10d149322f1c",
+    "attempt_path": "results/round5_granite4_3b/attempts/R5A-RUN-016-ATTEMPT-01.json",
+    "attempt_file_sha256": "653d8484e20bcc6daf46b735844104aa24e6286175a93e266f000e78974d0228",
+    "raw_api_body_sha256": "ec2d091f23ed8071ebacc27842e001fa5617fba2a589dc4a7f1038c1fafdf6e5",
+    "environment_snapshot_sha256": "25ec6fb10045bb1646a003df04c9e3bb81c51f77446727e17e749ee944bc5a5a"
+  },
+  "deterministic_recovery": {
+    "method": "Construct the missing raw-run artifact solely from the preserved request, successful attempt/API response, frozen run order, frozen sources, and frozen extraction function; make no model request.",
+    "raw_run_path": "results/round5_granite4_3b/raw_runs/R5A-RUN-016.json",
+    "raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+    "formal_output_regenerated": false,
+    "selective_rerun": false,
+    "response_bytes_changed": false
+  }
+}

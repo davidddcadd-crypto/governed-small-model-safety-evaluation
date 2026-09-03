@@ -1,0 +1,38 @@
+{
+  "authorization_type": "ROUND5A_STAGE1_POSTCOMPLETION_LIFECYCLE_REPAIR_AND_LOCAL_STAGE2_CONSTRUCTION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_stage1_session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+  "authorized_stage1_evidence": {
+    "authorization_sha256": "66fc7af5d606186e02124d95808d0cde758c5b4e4b2af9bfba96c54188aa60d2",
+    "events_sha256": "2b82fdc998f7c1eb9dc228d35ed3c9afd1c720e64c4850d0520e843330bf3a3c",
+    "raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "combined_log_sha256": "44fe2917380e694cb3f1f43cf338b97299b929e74644f6f2254dee7b37aab0b7",
+    "session_custody_sha256": "1938fb32dcb2979695d8a63ef3d56231fdbe576c4abbf58b9cae9d93280f0762",
+    "stage1_validation_sha256": "0866f3bcf1fd918643de1412f0a05a4bc3ec1f1e18748a8b29807ac856dce714"
+  },
+  "authorized_frozen_inputs": {
+    "round5_protocol_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_prompt_sha256": "c29e582edeb4fca8ee9c050b5f51631232b2bc96793b20decf1ce5b23ac814c5",
+    "stage1_payload_sha256": "38c1ef004758dcd0cc64c54d624e683f8f7dddd948e552c73bc067de914157cc",
+    "stage1_runtime_schema_sha256": "8b00434b0db5ad15dbd487b16dd4e5d7f04e80fcb0780892412b5fd30fde833a",
+    "surrogate_calibration_sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228",
+    "r16_correction_sha256": "c73b505506df2fcfb00ff9592615e39c744d42e78d14dfcb2ca70af87036d0c6",
+    "r16_raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+    "stage2_runtime_schema_sha256": "3ad19c65303dd4774458fff146434dfccef960d79e2acfd5d3ae47e1abfb70a1",
+    "stage1_lifecycle_diagnostic_sha256": "9ccb21964800716256151fcca38621e36bbc5ae06ccde73818cf4b78698c6d91"
+  },
+  "authorized_actions": [
+    "Make only additive Round-5 lifecycle, custody, validation, disclosure, validator, and test artifacts lifecycle-aware for FORMAL_EXECUTION_COMPLETE / STAGE1_COMPLETE_AND_FROZEN / STAGE2_NOT_TRANSMITTED.",
+    "Locally construct and validate the Round-5 Stage-2 gold-disclosed scoring payload from the exact frozen Stage-1 output.",
+    "Locally construct and validate the Round-5 Stage-2 prompt and deterministic custody bindings.",
+    "Run applicable local and isolated clean-checkout validation."
+  ],
+  "supersedes_for_local_construction_only": "The earlier prohibition on sampled-output-dependent Stage-2 preparation.",
+  "stage2_transmission_authorized": false,
+  "stage1_resume_authorized": false,
+  "model_execution_authorized": false,
+  "formal_rating_authorized": false,
+  "repository_staging_or_publication_authorized": false,
+  "authorized_at": "2026-09-03T13:05:22.536Z"
+}

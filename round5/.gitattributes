@@ -1,0 +1,5 @@
+preflight/stage1_schema_combined.log -text
+preflight/stage1_schema_events.jsonl -text
+preflight/stage2_schema_combined.log -text
+preflight/stage2_schema_events.jsonl -text
+preflight/byte_preservation_probe.log -text

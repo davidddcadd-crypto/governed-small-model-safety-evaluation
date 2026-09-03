@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Round 5A immutable raw run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id", "sequence", "arm", "case_id", "model_tag",
+    "model_manifest_sha256", "model_blob_sha256", "ollama_version", "settings",
+    "system_prompt_sha256", "user_prompt_sha256", "request_sha256",
+    "environment_snapshot_sha256", "round5_protocol_manifest_sha256",
+    "attempt_id", "raw_api_body_sha256", "started_at", "completed_at",
+    "raw_response", "parsed_response", "transport_status", "format_status",
+    "timing", "api_completion", "error"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^R5A-RUN-[0-9]{3}$"},
+    "sequence": {"type": "integer", "minimum": 1, "maximum": 24},
+    "arm": {"type": "string", "enum": ["A", "B"]},
+    "case_id": {"type": "string", "pattern": "^C[0-9]{2}$"},
+    "model_tag": {"const": "granite4:3b"},
+    "model_manifest_sha256": {"const": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f"},
+    "model_blob_sha256": {"const": "6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0"},
+    "ollama_version": {"const": "0.33.2"},
+    "settings": {"type": "object"},
+    "system_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "user_prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "request_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "environment_snapshot_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "round5_protocol_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "attempt_id": {"type": "string", "pattern": "^R5A-RUN-[0-9]{3}-ATTEMPT-0[12]$"},
+    "raw_api_body_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": "string", "format": "date-time"},
+    "raw_response": {"type": "string"},
+    "parsed_response": {"type": ["object", "null"]},
+    "transport_status": {"type": "string", "enum": ["OK", "TRANSPORT_RETRY"]},
+    "format_status": {"type": "string", "enum": ["VALID_JSON", "FORMAT_FAIL", "NO_OUTPUT"]},
+    "timing": {"type": "object"},
+    "api_completion": {"type": "object"},
+    "error": {"type": "null"}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "record_type": "ROUND5A_PREAUTHORIZATION_MANIFEST_REPAIR",
+  "recorded_at": "2026-09-03T12:05:21.506Z",
+  "rejected_manifest": {
+    "path": "round5/round5_protocol_manifest.json",
+    "sha256": "f44c47a4307e105b554ce71d85bff01030df937d6563f0a1eb9ef26d80daeb40",
+    "status": "REJECTED_BEFORE_OWNER_AUTHORIZATION_AND_BEFORE_FORMAL_EXECUTION"
+  },
+  "defect": {
+    "path": "round5/schemas/rater_session.schema.json",
+    "description": "Copied schema fixed codex_cli_version at 0.152.0 while the independently verified Round-5 preparation runtime is 0.152.1.",
+    "rejected_postimage_sha256": "e5304ec9af32c98be3351adf7c0ce6ff34fc146cb6e496207f35e0a36824911e",
+    "corrected_postimage_sha256": "c859e7a3a1acc9ddaba4b85ee9a9feae172d19708d731aa417e335f33ffefb9e",
+    "size_bytes_unchanged": 2998
+  },
+  "disposition": {
+    "scientific_design_changed": false,
+    "rating_semantics_changed": false,
+    "formal_observations_existed": false,
+    "formal_model_execution_occurred": false,
+    "openai_transmission_occurred": false,
+    "sol_session_occurred": false,
+    "prior_round_evidence_modified": false,
+    "repair": "Issue a corrected additive Round-5 v2 preparation manifest that preserves and supersedes the rejected manifest."
+  }
+}

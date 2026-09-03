@@ -1,0 +1,93 @@
+{
+  "repair_version": "round5a-additive-postexecution-custody-v1",
+  "authorization": {
+    "path": "results/round5_granite4_3b/POSTEXECUTION_REPAIR_AUTHORIZATION.json",
+    "sha256": "a4c543a08dda60e6f72c48b0cfa3c0fd58590d791c42575abeb1f09d8a5e5165"
+  },
+  "frozen_core": {
+    "round5_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_raw_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_prompt_sha256": "c29e582edeb4fca8ee9c050b5f51631232b2bc96793b20decf1ce5b23ac814c5",
+    "stage1_blinded_payload_sha256": "38c1ef004758dcd0cc64c54d624e683f8f7dddd948e552c73bc067de914157cc",
+    "stage1_runtime_schema_sha256": "8b00434b0db5ad15dbd487b16dd4e5d7f04e80fcb0780892412b5fd30fde833a",
+    "blinding_key_sha256": "79e4c6b55a1059595f6fff9f1ba89e01106487c314e91421c2c12a2bda45496b"
+  },
+  "lifecycle_reconciliation": {
+    "frozen_plan_path": "round5/LIFECYCLE_VALIDATION_PLAN.md",
+    "frozen_plan_sha256": "6389a621a2a849c5bbb531e4c806e7c4471b3aeeb07e1f7555eb6afe4d7005cb",
+    "frozen_test_path": "tests/test_round5_preparation.py",
+    "frozen_test_sha256": "eef2e4d556771da7e432b5f6a4d504462ee1f2977a55c2b97dc4c3b2e550b35d",
+    "frozen_test_modified": false,
+    "frozen_preparation_validator_path": "scripts/validate_round5_preparation.py",
+    "frozen_preparation_validator_sha256": "31e47433279d37c79f6e740515daf5d3f49cefd2fb906f21e68c73a6290e8d6b",
+    "frozen_postexecution_validator_path": "scripts/validate_round5_postexecution.py",
+    "frozen_postexecution_validator_sha256": "fb00b69a51fe559e23577f33a9f734731118cc2a87a251f6101a9adef5b03182",
+    "transitions": [
+      "tests/test_round5_preparation.py::test_zero_formal_observations",
+      "tests/test_round5_preparation.py::test_result_manifest_refuses_incomplete_evidence",
+      "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen"
+    ],
+    "third_transition": {
+      "test": "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen",
+      "pre_execution_status": "PASS",
+      "post_execution_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "reason": "The frozen test invokes the PRE_EXECUTION-only architecture gate. It truthfully passed before the separately authorized 24-observation execution and became historically inapplicable when the lifecycle advanced to POST_EXECUTION."
+    },
+    "scientific_semantics_changed": false
+  },
+  "r5a_run_016_custody": {
+    "rejected_record": {
+      "path": "results/round5_granite4_3b/attempts/R5A-RUN-016-INTERRUPTION-CUSTODY.json",
+      "sha256": "c6c1bb89916719556354cae48ed92641bed45a5d51ab341f3d38b371448b2d9c",
+      "status": "REJECTED_NOT_AUTHORITATIVE",
+      "preserved": true,
+      "reason": "The runner continued beyond R5A-RUN-016 and completed all 24 formal observations; therefore the inferred interruption did not occur."
+    },
+    "correction_record": {
+      "path": "results/round5_granite4_3b/attempts/R5A-RUN-016-INTERRUPTION-CUSTODY-CORRECTION.json",
+      "sha256": "c73b505506df2fcfb00ff9592615e39c744d42e78d14dfcb2ca70af87036d0c6",
+      "status": "AUTHORITATIVE_ADDITIVE_CORRECTION"
+    },
+    "request": {
+      "path": "results/round5_granite4_3b/requests/R5A-RUN-016.request.json",
+      "sha256": "20ea0c3fc86916ee45dcc0be92861bb4627cb0e410e64c3c79ff10d149322f1c"
+    },
+    "first_attempt": {
+      "path": "results/round5_granite4_3b/attempts/R5A-RUN-016-ATTEMPT-01.json",
+      "sha256": "653d8484e20bcc6daf46b735844104aa24e6286175a93e266f000e78974d0228"
+    },
+    "raw_run": {
+      "path": "results/round5_granite4_3b/raw_runs/R5A-RUN-016.json",
+      "sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+      "original_creation_utc": "2026-09-03T12:22:58.9942056Z",
+      "unnecessary_same_byte_rewrite_utc": "2026-09-03T12:25:20.9916651Z",
+      "raw_response_bytes_changed": false
+    },
+    "model_rerun_occurred": false,
+    "second_model_request_occurred": false,
+    "selective_regeneration_occurred": false,
+    "formal_observation_remains_bound_to_first_attempt": true
+  },
+  "formal_execution": {
+    "requests": 24,
+    "first_attempts": 24,
+    "raw_runs": 24,
+    "arm_a": 12,
+    "arm_b": 12,
+    "transport_ok": 24,
+    "transport_retries": 0,
+    "format_valid_json": 19,
+    "format_fail": 5
+  },
+  "scope_disposition": {
+    "frozen_evidence_modified_by_repair": false,
+    "additional_model_execution": false,
+    "openai_transmission": false,
+    "sol_session": false,
+    "formal_rating": false,
+    "stage2_preparation": false,
+    "publication_authorized": false,
+    "commit_authorized": false
+  },
+  "custody_disposition": "The false interruption inference is preserved as rejected evidence. The correction and this repair are additive. All frozen scientific bytes and the locally frozen Stage-1 preparation remain unchanged."
+}

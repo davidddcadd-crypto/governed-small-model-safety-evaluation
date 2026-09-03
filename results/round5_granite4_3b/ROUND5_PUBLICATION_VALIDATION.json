@@ -1,0 +1,25 @@
+{
+  "record_type": "ROUND5A_FINAL_PUBLICATION_VALIDATION",
+  "recorded_at": "2026-09-03T13:59:41.170Z",
+  "state": "PASS_READY_FOR_LOCAL_COMMIT",
+  "known_working_python": "3.13.13",
+  "base_commit": "dd0ca6afdf3e255f45a8c4d5f3596498d55ca2f0",
+  "core_result_validator": "PASS_CORE_RESULT_FROZEN; 24 observations; 24 canonical ratings; SUPPORTIVE",
+  "prior_round_validators": "PASS: Round-1 protocol and Round-2 through Round-4 result/publication validators",
+  "publication_validator": "PASS_PUBLICATION_PACKAGE",
+  "targeted_tests": "22 passed, 3 expected lifecycle transitions deselected",
+  "expected_lifecycle_transitions_deselected": [
+    "tests/test_round5_preparation.py::test_zero_formal_observations",
+    "tests/test_round5_preparation.py::test_result_manifest_refuses_incomplete_evidence",
+    "tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen"
+  ],
+  "authoritative_expected_lifecycle_transition_count": 10,
+  "new_publication_transition_classifications": [],
+  "exact_byte_staging_filter_audit": "PASS: 173 candidate paths, 0 filtered-byte mismatches",
+  "fresh_isolated_clean_checkout": "PASS: 173 files reproduced with 0 SHA-256 mismatches; checkpoint absent; validators PASS; 22 tests passed and 3 expected lifecycle transitions deselected",
+  "isolated_validation_path": "C:/Users/User/AppData/Local/Temp/round5-publication-precommit-7ff782a519004e998f1e76164293231b",
+  "checkpoint_excluded": true,
+  "model_execution_occurred": false,
+  "openai_transmission_occurred": false,
+  "remote_mutation_occurred": false
+}

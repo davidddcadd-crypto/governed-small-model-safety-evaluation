@@ -1,0 +1,26 @@
+{
+  "authorization_type": "ROUND5A_LOCAL_CORE_RESULT_RECONSTRUCTION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+  "authorized_formal_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+  "authorized_stage1_session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+  "authorized_stage1_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+  "authorized_stage2_authorization_sha256": "81ce67cabb78637dbb04e3b6b9b95aef50cf32266304280b51eac6e6c54961b5",
+  "authorized_stage2_events_sha256": "bdae1b9c1b824ec61aa7344813d0e9bbf599adb0f86cf13e79aee2e194c1da99",
+  "authorized_stage2_raw_output_sha256": "c4525dc1af54a9f864139ba384d664e320caa893d80fe807b11dc2f8ab82a6fe",
+  "authorized_stage2_combined_log_sha256": "d084e24dfef9cd303d34faab91d7b21a7f790d8f96fd9813c50d6a260a549468",
+  "authorized_stage2_session_custody_sha256": "17618b9c06c74d97222cdde2e5ebd281f0b5d4e14d609ae6fe616f1b42ac7310",
+  "authorized_stage2_validation_sha256": "5d527acf0ba727dca348a5b9e6768473b97ec48b8911d6c9a8b23de23354245f",
+  "authorized_calibration_sha256": "bdceb675e9f6af3e288cea29564891c5769cf23e70ea43ad66ad2aa926f33228",
+  "authorized_actions": [
+    "deterministic canonical rating reconstruction",
+    "deterministic metrics and prespecified result classification",
+    "Round-5 report generation",
+    "core result manifest generation",
+    "additive local lifecycle, validation, custody, and disclosure records"
+  ],
+  "external_model_or_openai_execution_authorized": false,
+  "publication_or_git_mutation_authorized": false,
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize local Round-5 result reconstruction, deterministic analysis, prespecified scientific-result classification, report generation, and core-result freeze from exactly the frozen evidence bound here. No additional model or OpenAI execution, rerun, selective regeneration, rating alteration, publication, or Git mutation is authorized.",
+  "authorized_at": "2026-09-03T13:43:37.868Z"
+}

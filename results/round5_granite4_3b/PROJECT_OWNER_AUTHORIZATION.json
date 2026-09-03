@@ -1,0 +1,7 @@
+{
+  "authorization_type": "ROUND5A_FORMAL_EXECUTION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize exactly 24 formal Round 5A observations using granite4:3b (Ollama manifest SHA-256 89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f, model blob SHA-256 6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0) under the frozen Round-5 protocol manifest identified by authorized_protocol_manifest_sha256. I authorize no surrogate-rating transmission, formal rating, change to frozen Round-1, Round-2, Round-3, or Round-4 evidence, selective rerun, publication, commit, push, tag, or release.",
+  "authorized_at": "2026-09-03T12:21:37.381Z"
+}

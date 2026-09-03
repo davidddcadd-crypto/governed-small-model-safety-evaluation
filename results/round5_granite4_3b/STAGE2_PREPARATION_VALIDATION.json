@@ -1,0 +1,66 @@
+{
+  "record_type": "ROUND5A_LOCAL_STAGE2_PREPARATION_VALIDATION",
+  "validated_at": "2026-09-03T13:14:58.601Z",
+  "result": "PASS_WAITING_FOR_STAGE2_OWNER_AUTHORIZATION",
+  "frozen_stage1": {
+    "session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+    "raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "output_unchanged": true,
+    "session_resumed": false
+  },
+  "lifecycle_repair": {
+    "record_sha256": "38eb9f8589e6353730387ab207f80fbae9bba2047c835093d625a0ada285965a",
+    "disclosure_sha256": "82698b4575feac70a0bcb57d7de1625dc011b5c1ff0c1b2d4d505c14bd9bc4c3",
+    "diagnostic_sha256": "9ccb21964800716256151fcca38621e36bbc5ae06ccde73818cf4b78698c6d91",
+    "new_transition_count": 2
+  },
+  "stage2": {
+    "custody_sha256": "ebd66b9790095319e60e0f59a9e038d9dbcc1990c558445c52d49fae1066bb96",
+    "prompt_sha256": "c74f966e8e0b31c5d26eede6941d7c378a2c5d839848a1a367a1fa27a348ec0e",
+    "scoring_payload_sha256": "9acf1695df901de94e60097b9df6818ed574bbb3bab17d765e197f7dfcd53625",
+    "runtime_schema_sha256": "3ad19c65303dd4774458fff146434dfccef960d79e2acfd5d3ae47e1abfb70a1",
+    "row_count": 24,
+    "deterministic_derivation": "PASS",
+    "isolation_content_audit": "PASS",
+    "transmission_occurred": false
+  },
+  "local_validation": {
+    "postexecution_repair_validator": "PASS",
+    "stage2_preparation_validator": "PASS",
+    "targeted_test_summary": "7 passed",
+    "applicable_test_summary": "21 passed, 3 deselected",
+    "final_postexecution_validator": {
+      "status": "NOT_YET_APPLICABLE",
+      "reason": "Canonical Stage-2 output, ratings, metrics, report, and result manifest do not exist before separately authorized Stage-2 transmission and downstream processing."
+    }
+  },
+  "construction_diagnostic": {
+    "first_local_packet_builder_attempt": "LOCAL_FILESYSTEM_SANDBOX_DENIED_BEFORE_TARGET_CREATION",
+    "scientific_or_schema_failure": false,
+    "model_or_openai_request_occurred": false,
+    "authorized_local_retry_result": "PASS"
+  },
+  "isolated_clean_checkout_validation": {
+    "result": "PASS",
+    "checkout_path": "C:/Users/User/AppData/Local/Temp/round5-stage2-final-clean-de1a281ca04948a58be1cb6438a79681",
+    "overlaid_file_count": 145,
+    "byte_mismatch_count": 0,
+    "excluded_checkpoint_absent": true,
+    "postexecution_repair_validator": "PASS",
+    "stage2_preparation_validator": "PASS",
+    "applicable_test_summary": "21 passed, 3 deselected"
+  },
+  "prohibited_activity_counts": {
+    "stage2_transmissions": 0,
+    "stage1_session_resumes": 0,
+    "gold_disclosures_to_openai": 0,
+    "formal_ratings": 0,
+    "model_executions": 0,
+    "observation_reruns": 0,
+    "commits": 0,
+    "pushes": 0,
+    "tags": 0,
+    "releases": 0,
+    "publications": 0
+  }
+}

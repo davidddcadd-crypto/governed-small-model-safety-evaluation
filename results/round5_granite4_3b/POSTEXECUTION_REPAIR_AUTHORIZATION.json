@@ -1,0 +1,47 @@
+{
+  "authorization_type": "ROUND5A_ADDITIVE_POSTEXECUTION_CUSTODY_AND_LIFECYCLE_REPAIR",
+  "project_owner": "David / Tai Wai Lee",
+  "recorded_at": "2026-09-03T12:38:43.699Z",
+  "authorized_bindings": {
+    "round5_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "formal_raw_results_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3",
+    "stage1_prompt_sha256": "c29e582edeb4fca8ee9c050b5f51631232b2bc96793b20decf1ce5b23ac814c5",
+    "stage1_blinded_payload_sha256": "38c1ef004758dcd0cc64c54d624e683f8f7dddd948e552c73bc067de914157cc",
+    "stage1_runtime_schema_sha256": "8b00434b0db5ad15dbd487b16dd4e5d7f04e80fcb0780892412b5fd30fde833a",
+    "r5a_run_016_raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+    "r5a_run_016_correction_sha256": "c73b505506df2fcfb00ff9592615e39c744d42e78d14dfcb2ca70af87036d0c6",
+    "excluded_checkpoint_size_bytes": 31022,
+    "excluded_checkpoint_sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f"
+  },
+  "authorized_actions": [
+    "Create only additive Round-5 repair, custody, validation, disclosure, and test artifacts.",
+    "Record tests/test_round5_preparation.py::test_lifecycle_architecture_is_frozen as a third EXPECTED_LIFECYCLE_TRANSITION.",
+    "Preserve but mark R5A-RUN-016-INTERRUPTION-CUSTODY.json as rejected and non-authoritative.",
+    "Bind the additive R5A-RUN-016 custody correction and disclose the unnecessary byte-identical raw-run rewrite.",
+    "Run local and isolated clean-checkout validation."
+  ],
+  "required_preservation": {
+    "frozen_protocol": true,
+    "formal_observations_and_attempts": true,
+    "stage1_prompt_payload_and_runtime_schema": true,
+    "round1_through_round4_evidence": true,
+    "excluded_local_checkpoint": true
+  },
+  "prohibited_actions": [
+    "model execution",
+    "OpenAI transmission",
+    "Sol session",
+    "formal rating",
+    "Stage-2 preparation dependent on sampled Stage-1 output",
+    "deletion",
+    "staging",
+    "commit",
+    "push",
+    "tag",
+    "release",
+    "publication",
+    "modification of frozen evidence"
+  ],
+  "publication_authorized": false,
+  "stage1_transmission_authorized": false
+}

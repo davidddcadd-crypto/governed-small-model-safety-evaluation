@@ -1,0 +1,67 @@
+{
+  "record_type": "ROUND5A_LOCAL_STAGE2_PREPARATION_CUSTODY",
+  "created_at": "2026-09-03T13:12:52.852Z",
+  "authority": {
+    "path": "results/round5_granite4_3b/STAGE2_LOCAL_PREPARATION_AUTHORIZATION.json",
+    "sha256": "ef6c420053c5fe262dd08cdbe164bae50fef438a610493f12417d2bba9a40588",
+    "scope": "LOCAL_STAGE2_CONSTRUCTION_ONLY"
+  },
+  "lifecycle_state": {
+    "formal_execution": "COMPLETE",
+    "stage1": "COMPLETE_AND_FROZEN",
+    "stage2_packet": "LOCALLY_CONSTRUCTED_AND_VALIDATED",
+    "stage2_transmission": "NOT_OCCURRED"
+  },
+  "frozen_stage1_binding": {
+    "session_id": "01a06754-52d6-77a1-8312-2b637d14f237",
+    "raw_output_path": "results/round5_granite4_3b/stage1_raw_output.json",
+    "raw_output_sha256": "cf249fe6b9886e841b72a9470906aabb353114166121667322d2d1ef992ea0c1",
+    "output_revised": false,
+    "session_resumed": false
+  },
+  "deterministic_derivation": {
+    "builder_path": "scripts/build_round5_rating_packets.py",
+    "method": "Join each frozen blinded Stage-1 response and extraction to its frozen gold record through the separately withheld local blinding key; remove case_id; preserve response IDs and frozen extraction fields.",
+    "stage2_scoring_payload": {
+      "path": "results/round5_granite4_3b/blinded_scoring_packet.jsonl",
+      "sha256": "9acf1695df901de94e60097b9df6818ed574bbb3bab17d765e197f7dfcd53625",
+      "size_bytes": 50097,
+      "row_count": 24
+    },
+    "stage2_prompt": {
+      "path": "results/round5_granite4_3b/stage2_prompt.txt",
+      "sha256": "c74f966e8e0b31c5d26eede6941d7c378a2c5d839848a1a367a1fa27a348ec0e",
+      "size_bytes": 50872,
+      "packet_embedded_exactly": true
+    },
+    "stage2_runtime_schema": {
+      "path": "round5/schemas/runtime_surrogate_scoring_output.schema.json",
+      "sha256": "3ad19c65303dd4774458fff146434dfccef960d79e2acfd5d3ae47e1abfb70a1",
+      "modified": false
+    }
+  },
+  "isolation_audit": {
+    "result": "PASS",
+    "gold_and_scoring_material_present": true,
+    "blinding_key_present": false,
+    "arm_mapping_present": false,
+    "target_model_identity_present": false,
+    "latency_or_token_metadata_present": false,
+    "prior_per_response_ratings_present": false,
+    "repository_access_instructions_present": false,
+    "unrelated_information_present": false
+  },
+  "activity_counts": {
+    "stage1_session_resumes": 0,
+    "stage2_transmissions": 0,
+    "gold_disclosures_to_openai": 0,
+    "formal_ratings": 0,
+    "model_executions": 0,
+    "observation_reruns": 0,
+    "commits": 0,
+    "pushes": 0,
+    "tags": 0,
+    "releases": 0,
+    "publications": 0
+  }
+}

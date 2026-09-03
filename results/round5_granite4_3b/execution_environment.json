@@ -1,0 +1,133 @@
+{
+  "authorization": {
+    "authorization_type": "ROUND5A_FORMAL_EXECUTION",
+    "authorized_at": "2026-09-03T12:21:37.381Z",
+    "authorized_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+    "project_owner": "David / Tai Wai Lee",
+    "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize exactly 24 formal Round 5A observations using granite4:3b (Ollama manifest SHA-256 89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f, model blob SHA-256 6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0) under the frozen Round-5 protocol manifest identified by authorized_protocol_manifest_sha256. I authorize no surrogate-rating transmission, formal rating, change to frozen Round-1, Round-2, Round-3, or Round-4 evidence, selective rerun, publication, commit, push, tag, or release."
+  },
+  "captured_at": "2026-09-03T12:22:22.445Z",
+  "command_evidence": {
+    "nvidia_smi": {
+      "available": true,
+      "command": [
+        "nvidia-smi"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Thu Sep  3 08:22:24 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 582.66                 Driver Version: 582.66         CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce GTX 1070      WDDM  |   00000000:2D:00.0  On |                  N/A |\n|  0%   37C    P2             47W /  151W |    3031MiB /   8192MiB |      2%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A             748    C+G   ...indows\\System32\\ShellHost.exe      N/A      |\n|    0   N/A  N/A            9348    C+G   ...xyewy\\ShellExperienceHost.exe      N/A      |\n|    0   N/A  N/A            9388    C+G   ...5n1h2txyewy\\TextInputHost.exe      N/A      |\n|    0   N/A  N/A           11212    C+G   C:\\Windows\\explorer.exe               N/A      |\n|    0   N/A  N/A           12312    C+G   ...2p2nqsd0c76g0\\app\\ChatGPT.exe      N/A      |\n|    0   N/A  N/A           14720    C+G   ...2txyewy\\CrossDeviceResume.exe      N/A      |\n|    0   N/A  N/A           15424    C+G   ...App_cw5n1h2txyewy\\LockApp.exe      N/A      |\n|    0   N/A  N/A           16024    C+G   ...ntrolPanel\\SystemSettings.exe      N/A      |\n|    0   N/A  N/A           17632    C+G   ..._cw5n1h2txyewy\\SearchHost.exe      N/A      |\n|    0   N/A  N/A           19340    C+G   ...em32\\ApplicationFrameHost.exe      N/A      |\n|    0   N/A  N/A           21180    C+G   ...64__8wekyb3d8bbwe\\Copilot.exe      N/A      |\n|    0   N/A  N/A           26908    C+G   ...\\Creative Cloud UI Helper.exe      N/A      |\n|    0   N/A  N/A           30928    C+G   ...4__8wekyb3d8bbwe\\ms-teams.exe      N/A      |\n|    0   N/A  N/A           31500    C+G   ...__kzh8wxbdkxb8p\\DCv2\\DCv2.exe      N/A      |\n|    0   N/A  N/A           31808    C+G   ....0.4191.53\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           33564    C+G   ...n\\AdobeNotificationClient.exe      N/A      |\n|    0   N/A  N/A           34880    C+G   ....0.4191.53\\msedgewebview2.exe      N/A      |\n|    0   N/A  N/A           34968    C+G   ...y\\StartMenuExperienceHost.exe      N/A      |\n|    0   N/A  N/A           35108      C   ...a\\lib\\ollama\\llama-server.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n"
+    },
+    "ollama_ps_after_warmup": {
+      "available": true,
+      "command": [
+        "ollama",
+        "ps"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "NAME           ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \ngranite4:3b    89962fcc7523    2.5 GB    100% GPU     4096       9 minutes from now    \n"
+    },
+    "ollama_show": {
+      "available": true,
+      "command": [
+        "ollama",
+        "show",
+        "granite4:3b"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "  Model\n    architecture        granite    \n    parameters          3.4B       \n    context length      131072     \n    embedding length    2560       \n    quantization        Q4_K_M     \n\n  Capabilities\n    completion    \n    tools         \n\n  License\n    Apache License               \n    Version 2.0, January 2004    \n    ...                          \n\n"
+    },
+    "ollama_template": {
+      "available": true,
+      "command": [
+        "ollama",
+        "show",
+        "granite4:3b",
+        "--template"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{{- /*\n\n------ MESSAGE PARSING ------\n\n*/}}\n{{- /*\nDeclare the system prompt chunks used for different features\n*/}}\n{{- $tools_system_message_prefix := \"You are a helpful assistant with access to the following tools. You may call one or more tools to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n{{- $tools_system_message_suffix := \"\\n</tools>\\n\\nFor each tool call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call>. If a tool does not exist in the provided list of tools, notify the user that you do not have the ability to fulfill the request.\" }}\n{{- $documents_system_message_prefix := \"You are a helpful assistant with access to the following documents. You may use one or more documents to assist with the user query.\\n\\nYou are given a list of documents within <documents></documents> XML tags:\\n<documents>\" }}\n{{- $documents_system_message_suffix := \"\\n</documents>\\n\\nWrite the response to the user's input by strictly aligning with the facts in the provided documents. If the information needed to answer the question is not available in the documents, inform the user that the question cannot be answered based on the available data.\" }}\n{{- $g4_default_system_message := \"You are a helpful assistant. Please ensure responses are professional, accurate, and safe.\" }}\n\n{{- /*\nDeclare the prompt structure variables to be filled in from messages\n*/}}\n{{- $tools_system_message := \"\" }}\n{{- $documents_system_message := \"\" }}\n{{- $system_message := \"\" }}\n{{- $document_counter := 0 }}\n{{- $last_query_index := 0 }}\n\n{{- /*\nOutput parsing heuristic\n\nOllama has very specific heuristics for parsing the tags for thinking and tool\ncalling. Rather than contorting the actual message expansion to match the\nexpectations, we explicitly put them here behind an unreachable condition.\n*/}}\n{{- if false }}\n    {{- /* tool calls: https://github.com/ollama/ollama/blob/main/tools/template.go#L17 */}}\n    {{- if .ToolCalls }}<tool_call>{{- end }}\n{{- end }}\n\n{{- /*\nCreate tools system message chunk\n*/}}\n{{- if .Tools }}\n    {{- $tools_system_message = print $tools_system_message_prefix }}\n    {{- range $_, $tool_body := .Tools }}\n        {{- $tools_system_message = print $tools_system_message \"\\n\" (json $tool_body) }}\n    {{- end }}\n    {{- $tools_system_message = print $tools_system_message $tools_system_message_suffix }}\n{{- end }}\n\n\n{{- /*\nLoop over messages to parse variables:\n\n- User provided documents in the \"document\" role\n- Last user query index\n- Initial system message\n\nNOTE: Since Ollama collates consecutive roles, for documents, we work around\n    this by allowing the role to contain a qualifier after the role string. This\n    is also then used as the title of the document.\n*/ -}}\n{{- range $index, $_ := .Messages }}\n    {{- if (and (eq .Role \"system\") (eq $index 0)) }}\n        {{- if ne $system_message \"\" }}\n            {{- $system_message = print $system_message \"\\n\" }}\n        {{- end }}\n        {{- $system_message = print $system_message .Content }}\n    {{- else if eq .Role \"user\" }}\n        {{- /*\n        NOTE: 31 == len '<tool_response></tool_response>'. We only check the\n            prefix match since go template doesn't support negative indexing.\n        */}}\n        {{- if or (lt (len .Content) 31) (ne (slice .Content 0 15) \"<tool_response>\") }}\n            {{- $last_query_index = $index }}\n        {{- end }}\n    {{- else if (and (ge (len .Role) 8) (eq (slice .Role 0 8) \"document\")) }}\n        {{- if (eq $document_counter 0)}}\n            {{- $documents_system_message = print $documents_system_message_prefix}}\n        {{- end }}\n        {{- $identifier := \"\"}}\n        {{- if (ge (len .Role) 9) }}\n            {{- $identifier = slice .Role 9}}\n        {{- end }}\n        {{- if (eq $identifier \"\") }}\n            {{- $identifier := print $document_counter}}\n        {{- end }}\n        {{- $documents_system_message = print $documents_system_message \"\\n{\\\"doc_id\\\": \" $document_counter \", \\\"title\\\": \\\"\" $identifier \"\\\", \\\"text\\\": \\\"\" .Content \"\\\"}\"}}\n        {{- $document_counter = len (printf \"a%*s\" $document_counter \"\")}}\n    {{- end }}\n{{- end }}\n{{- if (ne $document_counter 0) }}\n{{- $documents_system_message = print $documents_system_message $documents_system_message_suffix}}\n{{- end }}\n\n{{- /*\nConstruct the full system message\n*/}}\n{{- if ne $tools_system_message \"\" }}\n    {{- if ne $system_message \"\" }}\n        {{- $system_message = print $system_message \"\\n\\n\" }}\n    {{- end }}\n    {{- $system_message = print $system_message $tools_system_message }}\n{{- end }}\n{{- if ne $documents_system_message \"\" }}\n    {{- if ne $system_message \"\" }}\n        {{- $system_message = print $system_message \"\\n\\n\" }}\n    {{- end }}\n    {{- $system_message = print $system_message $documents_system_message }}\n{{- end }}\n\n{{- /*\n\n------ TEMPLATE EXPANSION ------\n\n*/}}\n{{- if ne $system_message \"\" -}}\n<|start_of_role|>system<|end_of_role|>{{ $system_message }}<|end_of_text|>{{ \"\\n\" }}\n{{- else -}}\n<|start_of_role|>system<|end_of_role|>{{ $g4_default_system_message }}<|end_of_text|>{{ \"\\n\" }}\n{{- end }}\n{{- $prev_role := \"\" }}\n{{- range $message_index, $_ := .Messages }}\n    {{- $next_message_index := len (printf \"a%*s\" $message_index \"\") }}\n    {{- if or (eq .Role \"user\") (and (eq .Role \"system\") (ne $message_index 0)) }}\n        {{- \"\" }}<|start_of_role|>{{- .Role }}<|end_of_role|>{{- .Content }}<|end_of_text|>{{ \"\\n\" }}\n    {{- else if eq .Role \"assistant\" -}}\n        {{- \"\" }}<|start_of_role|>{{ .Role }}<|end_of_role|>{{ .Content }}\n\n        {{- /* Expand tool calls */}}\n        {{- $content := .Content }}\n        {{- if .ToolCalls }}\n            {{- range $tool_idx, $tool_call := .ToolCalls }}\n                {{- if or (ne $content \"\") (ne $tool_idx 0) }}\n                   {{- \"\\n\" }}\n                {{- end }}\n                {{- print \"<tool_call>\\n{\\\"name\\\": \\\"\" $tool_call.Function.Name \"\\\", \\\"arguments\\\": \" (json $tool_call.Function.Arguments) \"}\\n</tool_call>\" }}\n            {{- end }}\n        {{- end }}\n\n        {{- /* End assistant block */}}<|end_of_text|>{{ \"\\n\" }}\n\n    {{- else if eq .Role \"tool\" }}\n        {{- if (ne $prev_role \"tool\") -}}\n            <|start_of_role|>user<|end_of_role|>\n        {{- end }}\n        {{- \"\\n\" }}<tool_response>{{ print \"\\n\" .Content \"\\n\" }}</tool_response>\n        {{- if ne $next_message_index (len $.Messages) }}\n            {{- $next_element := index $.Messages $next_message_index }}\n            {{- if ne $next_element.Role \"tool\" -}}\n                <|end_of_text|>{{ \"\\n\" }}\n            {{- end }}\n        {{- else -}}\n            <|end_of_text|>{{ \"\\n\" }}\n        {{- end }}\n    {{- end }}\n\n    {{- /* If not an assistant message at the end, add generation prompt */}}\n    {{- if and (eq $next_message_index (len $.Messages)) (ne .Role \"assistant\") }}\n        {{- \"<|start_of_role|>assistant<|end_of_role|>\" }}\n    {{- end }}\n{{- end }}"
+    },
+    "windows_inventory": {
+      "available": true,
+      "command": [
+        "powershell",
+        "-NoProfile",
+        "-Command",
+        "$cpu=Get-CimInstance Win32_Processor|Select-Object Name,NumberOfCores,NumberOfLogicalProcessors;$system=Get-CimInstance Win32_ComputerSystem|Select-Object TotalPhysicalMemory,Manufacturer,Model;[pscustomobject]@{cpu=$cpu;system=$system}|ConvertTo-Json -Depth 4 -Compress"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"cpu\":{\"Name\":\"AMD Ryzen 9 5950X 16-Core Processor            \",\"NumberOfCores\":16,\"NumberOfLogicalProcessors\":32},\"system\":{\"TotalPhysicalMemory\":34280726528,\"Manufacturer\":\"Micro-Star International Co., Ltd.\",\"Model\":\"MS-7C84\"}}\n"
+    }
+  },
+  "frozen_preparation_host_identity": {
+    "codex_cli_version": "0.152.1",
+    "cpu": "AMD Ryzen 9 5950X 16-Core Processor",
+    "gpu": "NVIDIA GeForce GTX 1070",
+    "gpu_free_memory_mib_at_capture": 5024,
+    "gpu_memory_mib": 8192,
+    "logical_processors": 32,
+    "machine": "AMD64",
+    "manufacturer": "Micro-Star International Co., Ltd.",
+    "nvidia_driver": "582.66",
+    "os_architecture": "64bit",
+    "os_build": "26200.9168",
+    "os_display_version": "25H2",
+    "os_product_name_registry": "Windows 10 Home",
+    "physical_cores": 16,
+    "physical_memory_bytes": 34280726528,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "python_capture_runtime": "3.13.13",
+    "python_default": "3.14.5",
+    "python_validation_note": "Use Python 3.13 for the applicable validation suite; do not repeatedly investigate the known unrelated Python 3.14 Windows subprocess WinError 6 behavior.",
+    "python_validation_runtime": "3.13.13",
+    "system_model": "MS-7C84"
+  },
+  "machine": "AMD64",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]",
+  "round5_protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+  "validated_model_runtime": {
+    "details": {
+      "context_length": 131072,
+      "embedding_length": 2560,
+      "families": [
+        "granite"
+      ],
+      "family": "granite",
+      "format": "gguf",
+      "parameter_size": "3.4B",
+      "parent_model": "/Users/runner/.ollama/models/blobs/sha256-6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0",
+      "quantization_level": "Q4_K_M"
+    },
+    "layers": {
+      "config": {
+        "sha256": "ba32b08db168051148743c54d446b8b0d82d112ced661edc21b070d3038f6ff1",
+        "size_bytes": 417
+      },
+      "license": {
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "size_bytes": 11358
+      },
+      "model": {
+        "sha256": "6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0",
+        "size_bytes": 2099502528
+      },
+      "template": {
+        "sha256": "0f6ec9740c765c3fb0dc38fe25f4d283c3bc1ede32b76f81c3a971daef20f76c",
+        "size_bytes": 7082
+      }
+    },
+    "model_blob_sha256": "6c02683809a8dc4eb05c78d44bc63bcd707703b078998fa58829c858ab337bb0",
+    "model_blob_size_bytes": 2099502528,
+    "model_manifest_sha256": "89962fcc75239ac434cdebceb6b7e0669397f92eaef9c487774b718bc36a3e5f",
+    "model_tag": "granite4:3b",
+    "ollama_api_version": "0.33.2",
+    "ollama_cli_output": "ollama version is 0.33.2"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "record_type": "ROUND5A_FORMAL_RUNNER_CUSTODY_CORRECTION",
+  "recorded_at": "2026-09-03T12:27:15.697Z",
+  "run_id": "R5A-RUN-016",
+  "protocol_manifest_sha256": "a556679cc276422f250d556f0b512334652b40eb7c35bbe07a45551d4290fd5b",
+  "disposition": {
+    "superseded_record_path": "results/round5_granite4_3b/attempts/R5A-RUN-016-INTERRUPTION-CUSTODY.json",
+    "superseded_record_sha256": "c6c1bb89916719556354cae48ed92641bed45a5d51ab341f3d38b371448b2d9c",
+    "status": "REJECTED_NOT_AUTHORITATIVE",
+    "reason": "A later filesystem timestamp audit proved that the original formal runner continued after R5A-RUN-016 and completed all 24 observations. The earlier interruption inference was false."
+  },
+  "verified_timeline": {
+    "r5a_run_016_attempt_creation_utc": "2026-09-03T12:22:58.9921040Z",
+    "r5a_run_016_raw_run_creation_utc": "2026-09-03T12:22:58.9942056Z",
+    "r5a_run_017_attempt_creation_utc": "2026-09-03T12:23:01.0149641Z",
+    "r5a_run_024_attempt_creation_utc": "2026-09-03T12:23:15.6438231Z",
+    "r5a_run_024_raw_run_creation_utc": "2026-09-03T12:23:15.6454111Z",
+    "formal_requests_present": 24,
+    "formal_first_attempts_present": 24,
+    "formal_raw_runs_present": 24,
+    "consolidated_rows_present": 24
+  },
+  "r5a_run_016_custody": {
+    "attempt_path": "results/round5_granite4_3b/attempts/R5A-RUN-016-ATTEMPT-01.json",
+    "attempt_sha256": "653d8484e20bcc6daf46b735844104aa24e6286175a93e266f000e78974d0228",
+    "raw_run_path": "results/round5_granite4_3b/raw_runs/R5A-RUN-016.json",
+    "raw_run_sha256": "e8b8dbf2e58cdc70ee01496779a0128428e2da15bcbfb50ee20ca7cc373af9bd",
+    "original_raw_run_creation_utc": "2026-09-03T12:22:58.9942056Z",
+    "unnecessary_rewrite_utc": "2026-09-03T12:25:20.9916651Z",
+    "rewrite_explanation": "The orchestrator attempted a deterministic reconstruction after incorrectly inferring that the runner had stopped. The original raw-run already existed. The rewritten canonical bytes were exactly identical to the original canonical bytes.",
+    "response_bytes_changed": false,
+    "model_rerun_occurred": false,
+    "second_attempt_occurred": false,
+    "selective_regeneration_occurred": false
+  },
+  "completion_evidence": {
+    "r5a_run_017_attempt_path": "results/round5_granite4_3b/attempts/R5A-RUN-017-ATTEMPT-01.json",
+    "r5a_run_017_attempt_sha256": "bbdbdd8fe0c8e79ce302f8b799a10970f83ae905cfe22d1f72b62731700cafe4",
+    "r5a_run_024_attempt_path": "results/round5_granite4_3b/attempts/R5A-RUN-024-ATTEMPT-01.json",
+    "r5a_run_024_attempt_sha256": "7810c4e23b5bf2e865f2136aa7a6869d2e676edc083907914891f052edb79aa6",
+    "r5a_run_024_raw_run_path": "results/round5_granite4_3b/raw_runs/R5A-RUN-024.json",
+    "r5a_run_024_raw_run_sha256": "8d6e0a6b09ee628de74cf280c80ccbc9b3ca59bc4bc10814be4fedf9b9d12400",
+    "consolidated_path": "results/round5_granite4_3b/formal_raw_results.jsonl",
+    "consolidated_sha256": "11ed3d64f40ca072ba57e744171c528be92cf0db10cba475a093e8d6c8e76ab3"
+  },
+  "external_activity": {
+    "additional_ollama_request_from_correction": false,
+    "openai_transmission": false,
+    "sol_session": false
+  }
+}

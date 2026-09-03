@@ -1,0 +1,30 @@
+{
+  "version": "round5a-result-manifest-plan-v1",
+  "result_root": "results/round5_granite4_3b",
+  "overwrite_policy": "refuse; repairs require fresh protocol or evidence identifiers",
+  "required_artifacts": [
+    "PROJECT_OWNER_AUTHORIZATION.json",
+    "warmup.json",
+    "execution_environment.json",
+    "24 request files",
+    "at least 24 and at most 48 attempt files",
+    "24 immutable raw-run files",
+    "formal_raw_results.jsonl",
+    "blinded_extraction_packet.jsonl",
+    "blinding_key.json",
+    "stage-specific transmission authorizations and rater custody",
+    "ratings_surrogate.jsonl",
+    "ROUND5_METRICS.json",
+    "ROUND5_REPORT.md"
+  ],
+  "bindings": [
+    "Round-5 protocol manifest and SHA-256",
+    "all frozen source and prior-publication hashes",
+    "model manifest, config, model, template, and license layer hashes",
+    "request and raw API-body hashes per observation",
+    "stage-specific authorization, calibration, rubric, packets, prompts, event logs, raw rater outputs, and session hashes",
+    "each result path, byte size, and SHA-256"
+  ],
+  "clean_checkout_rule": "results/ratings_primary.partial.jsonl may be absent; if present it must match its frozen size and SHA-256",
+  "publication_boundary": "No result-dependent publication artifact is created during preparation. Future additive publication custody must bind the immutable result manifest and complete disclosures."
+}
