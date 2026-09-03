@@ -1,0 +1,17 @@
+{
+  "version": "round4a-publication-manifest-plan-v1",
+  "state_at_protocol_freeze": "PREPUBLICATION",
+  "canonical_report_template": "round4/templates/ROUND4_REPORT.md",
+  "publication_addendum_template": "round4/templates/ROUND4_PUBLICATION_ADDENDUM.md",
+  "release_notes_template": "round4/templates/RELEASE_NOTES.md",
+  "future_publication_manifest": "results/round4_llama32_3b/PUBLICATION_MANIFEST.json",
+  "additive_only": true,
+  "frozen_result_evidence_may_not_be_edited": true,
+  "excluded_checkpoint_required_in_clean_checkout": false,
+  "required_additive_artifacts": [
+    "POSTEXECUTION_VALIDATION.json",
+    "ROUND4_PUBLICATION_ADDENDUM.md",
+    "stage1_combined.log",
+    "stage2_combined.log"
+  ]
+}

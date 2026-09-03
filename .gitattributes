@@ -3,3 +3,12 @@ round3/preflight/stage1_schema_combined.log -text
 round3/preflight/stage1_schema_events.jsonl -text
 round3/preflight/stage2_schema_combined.log -text
 round3/preflight/stage2_schema_events.jsonl -text
+round4/preflight/stage1_schema_combined.log -text
+round4/preflight/stage1_schema_events.jsonl -text
+round4/preflight/stage2_schema_combined.log -text
+round4/preflight/stage2_schema_events.jsonl -text
+round4/preflight/byte_preservation_probe.log -text
+results/round4_llama32_3b/stage1_combined.log -text
+results/round4_llama32_3b/stage1_events.jsonl -text
+results/round4_llama32_3b/stage2_combined.log -text
+results/round4_llama32_3b/stage2_events.jsonl -text

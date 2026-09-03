@@ -1,0 +1,23 @@
+{
+  "record_type": "ROUND4A_PREAUTHORIZATION_PROTOCOL_MANIFEST_V2_REPAIR",
+  "recorded_at": "2026-09-03T01:12:44.7815512Z",
+  "formal_observations_at_detection": 0,
+  "rejected_manifest": {
+    "path": "round4/round4_protocol_manifest_v2.json",
+    "sha256": "e49aea05dffc4b3801d20fab9ca7c1b0873f49c0a25a7a0c225c276cc5f9ff2a",
+    "status": "REJECTED_PREAUTHORIZATION_VALIDATION_RUNTIME_METADATA_MISMATCH"
+  },
+  "defect": {
+    "path": "round4/MODEL_AND_ENVIRONMENT.json",
+    "description": "The metadata identified Python 3.14.5 as the validation runtime, but the final complete passing targeted and lifecycle-applicable suites used Python 3.13.13. Python 3.14.5 remains the default interpreter.",
+    "evaluation_semantics_affected": false,
+    "formal_evidence_affected": false
+  },
+  "repair": {
+    "preserved_rejected_manifest": true,
+    "active_manifest_path": "round4/round4_protocol_manifest_v3.json",
+    "python_default": "3.14.5",
+    "python_validation_runtime": "3.13.13",
+    "prior_round_evidence_modified": false
+  }
+}

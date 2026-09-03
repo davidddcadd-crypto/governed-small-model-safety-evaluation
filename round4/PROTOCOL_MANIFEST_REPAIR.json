@@ -1,0 +1,23 @@
+{
+  "record_type": "ROUND4A_PREAUTHORIZATION_PROTOCOL_MANIFEST_REPAIR",
+  "recorded_at": "2026-09-03T01:02:24.8078773Z",
+  "formal_observations_at_detection": 0,
+  "rejected_manifest": {
+    "path": "round4/round4_protocol_manifest.json",
+    "sha256": "af59dc22f92f389a74ea8d5a8ec71563bfb40e6f2ccdc0774dfae46f965de62a",
+    "status": "REJECTED_PREAUTHORIZATION_STALE_REPORT_HEADING"
+  },
+  "defect": {
+    "path": "scripts/analyze_round4.py",
+    "description": "Future report heading said Llama 4.1 instead of the exact Llama 3.2 model family, and descriptive context omitted Granite Round 3A.",
+    "evaluation_semantics_affected": false,
+    "formal_evidence_affected": false
+  },
+  "repair": {
+    "preserved_rejected_manifest": true,
+    "active_manifest_path": "round4/round4_protocol_manifest_v2.json",
+    "correct_model_heading": "Round 4A Llama 3.2 3B governed safety replication",
+    "descriptive_context": ["Phi-4 Round 1", "Ministral Round 2A", "Granite Round 3A", "Llama Round 4A"],
+    "prior_round_evidence_modified": false
+  }
+}

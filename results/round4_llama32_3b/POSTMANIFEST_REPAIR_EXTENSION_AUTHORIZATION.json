@@ -1,0 +1,14 @@
+{
+  "authorization_type": "round4a_additive_postmanifest_repair_extension",
+  "authorized_at": "2026-09-03T02:02:28.459Z",
+  "project_owner": "David / Tai Wai Lee",
+  "authorization_text": "I, David / Tai Wai Lee, Project Owner, explicitly authorize an additive extension of the Round-4 post-manifest custody repair to record tests/test_round4_preparation.py::test_lifecycle_and_publication_architecture_is_frozen as a fourth EXPECTED_LIFECYCLE_TRANSITION.\n\nCodex may update only the newly created additive Round-4 repair, validation, disclosure, publication-custody, and test artifacts from the current repair attempt; preserve the newly identified frozen test and all previously frozen protocol, observation, rater-output, rating, metric, report, and result-manifest bytes unchanged; create the additive post-execution validation record and future publication-custody plan; and run local and isolated clean-checkout validation.\n\nI authorize no modification of frozen Round-1, Round-2, or Round-3 evidence; no modification or rerun of Round-4 observations or ratings; no additional OpenAI transmission; no commit, push, tag, release, publication, deletion, force-push, or other repository mutation.",
+  "authorized_actions": [
+    "record the fourth EXPECTED_LIFECYCLE_TRANSITION in additive Round-4 repair artifacts",
+    "create the additive post-execution validation record",
+    "create the future publication-custody plan",
+    "run local and isolated clean-checkout validation"
+  ],
+  "publication_authorized": false,
+  "commit_authorized": false
+}

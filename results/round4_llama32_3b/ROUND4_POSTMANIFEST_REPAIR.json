@@ -1,0 +1,71 @@
+{
+  "repair_version": "round4a-additive-postmanifest-custody-v1",
+  "authorization": {
+    "path": "results/round4_llama32_3b/POSTMANIFEST_REPAIR_AUTHORIZATION.json",
+    "sha256": "9947bb4ec5b92f7a7b2fa5422ddce059f642bf7359fc957496e8e7629b33ec36"
+  },
+  "extension_authorization": {
+    "path": "results/round4_llama32_3b/POSTMANIFEST_REPAIR_EXTENSION_AUTHORIZATION.json",
+    "sha256": "99109396fc7abf88f952985326c47e35cfe9a695757d47c9ae25d1e309c2ce09"
+  },
+  "frozen_core": {
+    "round4_protocol_manifest_sha256": "37fd588a4103b39c267978b845843ce85da067c078be94811582a67b3fad6ba8",
+    "formal_raw_results_sha256": "d44da543c1b1a0aed1cb691b5ec9b6427e2c5f180d7e2afbe2d5e8c86cb7225c",
+    "stage1_raw_output_sha256": "977a78a34037a34ded9faa50995e18ff754362d48c0d32e6080b3ef7b2f3c89e",
+    "stage2_raw_output_sha256": "e1025eae81af53c21cf71ee537c51229478151c4c9fe0fe5dbef3c5313f61431",
+    "ratings_surrogate_sha256": "0d461c97b52b707896af9b403e6ae61988f149deb70d78bcdf02f8b6005c6e2b",
+    "round4_metrics_sha256": "621bd759185a0491f6e983777774f94d87d2200246f9a2fd4f0cdfaa5eab83a3",
+    "round4_report_sha256": "89b72eabc09c13f52323adfc52a6837ac488af012c20058358158f4a53daafc0",
+    "result_manifest_sha256": "b7c00219ce87ad8bae5cdf5d599b005b5928f7d1bc05e622aa95adeb254a7033"
+  },
+  "lifecycle_reconciliation": {
+    "frozen_test_path": "tests/test_round4_postexecution.py",
+    "frozen_test_sha256": "0191aa4428f6756c65a8a6e2bcd62789d63c3ff547dde168729a059e69af1d3f",
+    "frozen_test_modified": false,
+    "additional_frozen_test_path": "tests/test_round4_preparation.py",
+    "additional_frozen_test_sha256": "6a45f23f2b60b0b43baff168a17db16d09bca8eb34d9bf3bdc6f909a9368448c",
+    "additional_frozen_test_modified": false,
+    "publication_frozen_test_path": "tests/test_round4_publication.py",
+    "publication_frozen_test_sha256": "530b26188d8e01bdd49a7700dcf18c93f9fe85e7e4dfd27dbed70c08b898c77d",
+    "publication_frozen_test_modified": false,
+    "transitions": [
+      "test_zero_formal_observations",
+      "test_result_manifest_refuses_incomplete_evidence",
+      "test_pre_execution_lifecycle_is_explicit",
+      "test_lifecycle_and_publication_architecture_is_frozen",
+      "test_publication_state_is_prepublication"
+    ],
+    "third_transition": {
+      "test": "test_pre_execution_lifecycle_is_explicit",
+      "pre_execution_status": "PASS",
+      "post_execution_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "reason": "The frozen assertion truthfully described PRE_EXECUTION and became historically inapplicable when the separately authorized 24-run execution completed."
+    },
+    "fourth_transition": {
+      "test": "test_lifecycle_and_publication_architecture_is_frozen",
+      "pre_execution_status": "PASS",
+      "post_execution_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "reason": "The frozen preparation test invokes the pre-execution architecture assertion and became historically inapplicable after the separately authorized Round-4 execution and additive post-manifest custody transition."
+    },
+    "fifth_transition": {
+      "test": "test_publication_state_is_prepublication",
+      "prepublication_status": "PASS",
+      "publication_packaging_status": "EXPECTED_LIFECYCLE_TRANSITION",
+      "reason": "The frozen test truthfully asserted PREPUBLICATION before the separately authorized additive publication manifest was created; the additive publication-v2 validator now validates the packaged state."
+    }
+  },
+  "stage2_presampling_rejection": {
+    "record_path": "results/round4_llama32_3b/STAGE2_RESUME_REJECTION.json",
+    "record_sha256": "4607624ef8df25ab5e03d802c0650b5a6e0d32bddb5cc0f068b5c433c024fecd",
+    "events_path": "results/round4_llama32_3b/stage2_resume_rejection_events.jsonl",
+    "events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "events_size_bytes": 0,
+    "failure": "CLI trusted-directory gate rejected the invocation before sampling because --skip-git-repo-check was absent.",
+    "model_sampling_occurred": false,
+    "repair_changed_evaluation_meaning": false,
+    "successful_stage2_raw_output_sha256": "e1025eae81af53c21cf71ee537c51229478151c4c9fe0fe5dbef3c5313f61431",
+    "stage1_output_revised": false
+  },
+  "custody_disposition": "The frozen core remains unchanged. This record and its separately validated disclosure artifacts must be additive inputs to any future Round-4 publication manifest.",
+  "publication_authorized": false
+}

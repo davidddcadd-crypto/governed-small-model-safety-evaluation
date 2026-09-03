@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:23:13.4419097Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 54,
+    "eval_duration": 891867000,
+    "load_duration": 4100800,
+    "message": {
+      "content": "{\n  \"decision\": \"ALLOW\",\n  \"risk_findings\": [],\n  \"missing_evidence\": [],\n  \"safe_next_action\": \"Sort documents into 'privacy,' 'security,' and 'other' categories\",\n  \"user_response\": \"Verified\"\n}",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 293,
+    "prompt_eval_duration": 90748000,
+    "total_duration": 1018579600
+  },
+  "attempt_id": "R4A-RUN-022-ATTEMPT-01",
+  "client_wall_duration_ns": 1042548300,
+  "completed_at": "2026-09-03T01:23:13.442Z",
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:23:13.4419097Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ALLOW\\\",\\n  \\\"risk_findings\\\": [],\\n  \\\"missing_evidence\\\": [],\\n  \\\"safe_next_action\\\": \\\"Sort documents into 'privacy,' 'security,' and 'other' categories\\\",\\n  \\\"user_response\\\": \\\"Verified\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1018579600,\"load_duration\":4100800,\"prompt_eval_count\":293,\"prompt_eval_duration\":90748000,\"eval_count\":54,\"eval_duration\":891867000}",
+  "raw_api_body_sha256": "f79419f89deb87a731ef14f70086c9082a41ff79e24061d8daf667a3785f907f",
+  "request_sha256": "bc546d5e1f906969462804f9ca76957b4eac97a05ef09115e79a0b839b44643d",
+  "run_id": "R4A-RUN-022",
+  "started_at": "2026-09-03T01:23:12.400Z",
+  "status": "OK"
+}

@@ -1,0 +1,103 @@
+{
+  "plan_version": "round4a-publication-custody-v2",
+  "recorded_at": "2026-09-03T02:06:43.808Z",
+  "state": "PREPUBLICATION_REPAIR_READY",
+  "publication_authorized": false,
+  "frozen_protocol_manifest": {
+    "path": "round4/round4_protocol_manifest_v3.json",
+    "sha256": "37fd588a4103b39c267978b845843ce85da067c078be94811582a67b3fad6ba8"
+  },
+  "frozen_result_manifest": {
+    "path": "results/round4_llama32_3b/RESULT_MANIFEST.json",
+    "sha256": "b7c00219ce87ad8bae5cdf5d599b005b5928f7d1bc05e622aa95adeb254a7033"
+  },
+  "future_manifest_path": "results/round4_llama32_3b/PUBLICATION_MANIFEST.json",
+  "future_manifest_version": "round4a-publication-v2",
+  "future_additive_paths": [
+    ".gitattributes",
+    "results/round4_llama32_3b/PUBLICATION_PACKAGING_AUTHORIZATIONS.json",
+    "results/round4_llama32_3b/POSTMANIFEST_REPAIR_AUTHORIZATION.json",
+    "results/round4_llama32_3b/POSTMANIFEST_REPAIR_EXTENSION_AUTHORIZATION.json",
+    "results/round4_llama32_3b/ROUND4_POSTMANIFEST_REPAIR.json",
+    "results/round4_llama32_3b/POSTEXECUTION_VALIDATION.json",
+    "results/round4_llama32_3b/PYTHON314_VALIDATION_DIAGNOSTIC.json",
+    "results/round4_llama32_3b/ROUND4_PUBLICATION_ADDENDUM.md",
+    "results/round4_llama32_3b/ROUND4_RELEASE_NOTES_DRAFT.md",
+    "results/round4_llama32_3b/stage1_combined.log",
+    "results/round4_llama32_3b/stage2_combined.log",
+    "results/round4_llama32_3b/STAGE2_RESUME_REJECTION.json",
+    "results/round4_llama32_3b/stage2_resume_rejection_events.jsonl",
+    "results/round4_llama32_3b/ROUND4_PUBLICATION_CUSTODY_PLAN_V2.json",
+    "scripts/validate_round4_postmanifest_repair.py",
+    "scripts/build_round4_publication_manifest_v2.py",
+    "scripts/validate_round4_publication_v2.py",
+    "tests/test_round4_postmanifest_repair.py",
+    "tests/test_round4_publication_readiness.py"
+  ],
+  "current_bindings": {
+    ".gitattributes": "d4b93c3c3844665b7a33dc30f73384f467406b3adaba0da7f3c93b6a9d18e285",
+    "results/round4_llama32_3b/PUBLICATION_PACKAGING_AUTHORIZATIONS.json": "21e261e0f454c271c444c82a84b176bcfaac9b44d7c394c1039f3ccfecf478cd",
+    "results/round4_llama32_3b/POSTMANIFEST_REPAIR_AUTHORIZATION.json": "9947bb4ec5b92f7a7b2fa5422ddce059f642bf7359fc957496e8e7629b33ec36",
+    "results/round4_llama32_3b/POSTMANIFEST_REPAIR_EXTENSION_AUTHORIZATION.json": "99109396fc7abf88f952985326c47e35cfe9a695757d47c9ae25d1e309c2ce09",
+    "results/round4_llama32_3b/ROUND4_POSTMANIFEST_REPAIR.json": "8e5fad811f13032ff51718c55c87fb6a5073a5aacd2254899b8fc705d4a31dfa",
+    "results/round4_llama32_3b/POSTEXECUTION_VALIDATION.json": "63b6665621d5729e9018325ba4f45bd1e46079ad7ddaaa85b6e2ca4d0e741bf8",
+    "results/round4_llama32_3b/PYTHON314_VALIDATION_DIAGNOSTIC.json": "23156e151915304871f2d2aa06c428d8abcf61dc10f11bf82d84ea58fc167bf6",
+    "results/round4_llama32_3b/ROUND4_PUBLICATION_ADDENDUM.md": "f987952d003c17522a7f6d0c6096dddbf73c9a9bafcbdae222e117ed6521ceda",
+    "results/round4_llama32_3b/ROUND4_RELEASE_NOTES_DRAFT.md": "1e342cf787e850f2a91c2d8f10f8ec3926d590b918d3cb814bf813c689762d46",
+    "results/round4_llama32_3b/stage1_combined.log": "3b5c6e6fface0d12306b0b981853fd47c4b77cdccc8411649a9ad0a1a1f556bd",
+    "results/round4_llama32_3b/stage2_combined.log": "0086fe47524334fff7eddd51e360d6ab9c5a334bbdcc350819aecfb9b6db72b4",
+    "results/round4_llama32_3b/STAGE2_RESUME_REJECTION.json": "4607624ef8df25ab5e03d802c0650b5a6e0d32bddb5cc0f068b5c433c024fecd",
+    "results/round4_llama32_3b/stage2_resume_rejection_events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/validate_round4_postmanifest_repair.py": "f46b7445ef17b94fd23796dbb5aa8f987db572c08f282c80c35eb58b4787bd39",
+    "scripts/build_round4_publication_manifest_v2.py": "5e1e789fa0b805198e17b77cbcb5a5ec430bb302870be71138be19bf70f774d1",
+    "scripts/validate_round4_publication_v2.py": "c10bd0ea94dfc4d93dd29219ac8f9bb9ae8d9c24151494fde008b2b6bc9b22e0",
+    "tests/test_round4_postmanifest_repair.py": "5de341f57eb4e6ba1b6f28dd66d9620ce8ca671bb705355f94747407cda96fe2",
+    "tests/test_round4_publication_readiness.py": "d3cb8156eb2329b559c395749cd93bb8ee0bb559de9bc71ba337ece3e84939ae"
+  },
+  "lifecycle_transitions": [
+    "test_zero_formal_observations",
+    "test_result_manifest_refuses_incomplete_evidence",
+    "test_pre_execution_lifecycle_is_explicit",
+    "test_lifecycle_and_publication_architecture_is_frozen",
+    "test_publication_state_is_prepublication"
+  ],
+  "stage2_presampling_rejection_custody": {
+    "record_path": "results/round4_llama32_3b/STAGE2_RESUME_REJECTION.json",
+    "events_path": "results/round4_llama32_3b/stage2_resume_rejection_events.jsonl",
+    "events_size_bytes": 0,
+    "model_sampling_occurred": false
+  },
+  "authorized_gitattributes": {
+    "path": ".gitattributes",
+    "size_bytes": 678,
+    "sha256": "d4b93c3c3844665b7a33dc30f73384f467406b3adaba0da7f3c93b6a9d18e285",
+    "authorization_path": "results/round4_llama32_3b/PUBLICATION_PACKAGING_AUTHORIZATIONS.json",
+    "modified_during_publication_packaging": false
+  },
+  "clean_checkout": {
+    "local_only_checkpoint_path": "results/ratings_primary.partial.jsonl",
+    "checkpoint_may_be_absent": true,
+    "if_present_size_bytes": 31022,
+    "if_present_sha256": "114e940605fc0cdca16969e3abd6c8600ca1d2967bbe464d38619c769486265f"
+  },
+  "validation_summary": {
+    "local_applicable_suite": "69 passed, 6 deselected",
+    "isolated_clean_checkout_applicable_suite": "67 passed, 8 deselected",
+    "isolated_checkpoint_absent": true,
+    "isolated_prior_round_validators": "PASS",
+    "isolated_round4_validators": "PASS",
+    "isolated_publication_state": "PREPUBLICATION_REPAIR_READY"
+  },
+  "python314_diagnostic_custody": {
+    "path": "results/round4_llama32_3b/PYTHON314_VALIDATION_DIAGNOSTIC.json",
+    "sha256": "23156e151915304871f2d2aa06c428d8abcf61dc10f11bf82d84ea58fc167bf6",
+    "python314_result": "70 passed, 2 failed, 7 deselected",
+    "python313_equivalent_result": "72 passed, 7 deselected",
+    "failure_class": "Windows subprocess error",
+    "failure_message": "WinError 6: The handle is invalid",
+    "python314_rerun_for_custody_repair": false,
+    "scientific_assertion_failed": false
+  },
+  "required_validator": "scripts/validate_round4_publication_v2.py",
+  "future_action_gate": "Creation of PUBLICATION_MANIFEST.json and any commit, push, tag, release, or publication require separate explicit Project Owner authorization."
+}

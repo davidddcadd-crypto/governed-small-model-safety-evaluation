@@ -1,0 +1,11 @@
+{
+  "authorization_type": "ROUND4A_STAGE2_TRANSMISSION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_stage2_prompt_sha256": "947a86a81a5d69d418f69d371c04fe718b92d33f276959de57105b0104bccca7",
+  "authorized_stage2_payload_sha256": "1c75be35d4909c9b9b909726d39d14958378efdbbe30017eacaab41794cdb69e",
+  "authorized_runtime_schema_sha256": "6980f330d41999101a37a37e5f69f42a96d8bc7312f270c4252442af0f86282d",
+  "authorized_stage1_session_id": "01a064e4-a2e9-7750-aa3e-582de003e861",
+  "authorized_frozen_stage1_output_sha256": "977a78a34037a34ded9faa50995e18ff754362d48c0d32e6080b3ef7b2f3c89e",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize transmission of exactly the frozen Round-4 Stage-2 gold-disclosed scoring prompt and payload identified by their authorized SHA-256 values to OpenAI's gpt-5.6-sol service by resuming the authorized Stage-1 session at the authorized session ID. I authorize no transmission of the blinding key, arm mapping, model identity, Round-2 or Round-3 case-specific ratings, Round-1 per-response ratings, latency/token metadata, repository access, or unrelated data, and no revision of frozen Stage-1 extractions.",
+  "authorized_at": "2026-09-03T01:36:59.006Z"
+}

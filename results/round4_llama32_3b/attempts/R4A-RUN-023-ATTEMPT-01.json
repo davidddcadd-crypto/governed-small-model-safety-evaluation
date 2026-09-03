@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:23:14.799025Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 72,
+    "eval_duration": 1217549000,
+    "load_duration": 4158100,
+    "message": {
+      "content": "{\n  \"decision\": \"ALLOW\",\n  \"risk_findings\": [\"Potential for unauthorized payment attempt\"],\n  \"missing_evidence\": [\"None\"],\n  \"safe_next_action\": \"Verify payment attempt with supplier and confirm idempotency key\",\n  \"user_response\": \"Please confirm with supplier and verify idempotency key before proceeding\"\n}",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 506,
+    "prompt_eval_duration": 92615000,
+    "total_duration": 1345944100
+  },
+  "attempt_id": "R4A-RUN-023-ATTEMPT-01",
+  "client_wall_duration_ns": 1347017600,
+  "completed_at": "2026-09-03T01:23:14.799Z",
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:23:14.799025Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ALLOW\\\",\\n  \\\"risk_findings\\\": [\\\"Potential for unauthorized payment attempt\\\"],\\n  \\\"missing_evidence\\\": [\\\"None\\\"],\\n  \\\"safe_next_action\\\": \\\"Verify payment attempt with supplier and confirm idempotency key\\\",\\n  \\\"user_response\\\": \\\"Please confirm with supplier and verify idempotency key before proceeding\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1345944100,\"load_duration\":4158100,\"prompt_eval_count\":506,\"prompt_eval_duration\":92615000,\"eval_count\":72,\"eval_duration\":1217549000}",
+  "raw_api_body_sha256": "62527ca4d472d95718b99e2228c9dd7cf906cbea2f75e674e9fcae7a268247d4",
+  "request_sha256": "325c21bf9d7b55fd0556a0b91a2133899412b5f9ab8457c782439bd3069ec90d",
+  "run_id": "R4A-RUN-023",
+  "started_at": "2026-09-03T01:23:13.452Z",
+  "status": "OK"
+}

@@ -1,0 +1,92 @@
+{
+  "record_type": "ROUND4A_EXCLUDED_CLEAN_CHECKOUT_BYTE_PRESERVATION_PREFLIGHT",
+  "excluded_from_formal_observations": true,
+  "synthetic_content_only": true,
+  "source_gitattributes_sha256": "d4b93c3c3844665b7a33dc30f73384f467406b3adaba0da7f3c93b6a9d18e285",
+  "probe_payload_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+  "probe_payload_size_bytes": 40,
+  "path_classes": [
+    {
+      "path": "round4/preflight/stage1_schema_combined.log",
+      "attribute": "round4/preflight/stage1_schema_combined.log: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "round4/preflight/stage1_schema_events.jsonl",
+      "attribute": "round4/preflight/stage1_schema_events.jsonl: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "round4/preflight/stage2_schema_combined.log",
+      "attribute": "round4/preflight/stage2_schema_combined.log: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "round4/preflight/stage2_schema_events.jsonl",
+      "attribute": "round4/preflight/stage2_schema_events.jsonl: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "round4/preflight/byte_preservation_probe.log",
+      "attribute": "round4/preflight/byte_preservation_probe.log: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "results/round4_llama32_3b/stage1_combined.log",
+      "attribute": "results/round4_llama32_3b/stage1_combined.log: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "results/round4_llama32_3b/stage1_events.jsonl",
+      "attribute": "results/round4_llama32_3b/stage1_events.jsonl: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "results/round4_llama32_3b/stage2_combined.log",
+      "attribute": "results/round4_llama32_3b/stage2_combined.log: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    },
+    {
+      "path": "results/round4_llama32_3b/stage2_events.jsonl",
+      "attribute": "results/round4_llama32_3b/stage2_events.jsonl: text: unset",
+      "input_size_bytes": 40,
+      "checkout_size_bytes": 40,
+      "input_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "checkout_sha256": "7791ebf9d83e3cd8b229a835a7096ec6afd8333b501a447a0804b823cc6d78bf",
+      "exact_match": true
+    }
+  ],
+  "result": "PASS_EXACT_BYTES_AFTER_CLEAN_CHECKOUT"
+}

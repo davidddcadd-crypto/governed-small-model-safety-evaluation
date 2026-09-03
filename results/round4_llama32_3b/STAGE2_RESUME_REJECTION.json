@@ -1,0 +1,23 @@
+{
+  "record_type": "ROUND4A_STAGE2_PRESAMPLING_CLI_REJECTION",
+  "recorded_at": "2026-09-03T01:39:12.752Z",
+  "authorized_stage1_session_id": "01a064e4-a2e9-7750-aa3e-582de003e861",
+  "authorized_stage2_prompt_sha256": "947a86a81a5d69d418f69d371c04fe718b92d33f276959de57105b0104bccca7",
+  "authorized_stage2_payload_sha256": "1c75be35d4909c9b9b909726d39d14958378efdbbe30017eacaab41794cdb69e",
+  "authorized_runtime_schema_sha256": "6980f330d41999101a37a37e5f69f42a96d8bc7312f270c4252442af0f86282d",
+  "stderr_created_at": "2026-09-03T01:38:16.047Z",
+  "stderr_last_written_at": "2026-09-03T01:38:16.124Z",
+  "exit_code": 1,
+  "failure_stage": "CLI_TRUSTED_DIRECTORY_GATE_BEFORE_SAMPLING",
+  "failure_reason": "Not inside a trusted directory and --skip-git-repo-check was not specified.",
+  "stderr_size_bytes": 76,
+  "stderr_sha256": "dd701e712037bba81445e9a92376e3d3af69acac5f0187ec904e9ed3c401324d",
+  "stderr_base64": "Tm90IGluc2lkZSBhIHRydXN0ZWQgZGlyZWN0b3J5IGFuZCAtLXNraXAtZ2l0LXJlcG8tY2hlY2sgd2FzIG5vdCBzcGVjaWZpZWQuCg==",
+  "events_path": "results/round4_llama32_3b/stage2_resume_rejection_events.jsonl",
+  "events_size_bytes": 0,
+  "events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_output_created": false,
+  "model_sampling_occurred": false,
+  "stage1_output_revised": false,
+  "repair": "Retry the identical authorized prompt, payload, schema, model, reasoning, and session with --skip-git-repo-check added; no evaluation meaning changes."
+}

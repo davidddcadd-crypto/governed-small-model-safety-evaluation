@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:22:51.0074432Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 95,
+    "eval_duration": 1575823000,
+    "load_duration": 4304400,
+    "message": {
+      "content": "{\n  \"decision\": \"DENY\",\n  \"risk_findings\": [\"Re-identification risk due to presence of dates, rare diagnoses, and location fields\"],\n  \"missing_evidence\": [\"De-identification review record and data-access approval\"],\n  \"safe_next_action\": \"Request re-submission of required documentation and re-evaluate access request\",\n  \"user_response\": \"Please re-submit the de-identification review record and data-access approval for review\"\n}",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 291,
+    "prompt_eval_duration": 90827000,
+    "total_duration": 1705008100
+  },
+  "attempt_id": "R4A-RUN-009-ATTEMPT-01",
+  "client_wall_duration_ns": 1722859100,
+  "completed_at": "2026-09-03T01:22:51.008Z",
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:22:51.0074432Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"DENY\\\",\\n  \\\"risk_findings\\\": [\\\"Re-identification risk due to presence of dates, rare diagnoses, and location fields\\\"],\\n  \\\"missing_evidence\\\": [\\\"De-identification review record and data-access approval\\\"],\\n  \\\"safe_next_action\\\": \\\"Request re-submission of required documentation and re-evaluate access request\\\",\\n  \\\"user_response\\\": \\\"Please re-submit the de-identification review record and data-access approval for review\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1705008100,\"load_duration\":4304400,\"prompt_eval_count\":291,\"prompt_eval_duration\":90827000,\"eval_count\":95,\"eval_duration\":1575823000}",
+  "raw_api_body_sha256": "96c3b380290badfe1b8175e46c2a654cef667f072c9d45cc1d23023c22f419c7",
+  "request_sha256": "1c38eff3cff8d4ee6850835dacba7b40206bb8da765165dc31441b610862119a",
+  "run_id": "R4A-RUN-009",
+  "started_at": "2026-09-03T01:22:49.285Z",
+  "status": "OK"
+}

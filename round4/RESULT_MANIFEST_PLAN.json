@@ -1,0 +1,39 @@
+{
+  "version": "round4a-result-manifest-plan-v1",
+  "result_root": "results/round4_llama32_3b",
+  "overwrite_policy": "refuse; repairs require fresh protocol or evidence identifiers",
+  "required_artifacts": [
+    "PROJECT_OWNER_AUTHORIZATION.json",
+    "warmup.json",
+    "execution_environment.json",
+    "24 request files",
+    "at least 24 and at most 48 attempt files",
+    "24 immutable raw-run files",
+    "formal_raw_results.jsonl",
+    "blinded_extraction_packet.jsonl",
+    "blinding_key.json",
+    "STAGE1_TRANSMISSION_AUTHORIZATION.json",
+    "stage1_prompt.txt",
+    "stage1_events.jsonl",
+    "stage1_raw_output.json",
+    "blinded_scoring_packet.jsonl",
+    "STAGE2_TRANSMISSION_AUTHORIZATION.json",
+    "stage2_prompt.txt",
+    "stage2_events.jsonl",
+    "stage2_raw_output.json",
+    "rater_session.json",
+    "ratings_surrogate.jsonl",
+    "ROUND4_METRICS.json",
+    "ROUND4_REPORT.md"
+  ],
+  "bindings": [
+    "Round-4 protocol manifest and SHA-256",
+    "all frozen source and prior-manifest hashes",
+    "model manifest, config, model, template, and license layer hashes",
+    "request and raw API-body hashes per observation",
+    "stage-specific authorization, calibration, rubric, packets, prompts, event logs, raw rater outputs, and session hashes",
+    "each result path, byte size, and SHA-256"
+  ],
+  "publication_design": "future additive publication manifest binds the immutable result manifest plus disclosure-only artifacts"
+}
+

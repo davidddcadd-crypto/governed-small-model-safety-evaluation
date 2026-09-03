@@ -1,0 +1,97 @@
+{
+  "preparation_capture_utc": "2026-09-03T00:42:08.6349878Z",
+  "formal_environment_capture": "Required again immediately after excluded warm-up and before R4A-RUN-001",
+  "ollama": {
+    "cli_version": "0.33.2",
+    "api_version": "0.33.2",
+    "model_tag": "llama3.2:3b-instruct-q4_K_M",
+    "manifest_path": "C:/Users/User/.ollama/models/manifests/registry.ollama.ai/library/llama3.2/3b-instruct-q4_K_M",
+    "manifest_size_bytes": 1005,
+    "manifest_sha256": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "model_blob_sha256": "dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff",
+    "model_blob_size_bytes": 2019377376,
+    "model_family": "llama",
+    "parameter_count": 3212749888,
+    "ollama_parameter_label": "3.2B",
+    "source_size_label": "3B",
+    "quantization": "Q4_K_M",
+    "context_length": 131072,
+    "embedding_length": 3072,
+    "capabilities": ["completion", "tools"],
+    "manifest_layers": {
+      "config": {"sha256": "34bb5ab01051a11372a91f95f3fbbc51173eed8e7f13ec395b9ae9b8bd0e242b", "size_bytes": 561, "independently_verified": true},
+      "model": {"sha256": "dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff", "size_bytes": 2019377376, "independently_verified": true},
+      "template": {"sha256": "966de95ca8a62200913e3f8bfbf84c8494536f1b94b49166851e76644e966396", "size_bytes": 1429, "independently_verified": true, "inspectable": true},
+      "license_agreement": {"sha256": "fcc5a6bec9daf9b561a68827b67ab6088e1dba9d1fa2a50d7bbcc8384e0a265d", "size_bytes": 7711, "independently_verified": true},
+      "acceptable_use_policy": {"sha256": "a70ff7e570d97baaf4e62ac6e6ad9975e04caa6d900d3742d37698494479e0cd", "size_bytes": 6016, "independently_verified": true},
+      "parameters": {"sha256": "56bb8bd477a519ffa694fc449c2413c6f0e1d3b1c88fa7e3c9d88d3ae49d4dcb", "size_bytes": 96, "independently_verified": true}
+    }
+  },
+  "host": {
+    "os_product_name_registry": "Windows 10 Home",
+    "os_display_version": "25H2",
+    "os_build": "26200.9168",
+    "os_cim_caption": "Microsoft Windows 11 家用版",
+    "os_architecture": "64-bit",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "manufacturer": "Micro-Star International Co., Ltd.",
+    "system_model": "MS-7C84",
+    "cpu": "AMD Ryzen 9 5950X 16-Core Processor",
+    "physical_cores": 16,
+    "logical_processors": 32,
+    "physical_memory_bytes": 34280726528,
+    "gpu": "NVIDIA GeForce GTX 1070",
+    "gpu_memory_mib": 8192,
+    "gpu_free_memory_mib_at_capture": 7132,
+    "nvidia_driver": "582.66",
+    "python_default": "3.14.5",
+    "python_validation_runtime": "3.13.13",
+    "python_validation_note": "The final targeted and lifecycle-applicable suites passed under Python 3.13.13. Python 3.14.5 remains the default interpreter; its raw full-suite run encountered Windows subprocess WinError 6 and is not represented as the passing validation runtime.",
+    "codex_cli_version": "0.152.0"
+  },
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 512,
+    "tools_enabled": false,
+    "conversation_history": false
+  },
+  "excluded_case_free_generation_preflight": {
+    "excluded_from_formal_evidence": true,
+    "contains_formal_case_content": false,
+    "started_at": "2026-09-03T00:42:06.3838178Z",
+    "completed_at": "2026-09-03T00:42:08.6349878Z",
+    "request": {
+      "model": "llama3.2:3b-instruct-q4_K_M",
+      "messages": [
+        {"role": "system", "content": "Return only the word OK."},
+        {"role": "user", "content": "Excluded case-free Round 4 generation-options compatibility preflight. No evaluation case content is present."}
+      ],
+      "stream": false,
+      "keep_alive": "10m",
+      "options": {"temperature": 0, "seed": 42, "num_ctx": 4096, "num_predict": 512}
+    },
+    "response": {
+      "model": "llama3.2:3b-instruct-q4_K_M",
+      "created_at": "2026-09-03T00:42:08.6228086Z",
+      "message": {"role": "assistant", "content": "OK"},
+      "done": true,
+      "done_reason": "stop",
+      "total_duration_ns": 2163239000,
+      "load_duration_ns": 2070992800,
+      "prompt_eval_count": 51,
+      "prompt_eval_duration_ns": 72787000,
+      "eval_count": 2,
+      "eval_duration_ns": 17034000
+    },
+    "result": "PASS: exact four generation options accepted"
+  },
+  "material_differences": [
+    "Llama model family, implementation, and Ollama chat template differ from Phi-4, Ministral, and Granite by design.",
+    "The exact tag is llama3.2:3b-instruct-q4_K_M; Ollama reports 3.2B parameters and the GGUF reports an exact parameter count of 3212749888.",
+    "The David-calibrated AI surrogate method remains constant with Round 2A and Round 3A, but this does not make cross-model comparisons controlled."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "authorization_type": "ROUND4A_ADDITIVE_POSTMANIFEST_CUSTODY_REPAIR",
+  "project_owner": "David / Tai Wai Lee",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize a narrow additive Round-4 post-manifest custody repair. Codex may preserve the frozen Round-4 protocol manifest, formal observations, Stage-1 and Stage-2 outputs, canonical ratings, metrics, report, and core result manifest without modification; record test_pre_execution_lifecycle_is_explicit as a third EXPECTED_LIFECYCLE_TRANSITION; create new additive Round-4-only repair, validation, disclosure, and test artifacts; and bind the preserved Stage-2 pre-sampling CLI rejection and its zero-byte event record into the future additive publication custody set. Codex may run local and isolated clean-checkout validation. I authorize no modification of frozen Round-1, Round-2, or Round-3 evidence; no modification or selective rerun of Round-4 observations or ratings; no additional OpenAI transmission; no commit, push, tag, release, publication, deletion, force-push, or other repository mutation outside those additive Round-4 repair artifacts.",
+  "authorized_at": "2026-09-03T01:52:17.150Z"
+}

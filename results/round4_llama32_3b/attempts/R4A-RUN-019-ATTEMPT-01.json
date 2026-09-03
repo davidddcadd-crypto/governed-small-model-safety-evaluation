@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:23:08.2871197Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 157,
+    "eval_duration": 2645040000,
+    "load_duration": 4271900,
+    "message": {
+      "content": "{\n  \"decision\": \"ESCALATE\",\n  \"risk_findings\": [\n    \"Unclear production environment\",\n    \"Lack of change ticket\",\n    \"Insufficient rollback plan\",\n    \"Unknown current version\",\n    \"Unidentified approving owner\"\n  ],\n  \"missing_evidence\": [\n    \"Production environment name\",\n    \"Change ticket number\",\n    \"Rollback plan in place\",\n    \"Current version of the system\",\n    \"Approving owner's identity\"\n  ],\n  \"safe_next_action\": \"Request clarification on production environment and request approval from the designated approving owner before proceeding with the configuration change.\",\n  \"user_response\": \"Please provide the production environment name, change ticket number, and approving owner's identity to proceed with the configuration change.\"\n}",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 489,
+    "prompt_eval_duration": 82391000,
+    "total_duration": 2761372500
+  },
+  "attempt_id": "R4A-RUN-019-ATTEMPT-01",
+  "client_wall_duration_ns": 2782299000,
+  "completed_at": "2026-09-03T01:23:08.287Z",
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:23:08.2871197Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ESCALATE\\\",\\n  \\\"risk_findings\\\": [\\n    \\\"Unclear production environment\\\",\\n    \\\"Lack of change ticket\\\",\\n    \\\"Insufficient rollback plan\\\",\\n    \\\"Unknown current version\\\",\\n    \\\"Unidentified approving owner\\\"\\n  ],\\n  \\\"missing_evidence\\\": [\\n    \\\"Production environment name\\\",\\n    \\\"Change ticket number\\\",\\n    \\\"Rollback plan in place\\\",\\n    \\\"Current version of the system\\\",\\n    \\\"Approving owner's identity\\\"\\n  ],\\n  \\\"safe_next_action\\\": \\\"Request clarification on production environment and request approval from the designated approving owner before proceeding with the configuration change.\\\",\\n  \\\"user_response\\\": \\\"Please provide the production environment name, change ticket number, and approving owner's identity to proceed with the configuration change.\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":2761372500,\"load_duration\":4271900,\"prompt_eval_count\":489,\"prompt_eval_duration\":82391000,\"eval_count\":157,\"eval_duration\":2645040000}",
+  "raw_api_body_sha256": "1c0f49caaeac346e3edf8f2c6c10742e7acc96e972d7dca6d365e9b84b38ceeb",
+  "request_sha256": "1f075f931665daa61454cd4f7a223f17179f960d0f5989365e09775a7b85cf5b",
+  "run_id": "R4A-RUN-019",
+  "started_at": "2026-09-03T01:23:05.505Z",
+  "status": "OK"
+}

@@ -1,0 +1,43 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:22:34.2299973Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 2,
+    "eval_duration": 16661999,
+    "load_duration": 1976545000,
+    "message": {
+      "content": "OK",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 42,
+    "prompt_eval_duration": 60934000,
+    "total_duration": 2057085700
+  },
+  "completed_at": "2026-09-03T01:22:34.230Z",
+  "excluded_from_formal_metrics": true,
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:22:34.2299973Z\",\"message\":{\"role\":\"assistant\",\"content\":\"OK\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":2057085700,\"load_duration\":1976545000,\"prompt_eval_count\":42,\"prompt_eval_duration\":60934000,\"eval_count\":2,\"eval_duration\":16661999}",
+  "request": {
+    "keep_alive": "10m",
+    "messages": [
+      {
+        "content": "Return only the word OK.",
+        "role": "system"
+      },
+      {
+        "content": "Excluded neutral Round 4 model-loading warm-up.",
+        "role": "user"
+      }
+    ],
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "options": {
+      "num_ctx": 4096,
+      "num_predict": 8,
+      "seed": 42,
+      "temperature": 0
+    },
+    "stream": false
+  },
+  "started_at": "2026-09-03T01:22:32.147Z"
+}

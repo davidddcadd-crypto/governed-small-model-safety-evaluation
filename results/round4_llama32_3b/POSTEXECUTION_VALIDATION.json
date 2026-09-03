@@ -1,0 +1,40 @@
+{
+  "core_postexecution_validation": "PASS",
+  "frozen_core_unchanged": true,
+  "isolated_clean_checkout_validation": {
+    "applicable_test_summary": "67 passed, 8 deselected",
+    "checkpoint_absent": true,
+    "checkout_path": "C:/Users/User/AppData/Local/Temp/round4-custody-02c93c3c8d364365be4fa7da504840e7/clean-checkout",
+    "final_result": "PASS",
+    "initial_discovery": {
+      "failures": [
+        "tests/test_round3_preparation.py::test_prior_evidence_and_exact_source_bindings",
+        "tests/test_round3_preparation.py::test_excluded_round2_checkpoint_is_unchanged"
+      ],
+      "reason": "These frozen Round-3 preparation assertions require the intentionally excluded local checkpoint and are inapplicable when that checkpoint is absent from a public checkout.",
+      "summary": "67 passed, 2 failed, 6 deselected"
+    },
+    "prior_round_validators": "PASS",
+    "round4_postexecution_validator": "PASS",
+    "round4_postmanifest_repair_validator": "PASS",
+    "round4_publication_v2_state": "PREPUBLICATION_REPAIR_READY"
+  },
+  "lifecycle_transitions": [
+    "test_zero_formal_observations",
+    "test_result_manifest_refuses_incomplete_evidence",
+    "test_pre_execution_lifecycle_is_explicit",
+    "test_lifecycle_and_publication_architecture_is_frozen"
+  ],
+  "local_validation": {
+    "applicable_test_summary": "69 passed, 6 deselected",
+    "round4_postexecution_validator": "PASS",
+    "round4_postmanifest_repair_validator": "PASS",
+    "round4_publication_v2_state": "PREPUBLICATION_REPAIR_READY"
+  },
+  "publication_authorized": false,
+  "recorded_at": "2026-09-03T02:06:25.043Z",
+  "validation_completed_at": "2026-09-03T02:10:20.543Z",
+  "result": "PASS",
+  "stage2_rejection_model_sampling": false,
+  "stage2_rejection_preserved": true
+}

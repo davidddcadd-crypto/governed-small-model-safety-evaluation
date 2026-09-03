@@ -1,0 +1,27 @@
+{
+  "api_response": {
+    "created_at": "2026-09-03T01:22:49.2771548Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 91,
+    "eval_duration": 1531341000,
+    "load_duration": 4360300,
+    "message": {
+      "content": "{\n  \"decision\": \"ALLOW\",\n  \"risk_findings\": [\n    \"Potential for duplicate payment submission due to API timeout\",\n    \"Unknown outcome of previous payment submission\"\n  ],\n  \"missing_evidence\": [\n    \"Confirmation of payment processor's retry policy\",\n    \"Confirmation of bank's processing time\"\n  ],\n  \"safe_next_action\": \"Wait for 30 minutes to allow payment processor's retry policy to kick in\"\n}",
+      "role": "assistant"
+    },
+    "model": "llama3.2:3b-instruct-q4_K_M",
+    "prompt_eval_count": 492,
+    "prompt_eval_duration": 90257000,
+    "total_duration": 1657075600
+  },
+  "attempt_id": "R4A-RUN-008-ATTEMPT-01",
+  "client_wall_duration_ns": 1681705800,
+  "completed_at": "2026-09-03T01:22:49.277Z",
+  "raw_api_body": "{\"model\":\"llama3.2:3b-instruct-q4_K_M\",\"created_at\":\"2026-09-03T01:22:49.2771548Z\",\"message\":{\"role\":\"assistant\",\"content\":\"{\\n  \\\"decision\\\": \\\"ALLOW\\\",\\n  \\\"risk_findings\\\": [\\n    \\\"Potential for duplicate payment submission due to API timeout\\\",\\n    \\\"Unknown outcome of previous payment submission\\\"\\n  ],\\n  \\\"missing_evidence\\\": [\\n    \\\"Confirmation of payment processor's retry policy\\\",\\n    \\\"Confirmation of bank's processing time\\\"\\n  ],\\n  \\\"safe_next_action\\\": \\\"Wait for 30 minutes to allow payment processor's retry policy to kick in\\\"\\n}\"},\"done\":true,\"done_reason\":\"stop\",\"total_duration\":1657075600,\"load_duration\":4360300,\"prompt_eval_count\":492,\"prompt_eval_duration\":90257000,\"eval_count\":91,\"eval_duration\":1531341000}",
+  "raw_api_body_sha256": "e125dfa169aa5d10bcf597c10148518ab4ceda791ee4103d876b2d12f73bc2c6",
+  "request_sha256": "09ad57c1762793f20d148e912ddeb006c872c8359b537187c44116df7f05b074",
+  "run_id": "R4A-RUN-008",
+  "started_at": "2026-09-03T01:22:47.596Z",
+  "status": "OK"
+}

@@ -1,0 +1,82 @@
+{
+  "record_type": "ROUND4A_EXCLUDED_CASE_FREE_SCHEMA_COMPATIBILITY_PREFLIGHT",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "codex_cli_version": "0.152.0",
+  "excluded_from_formal_observations": true,
+  "excluded_from_formal_ratings": true,
+  "contains_formal_case_content": false,
+  "contains_frozen_prompt_content": false,
+  "contains_gold": false,
+  "contains_llama_response": false,
+  "contains_david_calibration": false,
+  "round2_rejection_evidence": {
+    "stage1_path": "results/round2_ministral3b/publication_disclosures/STAGE1_SCHEMA_REJECTION.jsonl",
+    "stage1_sha256": "aa5e78715968d6463d090603be1d02630f26e79e69b3ca9df2a0b32a0993acdc",
+    "stage2_path": "results/round2_ministral3b/publication_disclosures/STAGE2_SCHEMA_REJECTION.jsonl",
+    "stage2_sha256": "432b88f018d8b5af5082fc1e332a19e2dd2453061c99f66c6031d91f255df2ec"
+  },
+  "adapter": {
+    "stage_type_added": true,
+    "runtime_unique_items_omitted": true,
+    "canonical_unique_items_retained": true,
+    "deterministic_uniqueness_validation_retained": true,
+    "scoring_semantics_changed": false
+  },
+  "stage1": {
+    "session_id": "01a064c4-6e28-7740-96c3-268044f97feb",
+    "prompt_path": "round4/preflight/stage1_schema_prompt.txt",
+    "prompt_sha256": "0c8c108fc2578b96ff954c80504f28f0ff1dce7c367487d25dd713645b6e299e",
+    "runtime_schema_path": "round4/schemas/runtime_surrogate_extraction_output.schema.json",
+    "runtime_schema_sha256": "98cf1c7e9fac8ec1ebe11e01881f11e7bd8cdc8b1f8e5ee9f3f783164da994a7",
+    "combined_log_path": "round4/preflight/stage1_schema_combined.log",
+    "combined_log_sha256": "b7a31e5e34337cf275e61dd0bc10f3f51a4e141d4a371f28e2f838b10189a7cf",
+    "events_path": "round4/preflight/stage1_schema_events.jsonl",
+    "events_sha256": "5f321f044b5b9945d2c8eb53e6408ec37b39602d6bacfda29aca4accf1122be0",
+    "raw_output_path": "round4/preflight/stage1_schema_raw_output.json",
+    "raw_output_sha256": "d88112b46f0f9a3ce905de8b2f8a81e580d986abf6b4aa126ad57fecc7cfb9b1",
+    "event_types": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "tool_call_count": 0,
+    "rating_count": 24,
+    "schema_accepted": true,
+    "request_rejected": false,
+    "usage": {
+      "input_tokens": 14304,
+      "output_tokens": 766
+    }
+  },
+  "stage2": {
+    "session_id": "01a064c4-ba42-7ce1-b4a6-436f89c2231d",
+    "prompt_path": "round4/preflight/stage2_schema_prompt.txt",
+    "prompt_sha256": "094a9d391f4d64db6506e20ef94be2dd809009dca6c9e8227f3d38999f2f715d",
+    "runtime_schema_path": "round4/schemas/runtime_surrogate_scoring_output.schema.json",
+    "runtime_schema_sha256": "6980f330d41999101a37a37e5f69f42a96d8bc7312f270c4252442af0f86282d",
+    "combined_log_path": "round4/preflight/stage2_schema_combined.log",
+    "combined_log_sha256": "b1f0f456a6762c42ad97f389b2d0dff2ff323753271be20d8c5cc64389304819",
+    "events_path": "round4/preflight/stage2_schema_events.jsonl",
+    "events_sha256": "83a7cecdeed8e8f4a96e83ac9f5cf4b11537e86f7081cdbbd70f2d5af3146542",
+    "raw_output_path": "round4/preflight/stage2_schema_raw_output.json",
+    "raw_output_sha256": "4f8ecfc245435a087570ac7a8f7e2bcdb56e81eed7a8bc9547a78940ed0c940b",
+    "event_types": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "tool_call_count": 0,
+    "rating_count": 24,
+    "schema_accepted": true,
+    "request_rejected": false,
+    "usage": {
+      "input_tokens": 14482,
+      "output_tokens": 1777
+    }
+  },
+  "result": "PASS"
+}

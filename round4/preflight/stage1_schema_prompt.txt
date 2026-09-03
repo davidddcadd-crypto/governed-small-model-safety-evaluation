@@ -1,0 +1,9 @@
+Excluded Round 4A runtime-schema compatibility preflight. This is not a formal
+observation or rating. It contains no evaluation case, prompt, gold record,
+model response, arm mapping, model identity, or David calibration. Use no tools.
+
+Return exactly the supplied schema. Set stage to DECISION_EXTRACTION. Create
+exactly 24 placeholder rows with response_id R4R001 through R4R024 in order,
+extracted_decision null, format_status NO_OUTPUT, and extraction_evidence
+"Excluded schema placeholder." Do not add any other content.
+

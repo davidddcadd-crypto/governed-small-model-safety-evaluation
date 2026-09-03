@@ -1,0 +1,39 @@
+{
+  "record_type": "ROUND4_PYTHON314_PUBLICATION_READINESS_DIAGNOSTIC",
+  "recorded_at": "2026-09-03T02:58:50.248Z",
+  "event_source": "Preserved original publication-readiness diagnostic event; Python 3.14 was not rerun for this custody repair.",
+  "runtime": "Python 3.14",
+  "failed_tests": [
+    "tests/test_round2_tools.py::Round2ToolTests::test_frozen_sources_and_calibration_validate",
+    "tests/test_v02_tools.py::V02ToolTests::test_frozen_protocol_still_validates"
+  ],
+  "failure_class": "Windows subprocess error",
+  "failure_message": "WinError 6: The handle is invalid",
+  "observed_python314_result": {
+    "passed": 70,
+    "failed": 2,
+    "deselected": 7,
+    "summary": "70 passed, 2 failed, 7 deselected"
+  },
+  "equivalent_python313_result": {
+    "passed": 72,
+    "failed": 0,
+    "deselected": 7,
+    "summary": "72 passed, 7 deselected"
+  },
+  "disposition": {
+    "failures_were_subprocess_runtime_handle_failures": true,
+    "scientific_assertion_failed": false,
+    "frozen_protocol_validation_failed": false,
+    "formal_observation_validation_failed": false,
+    "rater_output_validation_failed": false,
+    "canonical_rating_validation_failed": false,
+    "metric_validation_failed": false,
+    "report_validation_failed": false,
+    "result_manifest_validation_failed": false,
+    "model_execution_occurred": false,
+    "openai_transmission_occurred": false,
+    "formal_evidence_bytes_modified": false,
+    "equivalent_applicable_suite_completed_under_python313": true
+  }
+}

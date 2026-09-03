@@ -1,0 +1,7 @@
+{
+  "authorization_type": "ROUND4A_FORMAL_EXECUTION",
+  "project_owner": "David / Tai Wai Lee",
+  "authorized_protocol_manifest_sha256": "37fd588a4103b39c267978b845843ce85da067c078be94811582a67b3fad6ba8",
+  "statement": "I, David / Tai Wai Lee, Project Owner, explicitly authorize the 24 formal Round 4A observations using llama3.2:3b-instruct-q4_K_M under the frozen Round-4 protocol manifest identified by authorized_protocol_manifest_sha256. I authorize no surrogate-rating transmission, formal rating, change to frozen Round-1, Round-2, or Round-3 evidence, selective rerun, publication, commit, push, tag, or release.",
+  "authorized_at": "2026-09-03T01:21:51.2311653Z"
+}
