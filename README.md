@@ -275,23 +275,36 @@ The original pilot protocol can be validated with:
 
 ```powershell
 python -B scripts/validate_protocol.py
+```
+
 Expected result:
 
+```text
 PASS: frozen pilot protocol is internally consistent
+```
 
 Later rounds include their own preparation, rating, post-execution, and publication validators.
 
+---
 
-Project lead
+## Project lead
 
-Tai Wai Lee (David)
+**Tai Wai Lee (David)**
+
 Independent researcher and builder focused on AI safety evaluation and governed AI systems
+
 Ontario, Canada
 
 Research interests include:
 
-small-model safety evaluation;
-agent safety and reliability;
-system-level AI governance;
-model routing, verification, and escalation;
-safety–performance–cost trade-offs in governed AI systems.
+- small-model safety evaluation;
+- agent safety and reliability;
+- system-level AI governance;
+- model routing, verification, and escalation;
+- safety–performance–cost trade-offs in governed AI systems.
+
+---
+
+## License
+
+MIT. See [LICENSE](LICENSE).
